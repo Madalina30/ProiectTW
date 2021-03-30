@@ -1,0 +1,394 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="510" height="525" viewBox="0 0 510 525">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#bff8bf"/>
+      <stop offset="0.48" stop-color="#f8e38d"/>
+      <stop offset="1" stop-color="#fab9b9"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="289" height="168" transform="translate(10 182.821)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="289.152" height="159.768"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_23" data-name="Rectangle 23" width="283" height="153" transform="translate(0.234 0.077)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="279.08" height="153.082"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="Rectangle_26" data-name="Rectangle 26" width="296" height="162" transform="translate(0.458 -0.375)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="Rectangle_25" data-name="Rectangle 25" width="292.497" height="161.32"/>
+    </clipPath>
+    <clipPath id="clip-htmlLevels">
+      <rect width="510" height="525"/>
+    </clipPath>
+  </defs>
+  <g id="htmlLevels" clip-path="url(#clip-htmlLevels)">
+    <rect width="510" height="525" fill="url(#linear-gradient)"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(0 -77.822)" clip-path="url(#clip-path)">
+      <g id="htmlDefaultBeginner" transform="translate(10 186.995)" clip-path="url(#clip-path-2)">
+        <rect id="Rectangle_2" data-name="Rectangle 2" width="289.152" height="159.768" fill="#fff"/>
+        <g id="lego_1_" data-name="lego (1)" transform="translate(-0.904 100.249)">
+          <g id="Group_1" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+        <g id="lego_1_2" data-name="lego (1)" transform="translate(151.503 100.249)">
+          <g id="Group_1-2" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-2" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2-2" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3-2" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+        <g id="lego_1_3" data-name="lego (1)" transform="translate(-1.055 58.088)">
+          <g id="Group_1-3" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-3" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#216f27"/>
+            <path id="Path_2-3" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#216f27"/>
+          </g>
+          <path id="Path_3-3" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_4" data-name="lego (1)" transform="translate(75.601 100.249)">
+          <g id="Group_1-4" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-4" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2b9834"/>
+            <path id="Path_2-4" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2b9834"/>
+          </g>
+          <path id="Path_3-4" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_5" data-name="lego (1)" transform="translate(151.353 58.088)">
+          <g id="Group_1-5" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-5" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#216f27"/>
+            <path id="Path_2-5" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#216f27"/>
+          </g>
+          <path id="Path_3-5" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_6" data-name="lego (1)" transform="translate(226.954 100.249)">
+          <g id="Group_1-6" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-6" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2b9834"/>
+            <path id="Path_2-6" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2b9834"/>
+          </g>
+          <path id="Path_3-6" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_7" data-name="lego (1)" transform="translate(75.45 58.088)">
+          <g id="Group_1-7" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-7" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2-7" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3-7" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+        <g id="lego_1_8" data-name="lego (1)" transform="translate(226.803 58.088)">
+          <g id="Group_1-8" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-8" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2-8" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3-8" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+        <g id="lego_1_9" data-name="lego (1)" transform="translate(-1.13 14.448)">
+          <g id="Group_1-9" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-9" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2-9" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3-9" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+        <g id="lego_1_10" data-name="lego (1)" transform="translate(151.277 14.448)">
+          <g id="Group_1-10" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-10" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2-10" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3-10" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+        <g id="lego_1_11" data-name="lego (1)" transform="translate(75.375 14.448)">
+          <g id="Group_1-11" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-11" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2b9834"/>
+            <path id="Path_2-11" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2b9834"/>
+          </g>
+          <path id="Path_3-11" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_12" data-name="lego (1)" transform="translate(226.728 14.448)">
+          <g id="Group_1-12" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-12" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2b9834"/>
+            <path id="Path_2-12" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2b9834"/>
+          </g>
+          <path id="Path_3-12" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_13" data-name="lego (1)" transform="translate(-1.206 -28.946)">
+          <g id="Group_1-13" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-13" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#216f27"/>
+            <path id="Path_2-13" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#216f27"/>
+          </g>
+          <path id="Path_3-13" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_14" data-name="lego (1)" transform="translate(151.202 -28.946)">
+          <g id="Group_1-14" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-14" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#216f27"/>
+            <path id="Path_2-14" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#216f27"/>
+          </g>
+          <path id="Path_3-14" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2b9834"/>
+        </g>
+        <g id="lego_1_15" data-name="lego (1)" transform="translate(75.299 -28.946)">
+          <g id="Group_1-15" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-15" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2-15" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3-15" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+        <g id="lego_1_16" data-name="lego (1)" transform="translate(226.652 -28.946)">
+          <g id="Group_1-16" data-name="Group 1" transform="translate(9.638 0)">
+            <path id="Path_1-16" data-name="Path 1" d="M34.037,13.639H21.186a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H37.25a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-16.367 -13.639)" fill="#2a9132"/>
+            <path id="Path_2-16" data-name="Path 2" d="M94.048,13.639H81.2a4.777,4.777,0,0,0-4.819,4.734V27.84a1.592,1.592,0,0,0,1.606,1.578H97.261a1.592,1.592,0,0,0,1.606-1.578V18.373a4.777,4.777,0,0,0-4.819-4.734Z" transform="translate(-41.037 -13.639)" fill="#2a9132"/>
+          </g>
+          <path id="Path_3-16" data-name="Path 3" d="M72.288,35.461H4.819A4.777,4.777,0,0,0,0,40.2V81.222A1.592,1.592,0,0,0,1.606,82.8H75.5a1.592,1.592,0,0,0,1.606-1.578V40.2A4.777,4.777,0,0,0,72.288,35.461Z" transform="translate(0 -22.837)" fill="#2a9132"/>
+        </g>
+      </g>
+    </g>
+    <text id="HTML_LEVELS" data-name="HTML LEVELS" transform="translate(93 74)" fill="#2a9132" font-size="45" font-family="Rockwell-Bold, Rockwell" font-weight="700"><tspan x="0" y="0">HTML LEVELS</tspan></text>
+    <text id="Learn_the_basics_of_HTML_..." data-name="Learn the basics
+ of HTML ..." transform="translate(155 182)" fill="#fff" font-size="32" font-family="Rockwell"><tspan x="-119.508" y="0">Learn the basics</tspan><tspan x="-82.695" y="37" xml:space="preserve"> of HTML ...</tspan></text>
+    <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(211.766 225.923)" clip-path="url(#clip-path-3)">
+      <g id="htmlDefaultIntermediate" transform="translate(2.021 -0.005)" clip-path="url(#clip-path-4)">
+        <rect id="Rectangle_21" data-name="Rectangle 21" width="279.08" height="153.082" fill="#fff"/>
+        <g id="lego_1_17" data-name="lego (1)" transform="translate(-0.872 96.054)">
+          <g id="Group_1-17" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-17" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-17" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-17" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+        <g id="lego_1_18" data-name="lego (1)" transform="translate(146.226 96.054)">
+          <g id="Group_1-18" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-18" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-18" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-18" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+        <g id="lego_1_19" data-name="lego (1)" transform="translate(-1.018 55.657)">
+          <g id="Group_1-19" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-19" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-19" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-19" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_20" data-name="lego (1)" transform="translate(72.968 96.054)">
+          <g id="Group_1-20" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-20" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-20" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-20" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_21" data-name="lego (1)" transform="translate(146.081 55.657)">
+          <g id="Group_1-21" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-21" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-21" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-21" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_22" data-name="lego (1)" transform="translate(219.049 96.054)">
+          <g id="Group_1-22" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-22" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-22" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-22" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_23" data-name="lego (1)" transform="translate(72.822 55.657)">
+          <g id="Group_1-23" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-23" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-23" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-23" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+        <g id="lego_1_24" data-name="lego (1)" transform="translate(218.903 55.657)">
+          <g id="Group_1-24" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-24" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-24" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-24" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+        <g id="lego_1_25" data-name="lego (1)" transform="translate(-1.091 13.843)">
+          <g id="Group_1-25" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-25" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-25" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-25" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+        <g id="lego_1_26" data-name="lego (1)" transform="translate(146.008 13.843)">
+          <g id="Group_1-26" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-26" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-26" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-26" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+        <g id="lego_1_27" data-name="lego (1)" transform="translate(72.749 13.843)">
+          <g id="Group_1-27" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-27" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-27" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-27" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_28" data-name="lego (1)" transform="translate(218.83 13.843)">
+          <g id="Group_1-28" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-28" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-28" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-28" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_29" data-name="lego (1)" transform="translate(-1.164 -27.734)">
+          <g id="Group_1-29" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-29" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-29" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-29" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_30" data-name="lego (1)" transform="translate(145.935 -27.734)">
+          <g id="Group_1-30" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-30" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#d8b62c"/>
+            <path id="Path_2-30" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#d8b62c"/>
+          </g>
+          <path id="Path_3-30" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#d8b62c"/>
+        </g>
+        <g id="lego_1_31" data-name="lego (1)" transform="translate(72.677 -27.734)">
+          <g id="Group_1-31" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-31" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-31" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-31" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+        <g id="lego_1_32" data-name="lego (1)" transform="translate(218.758 -27.734)">
+          <g id="Group_1-32" data-name="Group 1" transform="translate(9.303)">
+            <path id="Path_1-32" data-name="Path 1" d="M33.825,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H36.926a1.532,1.532,0,0,0,1.55-1.512V18.511a4.6,4.6,0,0,0-4.651-4.536Z" transform="translate(-16.77 -13.975)" fill="#e0bc2a"/>
+            <path id="Path_2-32" data-name="Path 2" d="M95.317,13.975h-12.4a4.6,4.6,0,0,0-4.651,4.536v9.071a1.532,1.532,0,0,0,1.55,1.512H98.418a1.532,1.532,0,0,0,1.55-1.512V18.511A4.6,4.6,0,0,0,95.317,13.975Z" transform="translate(-44.152 -13.975)" fill="#e0bc2a"/>
+          </g>
+          <path id="Path_3-32" data-name="Path 3" d="M69.77,36.336H4.651A4.6,4.6,0,0,0,0,40.872v39.31a1.532,1.532,0,0,0,1.55,1.512H72.871a1.532,1.532,0,0,0,1.55-1.512V40.872A4.6,4.6,0,0,0,69.77,36.336Z" transform="translate(0 -24.24)" fill="#e0bc2a"/>
+        </g>
+      </g>
+    </g>
+    <text id="_..._and_get_to_the_advanced_class_..." data-name="... and get to
+the advanced
+class ..." transform="translate(354 277)" fill="#fff" font-size="32" font-family="Rockwell"><tspan x="-91.68" y="0">... and get to</tspan><tspan x="-99.508" y="37">the advanced</tspan><tspan x="-54.172" y="74">class ...</tspan></text>
+    <g id="Mask_Group_8" data-name="Mask Group 8" transform="translate(9.542 353.375)" clip-path="url(#clip-path-5)">
+      <g id="htmlDefaultExpert" transform="translate(2.197 0.055)" clip-path="url(#clip-path-6)">
+        <rect id="Rectangle_24" data-name="Rectangle 24" width="292.497" height="161.32" fill="#fff"/>
+        <g id="lego_1_33" data-name="lego (1)" transform="translate(-0.914 101.223)">
+          <g id="Group_1-33" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-33" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-33" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-33" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+        <g id="lego_1_34" data-name="lego (1)" transform="translate(153.256 101.223)">
+          <g id="Group_1-34" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-34" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-34" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-34" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+        <g id="lego_1_35" data-name="lego (1)" transform="translate(-1.067 58.653)">
+          <g id="Group_1-35" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-35" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-35" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-35" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_36" data-name="lego (1)" transform="translate(76.476 101.223)">
+          <g id="Group_1-36" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-36" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-36" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-36" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_37" data-name="lego (1)" transform="translate(153.103 58.653)">
+          <g id="Group_1-37" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-37" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-37" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-37" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_38" data-name="lego (1)" transform="translate(229.579 101.223)">
+          <g id="Group_1-38" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-38" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-38" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-38" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_39" data-name="lego (1)" transform="translate(76.323 58.653)">
+          <g id="Group_1-39" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-39" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-39" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-39" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+        <g id="lego_1_40" data-name="lego (1)" transform="translate(229.427 58.653)">
+          <g id="Group_1-40" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-40" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-40" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-40" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+        <g id="lego_1_41" data-name="lego (1)" transform="translate(-1.143 14.588)">
+          <g id="Group_1-41" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-41" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-41" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-41" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+        <g id="lego_1_42" data-name="lego (1)" transform="translate(153.027 14.588)">
+          <g id="Group_1-42" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-42" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-42" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-42" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+        <g id="lego_1_43" data-name="lego (1)" transform="translate(76.247 14.588)">
+          <g id="Group_1-43" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-43" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-43" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-43" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_44" data-name="lego (1)" transform="translate(229.35 14.588)">
+          <g id="Group_1-44" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-44" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-44" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-44" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_45" data-name="lego (1)" transform="translate(-1.219 -29.227)">
+          <g id="Group_1-45" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-45" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-45" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-45" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_46" data-name="lego (1)" transform="translate(152.951 -29.227)">
+          <g id="Group_1-46" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-46" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#df3131"/>
+            <path id="Path_2-46" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#df3131"/>
+          </g>
+          <path id="Path_3-46" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#df3131"/>
+        </g>
+        <g id="lego_1_47" data-name="lego (1)" transform="translate(76.17 -29.227)">
+          <g id="Group_1-47" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-47" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-47" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-47" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+        <g id="lego_1_48" data-name="lego (1)" transform="translate(229.274 -29.227)">
+          <g id="Group_1-48" data-name="Group 1" transform="translate(9.75)">
+            <path id="Path_1-48" data-name="Path 1" d="M34.645,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56A1.609,1.609,0,0,0,18.4,29.908H37.9a1.609,1.609,0,0,0,1.625-1.593v-9.56a4.828,4.828,0,0,0-4.875-4.78Z" transform="translate(-16.77 -13.975)" fill="#e83434"/>
+            <path id="Path_2-48" data-name="Path 2" d="M96.137,13.975h-13a4.828,4.828,0,0,0-4.875,4.78v9.56a1.609,1.609,0,0,0,1.625,1.593h19.5a1.609,1.609,0,0,0,1.625-1.593v-9.56A4.828,4.828,0,0,0,96.137,13.975Z" transform="translate(-42.512 -13.975)" fill="#e83434"/>
+          </g>
+          <path id="Path_3-48" data-name="Path 3" d="M73.124,36.336H4.875A4.828,4.828,0,0,0,0,41.116V82.541a1.609,1.609,0,0,0,1.625,1.593H76.374A1.609,1.609,0,0,0,78,82.541V41.116A4.828,4.828,0,0,0,73.124,36.336Z" transform="translate(0 -23.59)" fill="#e83434"/>
+        </g>
+      </g>
+    </g>
+    <text id="_..._by_playing_in_a_colorful_lego-themed_interface" data-name="... by playing
+in a colorful
+lego-themed 
+interface" transform="translate(158 390)" fill="#fff" font-size="32" font-family="Rockwell"><tspan x="-97.375" y="0">... by playing</tspan><tspan x="-86.711" y="37">in a colorful</tspan><tspan x="-98.867" y="74">lego-themed </tspan><tspan x="-65.188" y="111">interface</tspan></text>
+  </g>
+</svg>

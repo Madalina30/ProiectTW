@@ -197,6 +197,12 @@ nav {
     height: 400px;
 }
 
+.to-page {
+    cursor: pointer; 
+    border:1px solid rgb(214, 214, 214); 
+    border-radius:10px;
+}
+
 /* faq */
 .faq {
     background: url(../public/images/faq.svg) no-repeat center center fixed; 
