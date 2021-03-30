@@ -147,6 +147,7 @@ try {
             buildLevel(category.htmlBeginner[0]);
            
             document.querySelector(".next-level").addEventListener('click', function() {
+                
                 window.location.href = "templateCategory.html?cat=hi";
             });
 

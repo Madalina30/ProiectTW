@@ -44,6 +44,48 @@ nav {
     align-items: center;
 }
 
+.nav__appear {
+    height: 100vh;
+    background: rgb(167, 87, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.25s cubic-bezier(0, 1.76, 0.73, 0.53);
+}
+
+.nav__items {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.exit {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+
+.nav__appear img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav__appear.is--open {
+    transform: translateX(0);
+}
+
+.nav__appear a {
+    font-size: 1.5em;
+    margin: 1em 0;   
+    display: block; 
+    color: #fff;
+}
+
 /* starting page */
 .body__index {
     background: url(../public/images/startbk.png) no-repeat center center fixed; 
@@ -168,6 +210,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
+    flex-wrap: wrap;
 }
 
 .div__presentation a img {
@@ -334,6 +377,7 @@ li {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+    flex-wrap: wrap;
 }
 
 
@@ -452,6 +496,7 @@ image 100% */
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 
@@ -468,7 +513,6 @@ image 100% */
 
 
 .see-levels {
-    background-color: crimson;
     padding: 0;
     border-radius: 20px;
     display: flex;
@@ -483,7 +527,6 @@ image 100% */
 }
 
 .where-you-write  {
-    background-color: rgb(189, 161, 161);
     border-radius: 10px;
     padding: 20px;
     position: relative;
@@ -522,17 +565,11 @@ image 100% */
 
 
 .input-zone {
-    background-color:rgb(188, 206, 240);
     border: none;
     height: 5px;
     width: 30px;
     margin: 5px;
-    color: darkblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-/* beginner html - green, interm: orange, expert: red*/
-.body__category{
-    background-color: rgb(191, 248, 191);
 }
 
 
@@ -586,6 +623,7 @@ th, td {
 
 .rows-for-leaderboards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -638,16 +676,11 @@ th, td {
 }
 
 @media screen and (max-width: 800px) {
-    .div__games-presentation {
-        flex-direction: column;
-    }
-
     .three-on-row {
         justify-content: space-evenly;
     }
 
     .games-categories {
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -666,16 +699,6 @@ th, td {
 
     .categories-text {
         font-size: 16px;
-    }
-
-    .statictics-charts {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .statictics-charts img {
-        width: 70%;
-        padding-bottom: 20px;
     }
 
     .main__levels {
@@ -746,10 +769,6 @@ th, td {
 }
 
 @media screen and (max-width: 550px) {
-    .three-on-row {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .three-on-row > section {
         width: 80%
@@ -781,7 +800,7 @@ th, td {
     }
 
     
-    .btn-games, .btn-statistics, .btn-profile, .insta-button{
+    .btn-games, .btn-statistics, .icons-right{
         display: none;
     }
 
@@ -792,6 +811,7 @@ th, td {
         padding-right:1em;
         width: 20px;
     }
+
     .nav__left img {
         margin: 1em;
     }
