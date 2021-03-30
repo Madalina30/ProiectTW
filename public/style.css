@@ -1,5 +1,3 @@
-/* index.html */
-
 html {
     scroll-behavior: smooth;
 }
@@ -86,6 +84,9 @@ nav {
 .btn-fill {
     background-color: rgba(87, 168, 206, 0.151);
     margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-color: transparent;
     border-radius: 10px;
     font-size: 18px;
@@ -97,6 +98,7 @@ nav {
 }
 
 .btn-github {
+    padding: 5px 10px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -756,7 +758,7 @@ th, td {
 
 @media screen and (max-width: 450px) {
     nav {
-        display: relative;
+        position: relative;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -780,7 +782,6 @@ th, td {
     #menuButton {
         cursor: pointer;
         display: flex;
-        align-content: right;
         margin: 1em;
         padding-right:1em;
         width: 20px;
