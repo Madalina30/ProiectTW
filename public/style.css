@@ -110,7 +110,7 @@ nav {
     text-align: center;
     font-size: 18px;
     padding: 10px;
-    width: 20%;
+    width: 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -666,7 +666,8 @@ th, td {
     }
 
     .box__start-page {
-        width: 30%;
+        width: 25%;
+        font-size: 16px;
     }
 
 
@@ -723,7 +724,7 @@ th, td {
     }
 
     .box__start-page {
-        width: 40%;
+        width: 32%;
     }
 
     .description-site {
@@ -766,7 +767,8 @@ th, td {
     }
 
     .box__start-page {
-        width: 50%;
+        width: 41%;
+        font-size: 16px;
     }
 
     .description-site {
@@ -785,6 +787,10 @@ th, td {
     .icons-right {
         width: 20%;
     }
+
+    .box__start-page {
+        width: 47%;
+    }
     
 }
 
@@ -800,7 +806,7 @@ th, td {
     }
 
     .box__start-page {
-        width: 70%;
+        width: 60%;
     }
 
     .btn-github {
@@ -843,6 +849,16 @@ th, td {
     .user-profile {
         flex-wrap: nowrap;
         flex-direction: column;
+    }
+
+    .box__start-page {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .box__start-page {
+        width: 100%;
     }
 
 }
