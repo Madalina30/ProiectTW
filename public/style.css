@@ -588,33 +588,38 @@ image 100% */
     background-color: #E56666;
 }
 
+h3 {
+    margin: 0;
+}
+
 table, caption {
+    margin: 10px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .table__all {
-    background-color: #EC6C6C;
+    background-color: #ec6c6cb7;
 }
 
 .table__all tr:nth-child(odd) {
-    background-color: #E56666;
+    background-color: #d65f5f9c;
 }
 
 .table__html {
-    background-color: #FFE169;
+    background-color: #ffe16998;
 }
 
 .table__html tr:nth-child(odd) {
-    background-color: #FFDC4F;
+    background-color: #eccd4d93;
 }
 
 .table__css {
-    background-color: #84FB8C;
+    background-color: #8bf792bb;
 }
 
 .table__css tr:nth-child(odd) {
-    background-color: #6EF677;
+    background-color: #64e76d9f;
 }
 
 th, td {
@@ -622,6 +627,9 @@ th, td {
 }
 
 .rows-for-leaderboards {
+    background-color: rgba(110, 208, 247, 0.459);
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
