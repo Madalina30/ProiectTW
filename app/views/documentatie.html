@@ -3,15 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>HTCP - Scholarly HTML</title>
+    <title>LeHS (Learn HTML & CSS)</title>
     <link rel="stylesheet" href="css/scholarly.min.css">
     <script src="js/scholarly.min.js"></script>
   </head>
 
+<style>
+  *{
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+  p{text-align:justify;}
+</style>
   <body prefix="schema: http://schema.org">
     
     <header>
-      <h1>HTCP - documentatie Scholarly HTML</h1>
+      <h1 align="center">Documentatie - LeHS (Learn HTML & CSS)</h1>
     </header>
     
     <div role="contentinfo">
@@ -21,7 +28,7 @@
           <span typeof="schema:Person">
             <meta property="schema:givenName" content="Madalina">
 						<meta property="schema:familyName" content="Banica">
-            <a href="https://github.com/ASDKJNASKDJAKSJAKJSDKASHDKJASHDKAJHKJHKDJAHSKDJASKDA">
+            <a href="https://github.com/Madalina30">
               <span property="schema:name">Madalina Banica</span>
             </a>
           </span>
@@ -30,7 +37,7 @@
           <span typeof="schema:Person">
             <meta property="schema:givenName" content="Ionut">
 						<meta property="schema:familyName" content="Puiu">
-            <a href="https://github.com/ASDFGHJKJHGFDSASDFGHJKJHGFDSASDFGHJ">
+            <a href="https://github.com/IoanPuiu">
               <span property="schema:name">Ionut Puiu</span>
             </a>
           </span>
@@ -39,7 +46,7 @@
           <span typeof="schema:Person">
             <meta property="schema:givenName" content="George Emanuel">
             <meta property="schema:familyName" content="Hurmuz">
-            <a href="https://github.com/ASDFGHJKLKJHGFDSASDFGHJKJHGFDSASDFGHJKJHGFDS">
+            <a href="https://github.com/Emanuel-G-H">
               <span property="schema:name">George Emanuel Hurmuz</span>
             </a>
           </span>
@@ -54,15 +61,15 @@
     <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
       <h2>Cerință</h2>
       <p>
-        Să se creeze o platformă Web ce ajută cu exersarea cunoștințelor de HTML și CSS. După autentificarea cu o rețea socială 
-        la alegere (GitHub), aplicația va pune la dispoziția utilizatorilor, printr-o interfață atractivă, 
-        nivele cu diverse provocări, unde aceștia vor trebui să scrie cod pentru a trece mai departe.
+        Sa se creeze un sistem Web ce ajuta diverse categorii de persoane (de la incepatori la experti) sa invete, exerseze si aprofundeze cunostinte referitoare la HTML si CSS.
+
+        Dupa autentificarea cu un cont disponibil pe o retea sociala la alegere (minimal, GitHub), aplicatia va pune la dispozitia utilizatorilor, printr-o interfata atractiva, nivele cu diverse provocari (eventual, insotite de explicatii ce constau din anumite sarcini (e.g., scriere de cod-sursa, raspunsuri la teste) pentru a trece mai departe.
+
+        Aplicatia va salva progresul fiecarui utilizator, acesta putand, ulterior, sa continue de unde a ramas. In plus, se vor oferi statistici referitoare la clasamentele globale pentru fiecare utilizator in parte si vizand nivelurile de dificultate. De asemenea, solutia va expune si un API REST/GraphQL prin care alte aplicatii vor putea prelua in format JSON sau XML atat provocarile, cat si raspunsurile corecte.
       </p>
-      <p>
-        Aplicația va salva progresul fiecărui utilizator, acesta putând continua de unde a rămas, mai târziu. În plus, 
-        aceasta va oferi statistici, referitoare la clasamentele globale cât și pentru fiecare utilizator în parte. 
-        De asemenea, platforma va expune și un API REST/GraphQL prin care alte aplicații vor putea prelua în format 
-        JSON sau XML atât provocarile, cât și răspunsurile corecte.
+      <p>Se vor avea in vedere aspecte precum internationalizarea si accesibilitatea.
+      </p>
+        <p>Inspiratie: Flexbox Froggy & CSS Grid Garden
       </p>
     </section>
     
@@ -70,30 +77,28 @@
       <h2>Introducere</h2>
       <p>
         Prioritar dezvoltarii platformei Web a fost atingerea scopului didactic pe care aceasta si-l propune. Pentru ca 
-        experienta utilizatorilor sa fie intr-adevar una placuta, interfata urmareste o tematica inspirata din lumea
-          <a href="https://www.lego.com/en-us">
-            <span property="schema:name">Lego</span>
-          </a>
-        </span>,
-        iar fiecare tip de nivel (<span typeof="ComputerLanguage"><span property="schema:name">HTML</span></span>
-        sau <span typeof="ComputerLanguage"><span property="schema:name">CSS</span></span>) contine un scenariu Lego pe care utilizatorii
+        experienta utilizatorilor sa fie intr-adevar una placuta, interfata urmareste o tematica inspirata din lumea<a href="https://www.lego.com/en-us">Lego</a>,
+        iar fiecare tip de nivel (HTML
+        sau CSS) contine un scenariu Lego pe care utilizatorii
         trebuie sa il parcurga pentru a avansa atat in universul Lego, cat si in universul programarii.
-        Nivelele din partea de HTML urmaresc .... pe cand cele din CSS ...
+        Utilizatorii sunt supusi unor provocari pentru a salva super-eroii LEGO si a construi impreuna cu acestia regatul LEGO.
+      </p>
+      <p>
+        Link site: <a href="https://lego-htmlcss.netlify.app">https://lego-htmlcss.netlify.app<a>
       </p>
     </section>
     
     <section id="architecture">
       <h2>Arhitectura aplicației</h2>
-      <p>Din punct de vedere arhitectural, am recurs la MVC.</p>
+      <p>Din punct de vedere arhitectural, platforma respecta MVC.</p>
     </section>
     
     <section id="interfata-cu-utilizatorul">
         <h2>Interfața cu utilizatorul</h2>
           <p>
-            Platforma Web ofera o experienta placuta utilizatorului, abordand o tema inspirata din lumea Lego( vezi mai multe detalii in <a href="#introduction">Introducere</a>) ce are scopul de a starni interesul dar si creativitatea.
+            Platforma Web ofera o experienta placuta utilizatorilor, abordand o tema inspirata din lumea Lego( vezi mai multe detalii in <a href="#introduction">Introducere</a>) ce are scopul de a starni interesul dar si creativitatea.
 
-            Prima pagina a platformei Web este pagina de autentificare ce contine un buton prin intermediul caruia un utilizator isi poate accesa contul. Autentificarea se face utilizand conturi 
-            <span typeof="organization" resource="https://github.com/"><meta property="schema:name" content="GitHub">GitHub</span> iar dupa autentificare, utilizatorii sunt redirectionati catre pagina principala, de unde poate naviga ulterior in pagina de jocuri, pagina contului si pagina de statistici.
+            Prima pagina a platformei Web este pagina de autentificare ce contine un buton de autentificare/inregistrare. Dupa autentificare, utilizatorii sunt redirectionati catre pagina principala, de unde pot naviga ulterior in pagina de jocuri, pagina contului si pagina de statistici.
           </p>
     </section>
 
@@ -101,7 +106,8 @@
         <h4>Interfata paginii de autentificare</h4>
 
         <p>
-          Pagina de autentificare intampina utilizatorii cu titlul platformei web (LEGO HTML & CSS), o scurta descriere ce incurajeaza utilizatorii sa foloseasca platforma si un buton de autentificare prin Github ce permite utilizatorilor sa isi acceseze conturile. 
+          Pagina de autentificare intampina utilizatorii cu titlul platformei web (LEGO HTML & CSS), o scurta descriere ce incurajeaza utilizatorii sa foloseasca platforma si un buton de autentificare ce se foloseste de conturi  
+            <span typeof="organization" resource="https://github.com/"><meta property="schema:name" content="GitHub">GitHub</span> ce permit utilizatorilor sa isi creeze/acceseze conturile. 
         </p>
 
         <p>
@@ -112,7 +118,7 @@
     <section id="interfata-pagina-Home">
         <h4>Interfata paginii Home</h4>
         <p>
-          Pagina Home este pagina ce reprezinta punctul de legatura al tuturor paginilor oferite de platforma.
+          Pagina Home este punctul de legatura al tuturor paginilor oferite de platforma.
           Pentru a ajunge in pagina Home, utilizatorii trebuie sa se autentifice cu succes in pagina de autentificare. O data autentificati, acestia pot accesa pagina Home apasand click pe logo-ul platformei web( aflat in antet).
           Pagina Home este construita astfel incat experienta de navigare sa fie una cat mai placuta, cuprizand diverse sectiuni ce au rolul de a ajuta utilizatorii. 
         </p>
@@ -120,7 +126,7 @@
 
     <section id="interfata-pagina-games">
       <h4>Interfata paginii Games</h4>
-      <p>Pagina Games este o pagina statica ce contine doua subpagini dedicate nivelelor din HTML cat si CSS. Aceasta pagina este creata astfel incat sa se plieze pe dimensiunile oricarui dispozitiv ce acceseaza platforma. Astfel, pozitionarea nivelelor se face fie vertical, fie orizontal. </p>
+      <p>Pagina Games este o pagina ce contine doua subpagini dedicate nivelelor HTML dar si CSS. Pentru ca intreaga platforma este creata astfel incat sa fie compatibila tuturor device-urilor ce o utilizeaza, pozitionarea subpaginilor se face fie vertical, fie orizontal. </p>
     </section>
 
     <section id="interfata-nivele">
@@ -145,12 +151,15 @@
     </section>
     
     <section id="interfata-profil">
-        <h4>Pagina de profil</h4>
+        <h4>Interfata paginii de profil</h4>
 
-        <p>Pagina de profil afiseaza diverse informatii despre utilizator si anume:</p>
+        <p>Pagina de profil afiseaza diverse informatii despre utilizator, precum::</p>
         <ul>
-          <li>imaginea de profil</li>
-          <li>numele de utilizator, identic cu cel de pe GitHub;</li>
+          <li>Imaginea de profil</li>
+          <li>Numele de utilizator, identic cu cel de pe GitHub</li>
+          <li>Numarul de puncte primite atat la HTML cat si la CSS, dar si numarul total de puncte</li>
+          <li>Numarul de nivele trecute cu succes atat la HTML cat si la CSS</li>
+          <li>un buton de Logout</li>
         </ul> 
     </section>
 
