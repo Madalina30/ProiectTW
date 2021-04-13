@@ -53,7 +53,7 @@
                 $category = "";
                 try{
                     $category = $_GET['cat'];
-                }catch(Exception){
+                }catch(Exception $e){
                     $category = "hb";
                 }
                 
