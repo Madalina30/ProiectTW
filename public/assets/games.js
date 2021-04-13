@@ -41,26 +41,27 @@ function buildCategry(catZone, catData){
 }
 
 document.querySelector(".beginner-html").addEventListener('click', function() {
-    window.location.href = "templateCategory.html?cat=hb"
+    window.location.href = "templateCategory.php?cat=hb"
+    // sa se duca la nivelul la care a ramas - db
 });
 
 document.querySelector(".intermediate-html").addEventListener('click', function() {
-    window.location.href = "templateCategory.html?cat=hi"
+    window.location.href = "templateCategory.php?cat=hi"
 });
 
 document.querySelector(".expert-html").addEventListener('click', function() {
-    window.location.href = "templateCategory.html?cat=he"
+    window.location.href = "templateCategory.php?cat=he"
 });
 
 document.querySelector(".beginner-css").addEventListener('click', function() {
-    window.location.href = "templateCategory.html?cat=cb"
+    window.location.href = "templateCategory.php?cat=cb"
 });
 
 document.querySelector(".intermediate-css").addEventListener('click', function() {
-    window.location.href = "templateCategory.html?cat=ci"
+    window.location.href = "templateCategory.php?cat=ci"
 });
 
 document.querySelector(".expert-css").addEventListener('click', function() {
-    window.location.href = "templateCategory.html?cat=ce"
+    window.location.href = "templateCategory.php?cat=ce"
 });
 

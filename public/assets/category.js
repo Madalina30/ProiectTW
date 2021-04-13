@@ -1,134 +1,5 @@
-const category = {
-    htmlBeginner: [
-        // array de nivele
-        {
-            categoryName:'HTML - Beginner',
-            lvlName:'1',
-            lvlDescription:`This is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablbThis is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablb
-            <br>
-            Link for: `,
-            lvlAnswers:['html','head','head','html'],
-            lvlTemplate:`&lt;[cod]><br>
-            &nbsp; &lt;[cod]>
-                            <br>
-                            &nbsp;&nbsp; &lt;title> titlu &lt;/title><br>
-                            &nbsp; &lt;/[cod]><br>
-                        &lt;/[cod]>`,
-            lvlImg: 'htmlDefaultBeginner.svg'
-        }
-    ],
-    htmlIntermediate: [
-        {
-            categoryName:'HTML - Intermediate',
-            lvlName:'1',
-            lvlDescription:`This is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablbThis is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablb
-            <br>
-            Link for: `,
-            lvlAnswers:[''],
-            lvlTemplate:`&lt;[cod]><br>
-            &nbsp; &lt;[cod]>
-                            <br>
-                            &nbsp;&nbsp; &lt;title> titlu &lt;/title><br>
-                            &nbsp; &lt;/[cod]><br>
-                        &lt;/[cod]>`,
-            lvlImg: 'htmlDefaultIntermediate.svg'
+const category ='';
 
-        }
-    ],
-    htmlExpert: [
-        {
-            categoryName:'HTML - Expert',
-            lvlName:'1',
-            lvlDescription:`This is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablbThis is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablb
-            <br>
-            Link for: `,
-            lvlAnswers:[''],
-            lvlTemplate:`&lt;[cod]><br>
-            &nbsp; &lt;[cod]>
-                            <br>
-                            &nbsp;&nbsp; &lt;title> titlu &lt;/title><br>
-                            &nbsp; &lt;/[cod]><br>
-                        &lt;/[cod]>`,
-            lvlImg: 'htmlDefaultExpert.svg'
-        }
-    ],
-    cssBeginner: [
-        {
-            categoryName:'CSS - Beginner',
-            lvlName:'1',
-            lvlDescription:`This is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablbThis is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablb
-            <br>
-            Link for: `,
-            lvlAnswers:[''],
-            lvlTemplate:`&lt;[cod]><br>
-            &nbsp; &lt;[cod]>
-                            <br>
-                            &nbsp;&nbsp; &lt;title> titlu &lt;/title><br>
-                            &nbsp; &lt;/[cod]><br>
-                        &lt;/[cod]>`,
-            lvlImg: 'cssDefaultBeginner.svg'
-        }
-    ],
-    cssIntermediate: [
-        {
-            categoryName:'CSS - Intermediate',
-            lvlName:'1',
-            lvlDescription:`This is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablbThis is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablb
-            <br>
-            Link for: `,
-            lvlAnswers:[''],
-            lvlTemplate:`&lt;[cod]><br>
-            &nbsp; &lt;[cod]>
-                            <br>
-                            &nbsp;&nbsp; &lt;title> titlu &lt;/title><br>
-                            &nbsp; &lt;/[cod]><br>
-                        &lt;/[cod]>`,
-            lvlImg: 'cssDefaultIntermediar.svg'
-        }
-    ],
-    cssExpert: [
-        {
-            categoryName:'CSS - Expert',
-            lvlName:'1',
-            lvlDescription:`This is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablbThis is the description of this level, please pay
-            attention bla bla this level is very interesting 
-            bla bla bl ablb
-            <br>
-            Link for: `,
-            lvlAnswers:[''],
-            lvlTemplate:`&lt;[cod]><br>
-            &nbsp; &lt;[cod]>
-                            <br>
-                            &nbsp;&nbsp; &lt;title> titlu &lt;/title><br>
-                            &nbsp; &lt;/[cod]><br>
-                        &lt;/[cod]>`,
-            lvlImg: 'cssDefaultExpert.svg'
-        }
-    ]
-
-}
 
 const textZone = document.querySelector(".where-you-write");
 const description = document.querySelector(".lvlDescription");
@@ -136,7 +7,9 @@ const categoryName = document.querySelector(".categoryName");
 const lvlName = document.querySelector(".lvlName");
 const nextLevel = document.querySelector(".next-level");
 const imgSeeDefault = document.querySelector(".what-you-see");
-
+const level = nextLevel.getAttribute("level");
+const maxLevel = nextLevel.getAttribute("max-level");
+console.log(level, maxLevel);
 
 try {
     let fromUrl = getCategoryAndLevel();
@@ -144,11 +17,10 @@ try {
     // let levelAt = fromUrl.lvl;
     switch (categoryChosen) {
         case "hb":
-            buildLevel(category.htmlBeginner[0]);
+            // buildLevel(category.htmlBeginner[0]);
            
             document.querySelector(".next-level").addEventListener('click', function() {
-                
-                window.location.href = "templateCategory.html?cat=hi";
+                checkLevel("templateCategory.php?cat=hb&level="+level, "templateCategory.php?cat=hi&level=")
             });
 
             var style = document.createElement('style');
@@ -181,10 +53,10 @@ try {
             document.head.appendChild(style);
             break;
         case "hi":
-            buildLevel(category.htmlIntermediate[0]);
+            // buildLevel(category.htmlIntermediate[0]);
 
             document.querySelector(".next-level").addEventListener('click', function() {
-                window.location.href = "templateCategory.html?cat=he";
+                checkLevel("templateCategory.php?cat=hi&level="+level, "templateCategory.php?cat=he&level=")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -210,9 +82,9 @@ try {
             document.head.appendChild(style);
             break;
         case "he":
-            buildLevel(category.htmlExpert[0]);
+            // buildLevel(category.htmlExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                window.location.href = "templateCategory.html?cat=cb";
+                checkLevel("templateCategory.php?cat=he&level="+level, "templateCategory.php?cat=cb&level=")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -240,9 +112,9 @@ try {
             document.head.appendChild(style);
             break;
         case "cb":
-            buildLevel(category.cssBeginner[0]);
+            // buildLevel(category.cssBeginner[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                window.location.href = "templateCategory.html?cat=ci";
+                checkLevel("templateCategory.php?cat=cb&level="+level, "templateCategory.php?cat=ci&level=")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -270,9 +142,9 @@ try {
             document.head.appendChild(style);
             break;
         case "ci":
-            buildLevel(category.cssIntermediate[0]);
+            // buildLevel(category.cssIntermediate[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                window.location.href = "templateCategory.html?cat=ce";
+                checkLevel("templateCategory.php?cat=ci&level="+level, "templateCategory.php?cat=ce&level=")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -302,9 +174,9 @@ try {
             document.head.appendChild(style);
             break;
         case "ce":
-            buildLevel(category.cssExpert[0]);
+            // buildLevel(category.cssExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                window.location.href = "allgames.html";
+                checkLevel("templateCategory.php?cat=ce&level="+level, "allgames.html")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -337,7 +209,7 @@ try {
             break;
     }
 
-    console.log(fromUrl.cat);
+    console.log(fromUrl.cat, level);
 } catch (error) {
     console.log(error);
 }
@@ -363,4 +235,12 @@ function getCategoryAndLevel(){
         }
     );
     return q;
+}
+
+function checkLevel(toLower, toHigher){
+    if(parseInt(level)<parseInt(maxLevel)){
+        window.location.href = toLower;
+    }else{
+        toHigher === "allgames.html"?window.location.href = toHigher:window.location.href = toHigher+0;
+    }
 }

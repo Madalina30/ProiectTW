@@ -1,0 +1,78 @@
+{
+  "htmlBeginner": [
+    {
+      "categoryName": "HTML - Beginner",
+      "lvlName": "1",
+      "lvlDescription": "<br> Link for: ",
+      "lvlAnswers": ["html", "head", "head", "html"],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "htmlDefaultBeginner.svg"
+    },
+    {
+      "categoryName": "HTML - Beginner",
+      "lvlName": "2",
+      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
+      "lvlAnswers": ["html", "head", "head", "html"],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "htmlDefaultBeginner.svg"
+    },
+    {
+      "categoryName": "HTML - Beginner",
+      "lvlName": "3",
+      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
+      "lvlAnswers": ["html", "head", "head", "html"],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "htmlDefaultBeginner.svg"
+    }
+  ],
+  "htmlIntermediate": [
+    {
+      "categoryName": "HTML - Intermediate",
+      "lvlName": "1",
+      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
+      "lvlAnswers": [""],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "htmlDefaultIntermediate.svg"
+    }
+  ],
+  "htmlExpert": [
+    {
+      "categoryName": "HTML - Expert",
+      "lvlName": "1",
+      "lvlDescription": "Write a short program that will have a title for the movie 'Tarzan', a short description (that is already written, you just need to put the perfect tag for it) and an image (movie.png)<br> - write all the important tags in order <br> - in head you will have just a title <br> - in body you will need to put the title of the movie, tags for the description and the movie.png as image",
+      "lvlAnswers": ["html", "head", "title", "title", "head", "body", "h1", "Tarzan", "h1", "p", "p", "img", "movie.png", "body", "html"],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp;&nbsp; &lt;[cod]> <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod]> Tarzan &lt;/[cod]><br> &nbsp;&nbsp; &lt;/[cod]><br> &nbsp;&nbsp; &lt;[cod]><br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod]> [cod] &lt;/[cod]><br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod]> The movie is about Tarzan. &lt;[cod]><br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod] src='[cod]' alt='movie'><br> &nbsp;&nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "htmlDefaultExpert.svg"
+    }
+  ],
+  "cssBeginner": [
+    {
+      "categoryName": "CSS - Beginner",
+      "lvlName": "1",
+      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
+      "lvlAnswers": [""],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "cssDefaultBeginner.svg"
+    }
+  ],
+  "cssIntermediate": [
+    {
+      "categoryName": "CSS - Intermediate",
+      "lvlName": "1",
+      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
+      "lvlAnswers": [""],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "cssDefaultIntermediar.svg"
+    }
+  ],
+  "cssExpert": [
+    {
+      "categoryName": "CSS - Expert",
+      "lvlName": "1",
+      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
+      "lvlAnswers": [""],
+      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlImg": "cssDefaultExpert.svg"
+    }
+  ]
+}
