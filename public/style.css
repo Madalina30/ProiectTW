@@ -14,6 +14,7 @@ body {
 
 a {
     text-decoration: none;
+    padding: 0;
     color: black;
 }
 
@@ -567,7 +568,8 @@ image 100% */
 .input-zone {
     border: none;
     height: 5px;
-    width: 30px;
+    width: 50px;
+    text-align: center;
     margin: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
