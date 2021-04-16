@@ -3,7 +3,7 @@
     {
       "categoryName": "HTML - Beginner",
       "lvlName": "1",
-      "lvlDescription": "Hello and welcome to your first adventure of your HTML Journey in LEGO wolrd! You will have ot do here your first and simple HTML program with the most simple tags that are really important for all your HTML projects. Complete the empty spaces with how this program should look like! <br> For more details, visit the next<a href='https://www.w3schools.com/html/html_intro.asp' target='_blank'> link</a>.",
+      "lvlDescription": "Hello and welcome to your first adventure of your HTML Journey in LEGO wolrd! You will have ot do here your first and simple HTML program with the most simple tags that are really important for all your HTML projects. Complete the empty spaces with how this program should look like! <br> For more details, visit the next<a style='padding:0' href='https://www.w3schools.com/html/html_intro.asp' target='_blank'> link</a>.",
       "lvlAnswers": ["<html>", "<head>", "<title>", "</title>", "</head>", "<body>", "</body>", "</html>"],
       "lvlTemplate": "[cod]<br> &nbsp;&nbsp; [cod] <br> &nbsp;&nbsp;&nbsp;&nbsp; [cod] Lego Adventure [cod]<br> &nbsp;&nbsp; [cod]<br> &nbsp;&nbsp; [cod] <br>&nbsp;&nbsp;&nbsp;&nbsp; Hello World <br>&nbsp; [cod] <br>[cod]",
       "lvlImg": "htmlDefaultBeginner.svg"
@@ -11,7 +11,7 @@
     {
       "categoryName": "HTML - Beginner",
       "lvlName": "2",
-      "lvlDescription": "Ahoy, friend! Here and now you will learn about the best tags for writing in HTML! <br> Here is a list of them:<a href='https://www.w3schools.com/tags/tag_hn.asp' target='_blank'>h1...h6</a>,<a href='https://www.w3schools.com/tags/tag_p.asp' target='_blank'>p</a>,<a href='https://www.w3schools.com/tags/tag_strong.asp' target='_blank'>b & strong</a>(but you will use the simplest one here),<a href='https://www.w3schools.com/tags/tag_em.asp' target='_blank'>em</a>,<a href='https://www.w3schools.com/tags/tag_s.asp' target='_blank'>s</a>and<a href='https://www.w3schools.com/tags/tag_span.asp' target='_blank'>span</a>. <br>You can see information about those tags by clicking on each of them. <br> And now, you need to make the following: a title with the word 'best' in a span, a subtitle (that is in<em>italic</em>mode) and a description where the word camera will be<b>bold</b> and the word DO will be<s>cut</s>.",
+      "lvlDescription": "Ahoy, friend! Here and now you will learn about the best tags for writing in HTML! <br> Here is a list of them: <a style='padding:0' href='https://www.w3schools.com/tags/tag_hn.asp' target='_blank'>h1...h6</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_p.asp' target='_blank'>p</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_strong.asp' target='_blank'>b & strong</a>(but you will use the simplest one here), <a style='padding:0' href='https://www.w3schools.com/tags/tag_em.asp' target='_blank'>em</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_s.asp' target='_blank'>s</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_span.asp' target='_blank'>span</a>. <br>You can see information about those tags by clicking on each of them. <br> And now, you need to make the following: a title with the word 'best' in a span, a subtitle (that is in<em>italic</em>mode) and a description where the word camera will be<b>bold</b> and the word DO will be<s>cut</s>.",
       "lvlAnswers": ["<h1>", "<span>", "</span>", "</h1>", "<h3>", "<em>", "</em>", "</h3>", "<p>", "<b>", "</b>", "<s>", "</s>", "</p>"],
       "lvlTemplate": "&lt;html><br> &nbsp;&nbsp;&lt;head> <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title> Lego Adventure &lt;/title><br> &nbsp;&nbsp;&lt;/head><br>&nbsp;&nbsp;&lt;body><br> &nbsp;&nbsp;&nbsp;&nbsp;[cod] The [cod] best [cod] photography [cod] <br>&nbsp;&nbsp;&nbsp;&nbsp; [cod][cod]How to make the perfect photo on lego figures[cod][cod]<br> &nbsp;&nbsp;&nbsp;&nbsp;[cod] You will need to choose the perfect light to positionate your [cod] camera [cod] in, but [cod] DO [cod] DO NOT put it too close to the figure [cod]<br> &nbsp;&nbsp;&lt;/body><br>&lt;/html>",
       "lvlImg": "htmlDefaultBeginner.svg"
@@ -19,7 +19,7 @@
     {
       "categoryName": "HTML - Beginner",
       "lvlName": "3",
-      "lvlDescription": "Welcome to the 3rd  and longest challenge until now! <br> You will use here the following tags: <a href='https://www.w3schools.com/tags/tag_header.asp' target='_blank'>header</a>,<a href='https://www.w3schools.com/tags/tag_nav.asp' target='_blank'>nav</a>,<a href='https://www.w3schools.com/tags/tag_aside.asp' target='_blank'>aside</a>, as well as <a href='https://www.w3schools.com/tags/tag_button.asp' target='_blank'>button</a> and <a href='https://www.w3schools.com/tags/tag_a.asp' target='_blank'>a</a>. <br>Make a program that will have in the header a navigation bar that contains 2 buttons and in the aside section one link (with href to #) and a paragraph.",
+      "lvlDescription": "Welcome to the 3rd  and longest challenge until now! <br> You will use here the following tags: <a style='padding:0' href='https://www.w3schools.com/tags/tag_header.asp' target='_blank'>header</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_nav.asp' target='_blank'>nav</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_aside.asp' target='_blank'>aside</a>, as well as <a style='padding:0' href='https://www.w3schools.com/tags/tag_button.asp' target='_blank'>button</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_a.asp' target='_blank'>a</a>. <br>Make a program that will have in the header a navigation bar that contains 2 buttons and in the aside section one link (with href to #) and a paragraph.",
       "lvlAnswers": ["<header>", "<nav>", "<button>", "</button>", "<button>", "</button>", "</nav>", "</header>", "<aside>", "<a href='#'>", "</a>", "<p>", "</p>", "</aside>"],
       "lvlTemplate": "[cod]<br> &nbsp;&nbsp; [cod] <br>&nbsp;&nbsp;&nbsp;&nbsp;[cod] Btn 1 [cod]<br> &nbsp;&nbsp;&nbsp;&nbsp;[cod] Btn 2 [cod]<br> &nbsp;&nbsp; [cod]<br>  [cod]<br>  [cod]<br>  &nbsp;&nbsp; [cod] Link [cod]<br> &nbsp;&nbsp; [cod] Paragraph long [cod]<br> [cod]",
       "lvlImg": "htmlDefaultBeginner.svg"
@@ -27,7 +27,7 @@
     {
       "categoryName": "HTML - Beginner",
       "lvlName": "4",
-      "lvlDescription": "You will use here the following tags: <a href='https://www.w3schools.com/tags/tag_div.asp' target='_blank'>div</a>, <a href='https://www.w3schools.com/tags/tag_main.asp' target='_blank'>main</a>,<a href='https://www.w3schools.com/tags/tag_footer.asp' target='_blank'>footer</a>, as well as <a href='https://www.w3schools.com/tags/tag_button.asp' target='_blank'>button</a> and <a href='https://www.w3schools.com/tags/tag_span.asp' target='_blank'>span</a>. <br>Make a program that will have in the main section a title and a div and in the footer section 2 buttons and a span.",
+      "lvlDescription": "You will use here the following tags: <a style='padding:0' href='https://www.w3schools.com/tags/tag_div.asp' target='_blank'>div</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_main.asp' target='_blank'>main</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_footer.asp' target='_blank'>footer</a>, as well as <a style='padding:0' href='https://www.w3schools.com/tags/tag_button.asp' target='_blank'>button</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_span.asp' target='_blank'>span</a>. <br>Make a program that will have in the main section a title and a div and in the footer section 2 buttons and a span.",
       "lvlAnswers": ["<main>", "<h1>", "</h1>", "<div>", "</div>", "</main>", "<footer>", "<button>", "</button>", "<button>", "</button>", "<span>", "</span>", "</footer>"],
       "lvlTemplate": "[cod]<br> &nbsp;&nbsp;[cod] Title [cod]<br>&nbsp;&nbsp;[cod] Div here [cod]<br> [cod] <br>&nbsp;&nbsp;[cod] Btn1 [cod] <br>&nbsp;&nbsp;[cod] Btn2 [cod] <br> &nbsp;&nbsp;[cod] Copyright by you [cod]<br> [cod]",
       "lvlImg": "htmlDefaultBeginner.svg"
@@ -35,7 +35,7 @@
     {
       "categoryName": "HTML - Beginner",
       "lvlName": "5",
-      "lvlDescription": "Now, we will take things a bit easier. <br> You will have to use: <a href='https://www.w3schools.com/tags/tag_img.asp' target='_blank'>img</a>, <a href='https://www.w3schools.com/tags/tag_ul.asp' target='_blank'>ul</a> and <a href='https://www.w3schools.com/tags/tag_li.asp' target='_blank'>li</a>. <br> Make an unordered list containing 3 images (1.svg, 2.svg and 3.svg with alt: 1, 2, 3).",
+      "lvlDescription": "Now, we will take things a bit easier. <br> You will have to use: <a style='padding:0' href='https://www.w3schools.com/tags/tag_img.asp' target='_blank'>img</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_ul.asp' target='_blank'>ul</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_li.asp' target='_blank'>li</a>. <br> Make an unordered list containing 3 images (1.svg, 2.svg and 3.svg with alt: 1, 2, 3).",
       "lvlAnswers": ["<ul>", "<li>", "<img src='1.svg' alt='1'>", "</li>", "<li>", "<img src='2.svg' alt='2'>", "</li>", "<li>", "<img src='3.svg' alt='3'>", "</li>", "</ul>"],
       "lvlTemplate": "[cod] <br>&nbsp;&nbsp; [cod] [cod] [cod] <br>&nbsp;&nbsp; [cod] [cod] [cod]<br>&nbsp;&nbsp; [cod] [cod] [cod] <br>[cod]",
       "lvlImg": "htmlDefaultBeginner.svg"
@@ -45,7 +45,7 @@
     {
       "categoryName": "HTML - Intermediate",
       "lvlName": "1",
-      "lvlDescription": "We will continue with the easy part, but now in the Intermediate category. <br> You will have to use: <a href='https://www.w3schools.com/tags/tag_time.asp' target='_blank'>time</a>, <a href='https://www.w3schools.com/tags/tag_ol.asp' target='_blank'>ol</a> and <a href='https://www.w3schools.com/tags/tag_li.asp' target='_blank'>li</a>. <br> Make a time for Name day on 2020-05-21 20:00 and an ordered list with 3 lego friends names.",
+      "lvlDescription": "We will continue with the easy part, but now in the Intermediate category. <br> You will have to use: <a style='padding:0' href='https://www.w3schools.com/tags/tag_time.asp' target='_blank'>time</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_ol.asp' target='_blank'>ol</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_li.asp' target='_blank'>li</a>. <br> Make a time for Name day on 2020-05-21 20:00 and an ordered list with 3 lego friends names.",
       "lvlAnswers": ["<time datetime='2021-05-21 20:00'>", "</time>", "<ol>", "<li>", "</li>", "<li>", "</li>", "<li>", "</li>", "</ol>"],
       "lvlTemplate": "[cod] &nbsp;&nbsp;Name day [cod]<br> [cod] <br> &nbsp;&nbsp; [cod] Name1 [cod] <br> &nbsp;&nbsp; [cod] Name2 [cod] <br> &nbsp;&nbsp; [cod] Name3 [cod] <br>[cod]",
       "lvlImg": "htmlDefaultIntermediate.svg"
@@ -53,7 +53,7 @@
     {
       "categoryName": "HTML - Intermediate",
       "lvlName": "2",
-      "lvlDescription": "Now we enter in the realms of tables!<br> You will use: <a href='https://www.w3schools.com/tags/tag_table.asp' target='_blank'>table</a>, <a href='https://www.w3schools.com/tags/tag_caption.asp' target='_blank'>caption</a>,<a href='https://www.w3schools.com/tags/tag_tr.asp' target='_blank'>tr</a>,<a href='https://www.w3schools.com/tags/tag_th.asp' target='_blank'>th</a>and<a href='https://www.w3schools.com/tags/tag_td.asp' target='_blank'>td</a>.<br>Make a table that is called 'LEGO', containing the following: 3 columns with titles 'ID', 'NAME' and 'COLOR', having 2 rows with ids 1 and 2, names .... and ..... and colors blue and white.",
+      "lvlDescription": "Now we enter in the realms of tables!<br> You will use: <a style='padding:0' href='https://www.w3schools.com/tags/tag_table.asp' target='_blank'>table</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_caption.asp' target='_blank'>caption</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_tr.asp' target='_blank'>tr</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_th.asp' target='_blank'>th</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_td.asp' target='_blank'>td</a>.<br>Make a table that is called 'LEGO', containing the following: 3 columns with titles 'ID', 'NAME' and 'COLOR', having 2 rows with ids 1 and 2, names .... and ..... and colors blue and white.",
       "lvlAnswers": ["<table>", "<caption>", "</caption>", "<tr>", "<th>", "</th>", "<th>", "</th>","<th>", "</th>", "</tr>", "<tr>", "<td>", "</td>", "<td>", "</td>", "<td>", "</td>", "</tr>", "<tr>", "<td>", "</td>", "<td>", "</td>", "<td>", "</td>", "</tr>", "</table>"],
       "lvlTemplate": "[cod]<br>  &nbsp;&nbsp;[cod] LEGO [cod] <br>  &nbsp;&nbsp;[cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] ID [cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] NAME [cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] COLOR[cod]<br>  &nbsp;&nbsp;[cod] <br>&nbsp;&nbsp;[cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] 1 [cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] .... [cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] blue [cod]<br>  &nbsp;&nbsp;[cod] <br>&nbsp;&nbsp;[cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] 2 [cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] ..... [cod]<br>  &nbsp;&nbsp; &nbsp;&nbsp;[cod] white[cod]<br>  &nbsp;&nbsp;[cod] <br>[cod]",
       "lvlImg": "htmlDefaultIntermediate.svg"
@@ -61,7 +61,7 @@
     {
       "categoryName": "HTML - Intermediate",
       "lvlName": "3",
-      "lvlDescription": "Now, we will play with forms.<br> You will use: <a href='https://www.w3schools.com/tags/tag_form.asp' target='_blank'>form</a> and <a href='https://www.w3schools.com/tags/tag_input.asp' target='_blank'>input</a>.<br> Make a login page containing a form with a title saying LOGIN, 2 inputs for an email and a password (with the corespondent type and a hint for both of them containing what needs to be written there) and an input with the type and value submit. <br> Observation: put '' for atributes.",
+      "lvlDescription": "Now, we will play with forms.<br> You will use: <a style='padding:0' href='https://www.w3schools.com/tags/tag_form.asp' target='_blank'>form</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_input.asp' target='_blank'>input</a>.<br> Make a login page containing a form with a title saying LOGIN, 2 inputs for an email and a password (with the corespondent type and a hint for both of them containing what needs to be written there) and an input with the type and value submit. <br> Observation: put '' for atributes.",
       "lvlAnswers": ["<form>", "<h1>", "</h1>", "<input type='email' placeholder='email'>", "<input type='password' placeholder='password'>", "<input type='submit' value='submit'>", "</form>"],
       "lvlTemplate": "[cod]<br> &nbsp;&nbsp;[cod] LOGIN [cod] <br>&nbsp;&nbsp;[cod]<br> &nbsp;&nbsp;[cod]<br> &nbsp;&nbsp;[cod]<br>[cod]",
       "lvlImg": "htmlDefaultIntermediate.svg"
@@ -69,7 +69,7 @@
     {
       "categoryName": "HTML - Intermediate",
       "lvlName": "4",
-      "lvlDescription": "As in the last level you learned how to use forms, we will play around more with them.<br> You will use as the last time:<a href='https://www.w3schools.com/tags/tag_form.asp' target='_blank'>form</a> and <a href='https://www.w3schools.com/tags/tag_input.asp' target='_blank'>input</a>.<br> Make inside a form 2 radio inputs for 'fruits' and 'vegetables' (with suggestive ids and values and the name 'eat' - make sure you write them in order: type, id, value, name) with labels for them. Also, you will need to make 2 checkboxes for hero and villain (with labels Lego hero and Lego Villain - make sure you write the checkboxes attributes in order: type, id, value) and a submit input at the bottom.",
+      "lvlDescription": "As in the last level you learned how to use forms, we will play around more with them.<br> You will use as the last time: <a style='padding:0' href='https://www.w3schools.com/tags/tag_form.asp' target='_blank'>form</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_input.asp' target='_blank'>input</a>.<br> Make inside a form 2 radio inputs for 'fruits' and 'vegetables' (with suggestive ids and values and the name 'eat' - make sure you write them in order: type, id, value, name) with labels for them. Also, you will need to make 2 checkboxes for hero and villain (with labels Lego hero and Lego Villain - make sure you write the checkboxes attributes in order: type, id, value) and a submit input at the bottom.",
       "lvlAnswers": ["<form>", "<input type='radio' id='fruits' value='fruits' name='eat'>", "<label for='fruits'>", "</label>", "<input type='radio' id='vegetables' value='vegetables' name='eat'>", "<label for='vegetables'>", "</label>", "<input type='checkbox' id='hero' value='hero'>", "<label for='hero'>", "</label>", "<input type='checkbox' id='villain' value='villain'>", "<label for='villain'>", "</label>", "<input type='submit' value='submit'>", "</form>"],
       "lvlTemplate": "[cod]<br> &nbsp;&nbsp;[cod]<br> &nbsp;&nbsp;[cod] Fruits [cod]<br> &nbsp;&nbsp;[cod]<br> &nbsp;&nbsp;[cod] Vegetables [cod]<br> &nbsp;&nbsp;[cod]<br> &nbsp;&nbsp;[cod] Lego Hero [cod]<br>&nbsp;&nbsp;[cod]<br> &nbsp;&nbsp;[cod] Lego Villain [cod] <br>[cod]",
       "lvlImg": "htmlDefaultIntermediate.svg"
@@ -77,7 +77,7 @@
     {
       "categoryName": "HTML - Intermediate",
       "lvlName": "5",
-      "lvlDescription": "For the last Intermediate challenge, you will learn how to integrate scripts, links and meta tags into your project. <br>You will use: <a href='https://www.w3schools.com/tags/tag_link.asp' target='_blank'>link</a>, <a href='https://www.w3schools.com/tags/tag_script.asp' target='_blank'>script</a> and <a href='https://www.w3schools.com/tags/tag_meta.asp' target='_blank'>meta</a>.<br>Make a simple HTML program that will have in head one meta tag for..... and a link to 'int.css'. At the end of your body tag, put a script to '....../sample.js'. You will have to be able to see a short animation if what you wrote is correct.",
+      "lvlDescription": "For the last Intermediate challenge, you will learn how to integrate scripts, links and meta tags into your project. <br>You will use: <a style='padding:0' href='https://www.w3schools.com/tags/tag_link.asp' target='_blank'>link</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_script.asp' target='_blank'>script</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_meta.asp' target='_blank'>meta</a>.<br>Make a simple HTML program that will have in head one meta tag for..... and a link to 'int.css'. At the end of your body tag, put a script to '....../sample.js'. You will have to be able to see a short animation if what you wrote is correct.",
       "lvlAnswers": [],
       "lvlTemplate": "&lt;html><br> &nbsp;&nbsp; &lt;head><br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;title> Lego animation &lt;/title> <br> &nbsp;&nbsp;&nbsp;&nbsp;[cod] <br> &nbsp;&nbsp;&nbsp;&nbsp;[cod] <br> &nbsp;&nbsp; &lt;/head> <br> &nbsp;&nbsp; &lt;body> <br> &nbsp;&nbsp;&nbsp;&nbsp; aici ceva pt animatie - un cub lego sau cv <br> &nbsp;&nbsp;&nbsp;&nbsp;[cod]<br> &nbsp;&nbsp; &lt;/body> <br> &lt;/html>",
       "lvlImg": "htmlDefaultIntermediate.svg"
@@ -91,15 +91,79 @@
       "lvlAnswers": ["html", "head", "title", "title", "head", "body", "h1", "Tarzan", "h1", "p", "p", "img", "movie.png", "body", "html"],
       "lvlTemplate": "&lt;[cod]><br> &nbsp;&nbsp; &lt;[cod]> <br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod]> Tarzan &lt;/[cod]><br> &nbsp;&nbsp; &lt;/[cod]><br> &nbsp;&nbsp; &lt;[cod]><br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod]> [cod] &lt;/[cod]><br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod]> The movie is about Tarzan. &lt;[cod]><br> &nbsp;&nbsp;&nbsp;&nbsp; &lt;[cod] src='[cod]' alt='movie'><br> &nbsp;&nbsp; &lt;/[cod]><br> &lt;/[cod]>",
       "lvlImg": "htmlDefaultExpert.svg"
+    },
+    {
+      "categoryName": "HTML - Expert",
+      "lvlName": "2",
+      "lvlDescription": "You will now work with attributes: class and id.<br> What is a class? It is an attribute that can be used on every element and you can reuse it on more that one element. <br> What about id? It isn't the same as the class, as you may assume: you can use it just one in a HTML file as it is unique.<br>You have below a program with a div, 2 buttons and a link. You have to make sure that they have classes in order to show the correct output on the right. You will assignate the classes as it follows: div - 'rectangle-output' and buttons - 'mute-unmute'.<br>We don't want to forget the ids, so: first button - 'mute', second button - 'unmute' and link - 'choose-song'.",
+      "lvlAnswers": ["class", "'rectangle-output'", "class", "'mute-unmute'", "id", "'mute;'", "class", "'mute-unmute'", "id", "'unmute'", "id", "'choose-song'"],
+      "lvlTemplate": "&ltdiv [cod] = [cod]><br>&nbsp;&nbsp; &lt;button [cod] = [cod] [cod] = [cod]> Mute &lt;/button><br>&nbsp;&nbsp; &lt;button [cod] = [cod] [cod] = [cod]> Unmute &lt;/button><br>&nbsp;&nbsp; &lt;a [cod] = [cod] href='#'> Choose song &lt;/a> <br>&lt;/div>",
+      "lvlImg": "htmlDefaultExpert.svg"
+    },
+    {
+      "categoryName": "HTML - Expert",
+      "lvlName": "3",
+      "lvlDescription": "Here you will learn about other 3 HTML tags: audio, source and video.",
+      "lvlAnswers": [""],
+      "lvlTemplate": "&lt;div>  <br>&lt;/div>",
+      "lvlImg": "htmlDefaultExpert.svg"
+    },
+    {
+      "categoryName": "HTML - Expert",
+      "lvlName": "4",
+      "lvlDescription": "You will now build your first small web page! Remember that you did a login page on the last category? Well, now you will build a signup page.<br>You will have:<br>- signup title (but not the biggest version of the h tags)<br>- fields for username, email, password and password confirmation<br>- a checkbox for Terms and conditions<br>- an image for 'checking if you are a robot'<br>- a submit input for all the REQUIRED infos from above.",
+      "lvlAnswers": [""],
+      "lvlTemplate": "&lt;div> <br>&lt;/div>",
+      "lvlImg": "htmlDefaultExpert.svg"
+    },
+    {
+      "categoryName": "HTML - Expert",
+      "lvlName": "5",
+      "lvlDescription": "As we are at the end of the HTML journey, it is a great opportunity for you to learn how to put some CSS inside the tags (do not use this technique often, it is not recommanded for big data). <br>For the program below add:<br>- in div - background color to black, width to 100px and height to 100px<br>- on p - color white<br>- on button border none and background color to lightyellow.",
+      "lvlAnswers": [""],
+      "lvlTemplate": "&lt;div> <br>&lt;/div>",
+      "lvlImg": "htmlDefaultExpert.svg"
     }
   ],
   "cssBeginner": [
     {
       "categoryName": "CSS - Beginner",
       "lvlName": "1",
-      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
-      "lvlAnswers": [""],
-      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlDescription": "For the first adventure of the CSS realms, you are asked to build a 'lego' red rectangle of 200px x 200px. <br>For this challenge, you will have to use: <a style='padding:0' href='https://www.w3schools.com/cssref/pr_dim_width.asp' target='_blank'>width</a>,  <a style='padding:0' href='https://www.w3schools.com/cssref/pr_dim_height.asp' target='_blank'>height</a> and  <a style='padding:0' href='https://www.w3schools.com/cssref/pr_background-color.asp' target='_blank'>background-color</a>.",
+      "lvlAnswers": ["width", "200px", "height", "200px", "background-color", "red"],
+      "lvlTemplate": ".rectangle {<br> &nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>}",
+      "lvlImg": "cssDefaultBeginner.svg"
+    },
+    {
+      "categoryName": "CSS - Beginner",
+      "lvlName": "2",
+      "lvlDescription": "Now, let me tell you a short story about LEGO World, but to do that in a proper way, the text needs to be pink of size 25px, bold with font Roboto. <br>For this challenge, you will have to use: <a style='padding:0' href='https://www.w3schools.com/cssref/pr_text_color.asp' target='_blank'>color</a>, <a style='padding:0' href='https://www.w3schools.com/cssref/pr_font_font-size.asp' target='_blank'>font-size</a>, <a style='padding:0' href='https://www.w3schools.com/cssref/pr_font_weight.asp' target='_blank'>font-weight</a> and <a style='padding:0' href='https://www.w3schools.com/cssref/pr_font_font-family.asp' target='_blank'>font-family</a>.",
+      "lvlAnswers": ["color", "pink", "font-size", "25px", "font-weight", "bold", "font-family", "Roboto"],
+      "lvlTemplate": ".text {<br> &nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>}",
+      "lvlImg": "cssDefaultBeginner.svg"
+    },
+    {
+      "categoryName": "CSS - Beginner",
+      "lvlName": "3",
+      "lvlDescription": "I will now link you to the most important site of them all for our theme: the lego site. In order to do this, I'll want you to not put any decoration on the text, make it italic and align the text to center. To align it in center, you need to set the width to 100%. <br>For this challenge, you will have to use: <a style='padding:0' href='https://www.w3schools.com/cssref/pr_text_text-decoration.asp' target='_blank'>text-decoration</a>, <a style='padding:0' href='https://www.w3schools.com/cssref/pr_font_font-style.asp' target='_blank'>font-style</a> and <a style='padding:0' href='https://www.w3schools.com/cssref/pr_text_text-align.asp' target='_blank'>text-align</a>.",
+      "lvlAnswers": ["text-decoration", "none", "font-style", "italic", "text-align", "center"],
+      "lvlTemplate": ".link-to-site {<br> &nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>}",
+      "lvlImg": "cssDefaultBeginner.svg"
+    },
+    {
+      "categoryName": "CSS - Beginner",
+      "lvlName": "4",
+      "lvlDescription": "Now you will learn how to positionate object to help the lego people build their world faster. For the black rectangle from inside the yellow one, rotate it with 30 degrees and color the inside text with white, giving the rectangle a padding of 20px for top and bottom and 30px for left and right and margin of 20px. <br>For this challenge, you will have to use, besides what you learned in the previous levels: <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_transform.asp' target='_blank'>transform</a>, <a style='padding:0' href='https://www.w3schools.com/cssref/pr_padding.asp' target='_blank'>padding</a> and <a style='padding:0' href='https://www.w3schools.com/cssref/pr_margin.asp' target='_blank'>margin</a>.",
+      "lvlAnswers": ["transform", "rotate(30deg)", "color", "white", "padding", "20px 30px"],
+      "lvlTemplate": ".black-rect {<br>&nbsp;&nbsp; background-color : black;<br>&nbsp;&nbsp; width : 100%;<br>&nbsp;&nbsp; height : 100%;<br>  &nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>}",
+      "lvlImg": "cssDefaultBeginner.svg"
+    },
+    {
+      "categoryName": "CSS - Beginner",
+      "lvlName": "5",
+      "lvlDescription": "For the final challenge of the beginner section of CSS, you will have to build a lego piece with border of 1px solid and color black and radius of border of 20px.<br> For this challenge you will need, besides the ones from the past levels: <a style='padding:0' href='https://www.w3schools.com/cssref/pr_border.asp' target='_blank'>border</a> and <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_border-radius.asp' target='_blank'>border-radius</a>",
+      "lvlAnswers": ["border", "1px solid black", "border-radius", "20px"],
+      "lvlTemplate": ".lego-piece {<br> &nbsp;&nbsp; background-color : green;<br>&nbsp;&nbsp;[cod] : [cod];<br>&nbsp;&nbsp;[cod] : [cod];<br>}",
       "lvlImg": "cssDefaultBeginner.svg"
     }
   ],
@@ -107,9 +171,57 @@
     {
       "categoryName": "CSS - Intermediate",
       "lvlName": "1",
-      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
-      "lvlAnswers": [""],
-      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlDescription": "Welcome to the longest category! Here you will go through the magic of selections from a castle room. You will need here to select all carpets from the room. (hint: take the tag)<br> HTML code: <br>...<br>&lt;img class='carpet' href='../../public/images/carpet.svg'><br>&lt;img class='carpet' href='../../public/images/carpet.svg'><br>... <br>",
+      "lvlAnswers": ["img"],
+      "lvlTemplate": "[cod] {<br>}",
+      "lvlImg": "cssDefaultIntermediar.svg"
+    },
+    {
+      "categoryName": "CSS - Intermediate",
+      "lvlName": "2",
+      "lvlDescription": "You will now learn about classes in CSS as you already know something about them from HTML. In CSS, things are a bit different: you cannot access a class as a normal tag, you need to put '.' before the name of the class. Now that you know how to use it, select the hero from the images.<br> HTML code:<br>...<br> &lt;img class='hero' href='../../public/images/superman.svg'><br>&lt;img class='villain' href='../../public/images/villain.svg'> <br>...<br>",
+      "lvlAnswers": [".hero"],
+      "lvlTemplate": "[cod] {<br>}",
+      "lvlImg": "cssDefaultIntermediar.svg"
+    },
+    {
+      "categoryName": "CSS - Intermediate",
+      "lvlName": "3",
+      "lvlDescription": "As you already know about classes, you will learn about ids too. They are used in CSS different from the classes, as you need to add '#' in front of the id name. And that's it, you are ready to select the villain from the room.<br>HTML code:<br>...<br> &lt;img class='hero' href='../../public/images/superman.svg'><br>&lt;img id='villain' href='../../public/images/villain.svg'> <br>...<br>",
+      "lvlAnswers": ["#villain"],
+      "lvlTemplate": "[cod]{<br>}",
+      "lvlImg": "cssDefaultIntermediar.svg"
+    },
+    {
+      "categoryName": "CSS - Intermediate",
+      "lvlName": "4",
+      "lvlDescription": "Now we are gonna talk about children. Not human, but elements' children. For getting the exact child of an element, you use '>' between the parent and the child, but if you want to select all children (even if they are children of the children) you just write 'parent child'. Ok, so you need to select the children of the carpets. <br>HTML code:<br>...<br> &lt;main class='carpet'><br>&nbsp;&nbsp&lt;img class='hero' href='../../public/images/hero.svg'><br>&lt;/main><br>&lt;div class='carpet'><br>&nbsp;&nbsp&lt;img class='villain' href='../../public/images/villain.svg'> <br>&lt;/div><br>...<br>",
+      "lvlAnswers": [".carpet > img"],
+      "lvlTemplate": "[cod]{<br>}",
+      "lvlImg": "cssDefaultIntermediar.svg"
+    },
+    {
+      "categoryName": "CSS - Intermediate",
+      "lvlName": "5",
+      "lvlDescription": "We will continue our talk about children, but this time we are just gonna talk about the first ones. The command is simple, you just use the tag/class/id:first-child. So, go find the first child of the carpet. <br>HTML code<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='hero' href='../../public/images/superman.svg'> <br>&nbsp;&nbsp &lt;img class='villain' href='../../public/images/villain.svg'><br>&lt;/div> <br>...<br>",
+      "lvlAnswers": [".carpet:first-child"],
+      "lvlTemplate": "[cod]{<br>}",
+      "lvlImg": "cssDefaultIntermediar.svg"
+    },
+    {
+      "categoryName": "CSS - Intermediate",
+      "lvlName": "6",
+      "lvlDescription": "Got bored of children? You have one more important to learn. What happens when you need a specific child, but it isn't the first or the last? You use :nth-child(..). For odd selections, you can use odd or 2n+1 and for even: even or 2n (we prefer the more concrete versions). Select the odd children from the carpet.<br>HTML code:<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='hero' href='../../public/images/superman.svg'> <br>&nbsp;&nbsp &lt;img class='girl' href='../../public/images/girl.svg'><br>&nbsp;&nbsp &lt;img class='villain' href='../../public/images/villain.svg'><br>&lt;/div> <br>...<br>",
+      "lvlAnswers": [".carpet:nth-child(odd)"],
+      "lvlTemplate": "[cod]{<br>}",
+      "lvlImg": "cssDefaultIntermediar.svg"
+    },
+    {
+      "categoryName": "CSS - Intermediate",
+      "lvlName": "7",
+      "lvlDescription": "To finish up this category, we need to talk about emtpy, an element that has no children (told you we won't talk anymore about children). This one is very easy: tag/class/id:empty. So, select the empty carpets.<br>HTML cod:<br>...<br> &lt;div class='carpet' /><br> &lt;div class='carpet'><br>&nbsp;&nbsp; &lt;img class='boy' href='../../public/images/boy.svg'> <br>&lt/div><br> &lt;div class='carpet' /><br>...<br>",
+      "lvlAnswers": [".carpet:empty"],
+      "lvlTemplate": "[cod]{<br>}",
       "lvlImg": "cssDefaultIntermediar.svg"
     }
   ],
@@ -117,9 +229,33 @@
     {
       "categoryName": "CSS - Expert",
       "lvlName": "1",
-      "lvlDescription": "This is the description of this level, please pay attention bla bla this level is very interesting bla bla bl ablbThis is the description of this level, please payattention bla bla this level is very interesting bla bla bl ablb <br> Link for: ",
-      "lvlAnswers": [""],
-      "lvlTemplate": "&lt;[cod]><br> &nbsp; &lt;[cod]> <br> &nbsp;&nbsp; &lt;title> titlu &lt;/title><br> &nbsp; &lt;/[cod]><br> &lt;/[cod]>",
+      "lvlDescription": "Welcome to the final category from the CSS Adventure where you will help the LEGO friends to meet or be saved! Here you will learn some things about the very important flex. For this level, you need to know about <a style='padding:0' href='https://www.w3schools.com/cssref/pr_class_display.asp' target='_blank'>display</a> and <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_flex-direction.asp' target='_blank'>flex-direction</a>. After you read about it, we invite you to make the display flex and set the flex direction to column (SEE).",
+      "lvlAnswers": ["display", "flex", "flex-direction", "column"],
+      "lvlTemplate": ".lego-friends {<br> &nbsp;&nbsp;[cod] : [cod]<br> &nbsp;&nbsp;[cod] : [cod] <br>}",
+      "lvlImg": "cssDefaultExpert.svg"
+    },
+    {
+      "categoryName": "CSS - Expert",
+      "lvlName": "2",
+      "lvlDescription": "Our superheroes want to meet at the middle of the row between their castles, one next to another, so someone needs to help them. For that to work the way it is supposed to, you need to read about  <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_justify-content.asp' target='_blank'>justify-content</a> and  <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_align-items' target='_blank'>align-items</a>. <br>Good luck!",
+      "lvlAnswers": ["flex-direction", "row", "justify-content", "center", "align-items", "center"],
+      "lvlTemplate": ".lego-friends {<br>&nbsp;&nbsp; display : flex;<br>&nbsp;&nbsp;[cod] : [cod]; <br>&nbsp;&nbsp;[cod] : [cod];<br> &nbsp;&nbsp;[cod] : [cod]; <br>}",
+      "lvlImg": "cssDefaultExpert.svg"
+    },
+    {
+      "categoryName": "CSS - Expert",
+      "lvlName": "3",
+      "lvlDescription": "Our lego friends are lost! Help them find their way back. The boy belongs to the right castle and the girl to the left one, but they are in reverse. Use the learnt flex-direction to change directions, justify-content and align-items to put them in the right places.",
+      "lvlAnswers": ["flex-direction", "row-reverse", "justify-content", "space-between", "align-items", "center"],
+      "lvlTemplate": ".lego-friends {<br>&nbsp;&nbsp; display : flex; <br>&nbsp;&nbsp;[cod] : [cod]<br>&nbsp;&nbsp;[cod] : [cod]<br>&nbsp;&nbsp;[cod] : [cod]<br>}",
+      "lvlImg": "cssDefaultExpert.svg"
+    },
+    {
+      "categoryName": "CSS - Expert",
+      "lvlName": "4",
+      "lvlDescription": "Oh no, the lego team doesn't find its place to get ready to save the city! Place the forth of them at the bottom of the grass, each of the four hero on each place of the bottom line of the grass.",
+      "lvlAnswers": ["justify-content", "space-around", "align-items", "baseline"],
+      "lvlTemplate": ".lego-friends {<br>&nbsp;&nbsp; display : flex;<br>&nbsp;&nbsp; flex-direction : row; <br>&nbsp;&nbsp;[cod] : [cod]<br>&nbsp;&nbsp;[cod] : [cod]<br>}",
       "lvlImg": "cssDefaultExpert.svg"
     }
   ]
