@@ -179,6 +179,7 @@ try {
             }
             .where-you-write input {
                 background-color: #C6A726;
+                color: black;
             }
             .next-level {
                 background-color: #C6A726;
@@ -208,6 +209,7 @@ try {
             }
             .where-you-write input {
                 background-color: #B71313;
+                color: white;
             }
             .next-level {
                 background-color: #B71313;
@@ -238,6 +240,7 @@ try {
             }
             .where-you-write input {
                 background-color: #7ECEF2;
+                color: black;
             }
             .next-level {
                 background-color: #7ECEF2;

@@ -120,7 +120,7 @@
                     </p>
                     <form class="where-you-write">
                         <?php 
-                        $template = '<input type="text" name="html" id="level'.($level+1).'-html" class="input-zone" style="color:white;">'; 
+                        $template = '<input type="text" name="html" id="level'.($level+1).'-html" class="input-zone">'; 
                         echo str_replace("[cod]", $template, $levelTemplate);
                          
                         

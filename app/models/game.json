@@ -78,7 +78,7 @@
       "categoryName": "HTML - Intermediate",
       "lvlName": "5",
       "lvlDescription": "For the last Intermediate challenge, you will learn how to integrate scripts, links and meta tags into your project. <br>You will use: <a style='padding:0' href='https://www.w3schools.com/tags/tag_link.asp' target='_blank'>link</a>, <a style='padding:0' href='https://www.w3schools.com/tags/tag_script.asp' target='_blank'>script</a> and <a style='padding:0' href='https://www.w3schools.com/tags/tag_meta.asp' target='_blank'>meta</a>.<br>Make a simple HTML program that will have in head one meta tag for..... and a link to 'int.css'. At the end of your body tag, put a script to '....../sample.js'. You will have to be able to see a short animation if what you wrote is correct.",
-      "lvlAnswers": [],
+      "lvlAnswers": ["<meta>", "<link>", "<script>"],
       "lvlTemplate": "&lt;html><br> &nbsp;&nbsp; &lt;head><br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;title> Lego animation &lt;/title> <br> &nbsp;&nbsp;&nbsp;&nbsp;[cod] <br> &nbsp;&nbsp;&nbsp;&nbsp;[cod] <br> &nbsp;&nbsp; &lt;/head> <br> &nbsp;&nbsp; &lt;body> <br> &nbsp;&nbsp;&nbsp;&nbsp; aici ceva pt animatie - un cub lego sau cv <br> &nbsp;&nbsp;&nbsp;&nbsp;[cod]<br> &nbsp;&nbsp; &lt;/body> <br> &lt;/html>",
       "lvlImg": "htmlDefaultIntermediate.svg"
     }
