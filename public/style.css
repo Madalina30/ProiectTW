@@ -506,11 +506,12 @@ image 100% */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.left-side-level * {
     padding: 10px;
 }
+
+/* .left-side-level * {
+    padding: 10px;
+} */
 
 
 .see-levels {
@@ -551,21 +552,32 @@ image 100% */
 
 .what-you-see{
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+}
+
+.what-you-see > * {
+    position: absolute;
+    width: 100%;
+    top:-200px;
+    left: 5%;
 }
 
 .what-you-see img {
-    width: 100%;
+    top:-200px;
+    left: 0% !important;
 }
 
-.what-you-see span {
-    margin-bottom: 10px;
+.level-at {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
 
 .input-zone {
+    padding: 10px;
     border: none;
     height: 5px;
     width: 50px;
@@ -641,14 +653,10 @@ th, td {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     padding-bottom: 30px;
 }
 
-.graph-daily img {
-    width: 400px;
-    opacity: 0.7;
-    padding: 10px;
-}
 
 /* for different screens */
 

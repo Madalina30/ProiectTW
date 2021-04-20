@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
     <link rel="stylesheet" href="../../public/style.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 </head>
 <body class="body__category">
     <nav>
@@ -97,24 +100,22 @@
                    <?php echo $categoryName ?> 
                 </h1>
                 <div class="see-levels">
-                    <!-- <img src="../../public/images/leftarrow.svg" alt="A"> -->
                     <span class="level-at"> Level 
                         <span class="lvlName">
-                        <?php echo ($level + 1) ?> 
+                        <?php echo "&nbsp;" . ($level + 1) ?> 
                         </span> 
-                        <?php
+                        <!-- ?php
                         $levels = '';
                         echo "<br>";
                         for($i=1;$i<=$maxLevel;$i++){
                             echo "<center> Level ".$i.'</center><br>';
                         }
                         echo $levels;
-                        ?>
+                        ?> -->
                     </span>
-                    <!-- <img src="../../public/images/rightarrow.svg" alt="A"> -->
                 </div>
                 <div>
-                    <p class="lvlDescription">
+                    <p class="lvlDescription" style="padding: 10px">
                     <?php echo $levelDescription ?>  
                     </p>
                     <form class="where-you-write">
@@ -141,6 +142,7 @@
             <div class="what-you-see">
                 <?php
                     echo '<img src="../../public/images/'.$levelImage.'" alt="">';
+                    echo '<p>ceva</p>';
                 ?>
                 
             </div>

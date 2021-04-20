@@ -6,6 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics</title>
     <link rel="stylesheet" href="../../public/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', { 'packages': ['bar'] });
+      google.charts.setOnLoadCallback(drawChart);
+  
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Period', 'Minutes', { role: 'style'}],
+          ['all time', 2,'#f3f3f3'],
+          ['last week', 4, 'pink'],
+          ['this week', 10, 'green'],
+          ['yesterday', 4 ,'green'],
+          ['today', 5, 'green']
+        ]);
+  
+        var options = {
+          chart: {
+            title: 'Time spent learning'
+          }
+        };
+  
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+  
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  
+  
+    <script type="text/javascript">
+      google.charts.load('current', { 'packages': ['corechart'] });
+      google.charts.setOnLoadCallback(drawChart);
+  
+      function drawChart() {
+  
+        var data = google.visualization.arrayToDataTable([
+          ['Levels completed', 'Number of levels', {role: 'style'}],
+          ['Compelted', 11, 'red'],
+          ['Incompleted', 2, 'green']
+        ]);
+  
+        var options = {
+          title: 'Progress'
+        };
+  
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  
+        chart.draw(data, options);
+      }
+    </script>
+  
+    <style>
+      rect {
+        fill: transparent;
+      }
+    </style>
 </head>
 <body class="body__stats">    
     <nav>
@@ -168,8 +223,14 @@
         </div>
     </main>
     <div class="graph-daily">
-        <img src="../../public/images/MinPerDay.png" alt="">
-        <img src="../../public/images/Levels.png" alt="">
+        <selection class="child">
+            <div id="columnchart_material" style="width:500px; height: 400px;"></div>
+        
+        </selection>
+        <selection class="child">
+            <div id="piechart" style="width:500px; height: 400px;"></div>
+        
+        </selection>
     </div>
     <script src="../../public/assets/side-menu.js"></script>
 

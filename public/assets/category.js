@@ -1,26 +1,134 @@
 const category ='';
 
-
+let buttonEnabled = false;
 const textZone = document.querySelector(".where-you-write");
 const description = document.querySelector(".lvlDescription");
 const categoryName = document.querySelector(".categoryName");
 const lvlName = document.querySelector(".lvlName");
 const nextLevel = document.querySelector(".next-level");
 const imgSeeDefault = document.querySelector(".what-you-see");
-const level = nextLevel.getAttribute("level");
+const level = nextLevel.getAttribute("level"); ///////
 const maxLevel = nextLevel.getAttribute("max-level");
-console.log(level, maxLevel);
+const attempts = document.querySelector(".attempts");
+
+nextLevel.innerText = "Check Validity"
+// textZone.addEventListener("keydown", ()=>{
+//     let inputs = document.querySelectorAll('.where-you-write > input')
+  
+//     let newTextZone = textZone.cloneNode();
+//     let c = 0;
+//     for(let i=0;i<newTextZone.children.length;i++){
+//         if(newTextZone.children[i].classList.contains("input-zone")){
+           
+//             c++;
+//         }
+//     }
+//     imgSeeDefault.innerHTML = newTextZone.innerHTML;
+// })
+// console.log(level, maxLevel);
+
+// get from json data and verify if input is correct
+// let requestURL = "../models/game.json";
+// let request = new XMLHttpRequest();
+// request.open('GET', requestURL);
+// request.responseType = 'json';
+// request.send();
+// let lvlAnswers ="";
+// request.onload = function() {
+//     const superHeroes = request.response;
+//     const heroes = superHeroes['htmlBeginner'];
+//     lvlAnswers = heroes[0]['lvlAnswers'];
+//     console.log(lvlAnswers);
+// }
+
+
+textZone.addEventListener("keydown", ()=>{
+    let inputs = document.querySelectorAll('.where-you-write > input');
+    let c = 0;
+    let arr = [];
+    for(let i=0;i<inputs.length;i++){
+        if(inputs[i].value != ""){
+            if(!arr.includes(inputs[i])){
+                arr.push(inputs[i])
+                c++;
+            }
+        }
+    }
+    if(c==inputs.length){
+        console.log("toate contin cate cv")
+        
+    }else{
+    
+    }
+    console.log(c)
+})
+
+let pointsPerLevel = 20;
+
+async function loadAnswers(type, level){
+    const result = await fetch('../models/game.json').then(data=>data.json()).then(data=>data);
+    // console.log(result[type][level]);
+    if (checkValidity(result[type][level]) == true) {
+        // console.log("returneaza true")
+        buttonEnabled = true;
+        
+        Swal.fire({
+            icon: 'success',
+            title: 'Great job!',
+            text: 'You answered correctly! You can go to the next level with ' + pointsPerLevel + " points!"
+          }).then((result) => {
+            if (result.isConfirmed) {
+              nextLevel.innerText = 'Next Level'
+            }
+          });
+        console.log("Atatea pnt la level ", level, ": ", pointsPerLevel);
+        /// sweet alert
+
+    } else {
+        buttonEnabled = false;
+        let intAttempt = parseInt(attempts.innerText)
+        console.log(intAttempt + "da")
+        attempts.innerText = intAttempt + 1;
+        pointsPerLevel -= 1;
+        Swal.fire({
+            icon: 'error',
+            title: 'Wrong answer!',
+            text: 'You submitted a wrong answer! You got -1 points and -1 attempts!',
+          });
+        /// sweet alert
+    }
+}
+
+function checkValidity(data){
+    const answers = data.lvlAnswers;
+    let inputs = document.querySelectorAll('.where-you-write > input');
+    let c = 0, c1=0;
+    for(let i=0;i<inputs.length;i++){
+        if(inputs[i].value == answers[i]){
+            c1++;
+        }
+    }
+    console.log(c1, " ", answers.length)
+    if(c1 == answers.length){
+        console.log("esti jmecher")
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+
 
 try {
     let fromUrl = getCategoryAndLevel();
     let categoryChosen = fromUrl.cat;
-    // let levelAt = fromUrl.lvl;
     switch (categoryChosen) {
         case "hb":
             // buildLevel(category.htmlBeginner[0]);
            
             document.querySelector(".next-level").addEventListener('click', function() {
-                checkLevel("templateCategory.php?cat=hb&level="+level, "templateCategory.php?cat=hi&level=")
+                checkLevel("templateCategory.php?cat=hb&level="+level, "templateCategory.php?cat=hi&level=", "htmlBeginner")
             });
 
             var style = document.createElement('style');
@@ -56,7 +164,7 @@ try {
             // buildLevel(category.htmlIntermediate[0]);
 
             document.querySelector(".next-level").addEventListener('click', function() {
-                checkLevel("templateCategory.php?cat=hi&level="+level, "templateCategory.php?cat=he&level=")
+                checkLevel("templateCategory.php?cat=hi&level="+level, "templateCategory.php?cat=he&level=", "htmlIntermediate")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -84,7 +192,7 @@ try {
         case "he":
             // buildLevel(category.htmlExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                checkLevel("templateCategory.php?cat=he&level="+level, "templateCategory.php?cat=cb&level=")
+                checkLevel("templateCategory.php?cat=he&level="+level, "templateCategory.php?cat=cb&level=", "htmlExpert")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -114,7 +222,7 @@ try {
         case "cb":
             // buildLevel(category.cssBeginner[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                checkLevel("templateCategory.php?cat=cb&level="+level, "templateCategory.php?cat=ci&level=")
+                checkLevel("templateCategory.php?cat=cb&level="+level, "templateCategory.php?cat=ci&level=", "cssBeginner")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -144,7 +252,7 @@ try {
         case "ci":
             // buildLevel(category.cssIntermediate[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                checkLevel("templateCategory.php?cat=ci&level="+level, "templateCategory.php?cat=ce&level=")
+                checkLevel("templateCategory.php?cat=ci&level="+level, "templateCategory.php?cat=ce&level=", "cssIntermediate")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -176,7 +284,7 @@ try {
         case "ce":
             // buildLevel(category.cssExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
-                checkLevel("templateCategory.php?cat=ce&level="+level, "allgames.html")
+                checkLevel("templateCategory.php?cat=ce&level="+level, "allgames.html", "cssExpert")
             });
             var style = document.createElement('style');
             style.innerHTML = `
@@ -237,10 +345,19 @@ function getCategoryAndLevel(){
     return q;
 }
 
-function checkLevel(toLower, toHigher){
-    if(parseInt(level)<parseInt(maxLevel)){
-        window.location.href = toLower;
+function checkLevel(toLower, toHigher, category){
+    
+    if(buttonEnabled){
+        console.log("treci")
+        if(parseInt(level)<parseInt(maxLevel)){
+            window.location.href = toLower;
+            pointsPerLevel = 20;
+        }else{
+            toHigher === "allgames.html"?window.location.href = toHigher:window.location.href = toHigher+0;
+        }
     }else{
-        toHigher === "allgames.html"?window.location.href = toHigher:window.location.href = toHigher+0;
+        loadAnswers(category, level - 1) 
     }
+  
+    
 }
