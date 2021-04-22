@@ -11,6 +11,7 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 </head>
 <body class="body__category">
+    <div class="style-css"></div>
     <nav>
         <div class="nav__left">
             <a href="home.html">
@@ -100,19 +101,22 @@
                    <?php echo $categoryName ?> 
                 </h1>
                 <div class="see-levels">
-                    <span class="level-at"> Level 
+                    <span onclick="myFunction()" class="level-at radius-bottom-on"> Level 
                         <span class="lvlName">
                         <?php echo "&nbsp;" . ($level + 1) ?> 
                         </span> 
-                        <!-- ?php
-                        $levels = '';
-                        echo "<br>";
-                        for($i=1;$i<=$maxLevel;$i++){
-                            echo "<center> Level ".$i.'</center><br>';
-                        }
-                        echo $levels;
-                        ?> -->
+                     
                     </span>
+                    <div id="myDropdown" class="dropdown-content">
+                        <?php
+                            $levels = '';
+                            echo "<br>";
+                            for($i=1;$i<=$level;$i++){
+                                echo "<a onclick='' class='toLevel' level='".($i-1)."'><center> Level ".$i.'</center></a>';
+                            }
+                            echo $levels;
+                        ?>
+                    </div>
                 </div>
                 <div>
                     <p class="lvlDescription" style="padding: 10px">
@@ -122,8 +126,6 @@
                         <?php 
                         $template = '<input type="text" name="html" id="level'.($level+1).'-html" class="input-zone">'; 
                         echo str_replace("[cod]", $template, $levelTemplate);
-                         
-                        
                         ?>
                    
                         <br>
@@ -141,8 +143,11 @@
             </aside>
             <div class="what-you-see">
                 <?php
-                    echo '<img src="../../public/images/'.$levelImage.'" alt="">';
-                    echo '<p>ceva</p>';
+                    echo '<img class="img-level-here" src="../../public/images/'.$levelImage.'" alt="">';
+                    echo '<p class="where-you-see" style="z-index: 7;color:black;"></p>';
+                    if(isset($gameData["lvlHtml"])){
+                        echo $gameData["lvlHtml"];
+                    }
                 ?>
                 
             </div>

@@ -1,5 +1,3 @@
-const category ='';
-
 let buttonEnabled = false;
 const textZone = document.querySelector(".where-you-write");
 const description = document.querySelector(".lvlDescription");
@@ -7,71 +5,73 @@ const categoryName = document.querySelector(".categoryName");
 const lvlName = document.querySelector(".lvlName");
 const nextLevel = document.querySelector(".next-level");
 const imgSeeDefault = document.querySelector(".what-you-see");
-const level = nextLevel.getAttribute("level"); ///////
+const level = nextLevel.getAttribute("level"); 
 const maxLevel = nextLevel.getAttribute("max-level");
 const attempts = document.querySelector(".attempts");
+const textRight = document.querySelector(".where-you-see");
+const toLevels = document.querySelectorAll(".toLevel");
+let fromUrl = getCategoryAndLevel();
+let categoryChosen = fromUrl.cat;
+// console.log(categoryChosen);
+nextLevel.innerText = "Check Validity";
 
-nextLevel.innerText = "Check Validity"
-// textZone.addEventListener("keydown", ()=>{
-//     let inputs = document.querySelectorAll('.where-you-write > input')
-  
-//     let newTextZone = textZone.cloneNode();
-//     let c = 0;
-//     for(let i=0;i<newTextZone.children.length;i++){
-//         if(newTextZone.children[i].classList.contains("input-zone")){
-           
-//             c++;
-//         }
-//     }
-//     imgSeeDefault.innerHTML = newTextZone.innerHTML;
-// })
-// console.log(level, maxLevel);
-
-// get from json data and verify if input is correct
-// let requestURL = "../models/game.json";
-// let request = new XMLHttpRequest();
-// request.open('GET', requestURL);
-// request.responseType = 'json';
-// request.send();
-// let lvlAnswers ="";
-// request.onload = function() {
-//     const superHeroes = request.response;
-//     const heroes = superHeroes['htmlBeginner'];
-//     lvlAnswers = heroes[0]['lvlAnswers'];
-//     console.log(lvlAnswers);
-// }
+goToLevel();
+if (categoryChosen.includes('h')) {
+    showMeHTML();
 
 
-textZone.addEventListener("keydown", ()=>{
-    let inputs = document.querySelectorAll('.where-you-write > input');
-    let c = 0;
-    let arr = [];
-    for(let i=0;i<inputs.length;i++){
-        if(inputs[i].value != ""){
-            if(!arr.includes(inputs[i])){
-                arr.push(inputs[i])
-                c++;
+    textZone.addEventListener("keyup", ()=>{
+        showMeHTML();
+    })
+} else if (categoryChosen.includes('c')) {
+    showMeCSS()
+    textZone.addEventListener("keyup", ()=>{
+       showMeCSS();
+    })
+}
+
+function showMeCSS(){
+    let css = document.querySelectorAll('.where-you-write > *');
+    //  console.log(textZone.outerHTML)
+    let newCss = ["<style>"];
+        for(let i=0;i<css.length;i++){
+            if(css[i].classList.contains("input-zone")){
+                newCss.push(css[i].value);
+            }else{
+                newCss.push(css[i].innerText?css[i].innerText:css[i].outerHTML);
             }
         }
+    newCss = newCss.join("(P)").replaceAll("<br>","").replaceAll(",","").split("(P)");
+    newCss = newCss.slice(0, newCss.length-3)
+    newCss.push("</style>")
+    newCss = newCss.join("")
+    document.querySelector(".style-css").innerHTML = newCss
+    console.log(newCss)
+}
+function showMeHTML(){
+    let html = document.querySelectorAll('.where-you-write > *');
+    let newHtml = [];
+    for(let i=0;i<html.length;i++){
+        if(html[i].classList.contains("input-zone")){
+            newHtml.push(html[i].value);
+        }else{
+
+            console.log(html[i].outerHTML)
+            newHtml.push(html[i].innerText?html[i].innerText:html[i].outerHTML);
+        }
     }
-    if(c==inputs.length){
-        console.log("toate contin cate cv")
-        
-    }else{
-    
-    }
-    console.log(c)
-})
+    newHtml = newHtml.slice(0, newHtml.length-2)
+    textRight.innerHTML = newHtml.join("");
+}
+
 
 let pointsPerLevel = 20;
 
 async function loadAnswers(type, level){
     const result = await fetch('../models/game.json').then(data=>data.json()).then(data=>data);
-    // console.log(result[type][level]);
     if (checkValidity(result[type][level]) == true) {
-        // console.log("returneaza true")
         buttonEnabled = true;
-        
+        ////// sweet alert    
         Swal.fire({
             icon: 'success',
             title: 'Great job!',
@@ -81,8 +81,8 @@ async function loadAnswers(type, level){
               nextLevel.innerText = 'Next Level'
             }
           });
+        //   nextLevel.innerText = 'Next Level'
         console.log("Atatea pnt la level ", level, ": ", pointsPerLevel);
-        /// sweet alert
 
     } else {
         buttonEnabled = false;
@@ -90,12 +90,13 @@ async function loadAnswers(type, level){
         console.log(intAttempt + "da")
         attempts.innerText = intAttempt + 1;
         pointsPerLevel -= 1;
+        ////// sweet alert
         Swal.fire({
             icon: 'error',
             title: 'Wrong answer!',
             text: 'You submitted a wrong answer! You got -1 points and -1 attempts!',
           });
-        /// sweet alert
+        
     }
 }
 
@@ -121,8 +122,6 @@ function checkValidity(data){
 
 
 try {
-    let fromUrl = getCategoryAndLevel();
-    let categoryChosen = fromUrl.cat;
     switch (categoryChosen) {
         case "hb":
             // buildLevel(category.htmlBeginner[0]);
@@ -130,6 +129,7 @@ try {
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=hb&level="+level, "templateCategory.php?cat=hi&level=", "htmlBeginner")
             });
+
 
             var style = document.createElement('style');
             style.innerHTML = `
@@ -154,7 +154,10 @@ try {
                 background-color: #2C7131;
                 color: white;
             }
-            .see-levels {
+            .level-at:hover, .level-at:focus {
+                background-color: #2C7131;
+            }
+            .see-levels, .dropdown-content {
                 background-color: #2C7131;
             }
             `;
@@ -364,3 +367,31 @@ function checkLevel(toLower, toHigher, category){
   
     
 }
+
+function goToLevel(){
+    //categoryChosen
+    for(let i=0;i<toLevels.length;i++){
+        toLevels[i].addEventListener("click", ()=>{
+            let level = toLevels[i].getAttribute("level");
+            window.location.href = `templateCategory.php?cat=${categoryChosen}&level=${level}`
+        })
+    }
+}
+///////////////////////////////
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.level-at')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
