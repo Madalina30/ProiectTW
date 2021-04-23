@@ -187,7 +187,11 @@ try {
             .next-level {
                 background-color: #C6A726;
             }
-            .see-levels {
+
+            .level-at:hover, .level-at:focus {
+                background-color: #C6A726;
+            }
+            .see-levels, .dropdown-content {
                 background-color: #C6A726;
             }
             `;
@@ -218,7 +222,10 @@ try {
                 background-color: #B71313;
                 color: white;
             }
-            .see-levels {
+            .level-at:hover, .level-at:focus {
+                background-color: #B71313;
+            }
+            .see-levels, .dropdown-content {
                 background-color: #B71313;
             }
             `;
@@ -249,7 +256,10 @@ try {
                 background-color: #7ECEF2;
                 color: #054863;
             }
-            .see-levels {
+            .level-at:hover, .level-at:focus {
+                background-color: #7ECEF2;
+            }
+            .see-levels, .dropdown-content {
                 background-color: #7ECEF2;
             }
             `;
@@ -281,7 +291,10 @@ try {
                 background-color: #695726;
                 color: white;
             }
-            .see-levels {
+            .level-at:hover, .level-at:focus {
+                background-color: #695726;
+            }
+            .see-levels, .dropdown-content {
                 background-color: #695726;
             }
             `;
@@ -313,8 +326,17 @@ try {
                 background-color: #245C28;
                 color: white;
             }
-            .see-levels {
+            .level-at:hover, .level-at:focus {
                 background-color: #7ECEF2;
+            }
+            .see-levels, .dropdown-content {
+                background-color: #7ECEF2;
+            }
+            .what-you-see {
+            }
+            .img-level-here {
+                position: relative !important;
+                top: 50%;
             }
             `;
             document.head.appendChild(style);

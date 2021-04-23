@@ -179,56 +179,62 @@
       "lvlDescription": "Welcome to the longest category! Here you will go through the magic of selections from a castle room. You will need here to select all carpets from the room. (hint: take the tag)<br> HTML code: <br>...<br>&lt;img class='carpet' src='carpet.svg'><br>&lt;img class='carpet' src='carpet.svg'><br>... <br>",
       "lvlAnswers": ["img"],
       "lvlTemplate": "[cod] {<br>}",
-      "lvlImg": "cssDefaultIntermediar.svg",
-      "lvlHtml":"<div style='display:flex; flex-direction:row; justify-content: space-around; align-items:center; height:500px'><img class='carpet' style='z-index:10; width:200px;' src='../../public/images/carpet.svg' alt='carpet'> <img style='z-index:10; width:200px;' class='carpet' src='../../public/images/carpet.svg' alt='carpet'></div>"
+      "lvlImg": "lvl1CSSI.svg",
+      "lvlHtml":""
     },
     {
       "categoryName": "CSS - Intermediate",
       "lvlName": "2",
-      "lvlDescription": "You will now learn about classes in CSS as you already know something about them from HTML. In CSS, things are a bit different: you cannot access a class as a normal tag, you need to put '.' before the name of the class. Now that you know how to use it, select the hero from the images.<br> HTML code:<br>...<br> &lt;img class='hero' href='../../public/images/superman.svg'><br>&lt;img class='villain' href='../../public/images/villain.svg'> <br>...<br>",
+      "lvlDescription": "You will now learn about classes in CSS as you already know something about them from HTML. In CSS, things are a bit different: you cannot access a class as a normal tag, you need to put '.' before the name of the class. Now that you know how to use it, select the hero from the images.<br> HTML code:<br>...<br> &lt;img class='villain' src='pirate.svg'><br>&lt;img class='hero' src='superman.svg'> <br>...<br>",
       "lvlAnswers": [".hero"],
       "lvlTemplate": "[cod] {<br>}",
-      "lvlImg": "cssDefaultIntermediar.svg"
+      "lvlImg": "lvl2CSSI.svg",
+      "lvlHtml":""
     },
     {
       "categoryName": "CSS - Intermediate",
       "lvlName": "3",
-      "lvlDescription": "As you already know about classes, you will learn about ids too. They are used in CSS different from the classes, as you need to add '#' in front of the id name. And that's it, you are ready to select the villain from the room.<br>HTML code:<br>...<br> &lt;img class='hero' href='../../public/images/superman.svg'><br>&lt;img id='villain' href='../../public/images/villain.svg'> <br>...<br>",
+      "lvlDescription": "As you already know about classes, you will learn about ids too. They are used in CSS different from the classes, as you need to add '#' in front of the id name. And that's it, you are ready to select the villain from the room.<br>HTML code:<br>...<br> &lt;img id='villain' src='pirate.svg'><br>&lt;img class='hero' src='superman.svg'> <br>...<br>",
       "lvlAnswers": ["#villain"],
       "lvlTemplate": "[cod]{<br>}",
-      "lvlImg": "cssDefaultIntermediar.svg"
+      "lvlImg": "lvl2CSSI.svg",
+      "lvlHtml": ""
     },
     {
       "categoryName": "CSS - Intermediate",
       "lvlName": "4",
-      "lvlDescription": "Now we are gonna talk about children. Not human, but elements' children. For getting the exact child of an element, you use '>' between the parent and the child, but if you want to select all children (even if they are children of the children) you just write 'parent child'. Ok, so you need to select the children of the carpets. <br>HTML code:<br>...<br> &lt;main class='carpet'><br>&nbsp;&nbsp&lt;img class='hero' href='../../public/images/hero.svg'><br>&lt;/main><br>&lt;div class='carpet'><br>&nbsp;&nbsp&lt;img class='villain' href='../../public/images/villain.svg'> <br>&lt;/div><br>...<br>",
+      "lvlDescription": "Now we are gonna talk about children. Not human, but elements' children. For getting the exact child of an element, you use '>' between the parent and the child, but if you want to select all children (even if they are children of the children) you just write 'parent child'. Ok, so you need to select the children of the carpets. <br>HTML code:<br>...<br> &lt;main class='carpet'><br>&nbsp;&nbsp&lt;img class='villain' src='pirate.svg'><br>&lt;/main><br>&lt;div class='carpet'><br>&nbsp;&nbsp&lt;img class='hero' src='superman.svg'> <br>&lt;/div><br>...<br>",
       "lvlAnswers": [".carpet > img"],
       "lvlTemplate": "[cod]{<br>}",
-      "lvlImg": "cssDefaultIntermediar.svg"
+      "lvlImg": "lvl4CSSI.svg",
+      "lvlHtml": ""
     },
     {
       "categoryName": "CSS - Intermediate",
       "lvlName": "5",
-      "lvlDescription": "We will continue our talk about children, but this time we are just gonna talk about the first ones. The command is simple, you just use the tag/class/id:first-child. So, go find the first child of the carpet. <br>HTML code<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='hero' href='../../public/images/superman.svg'> <br>&nbsp;&nbsp &lt;img class='villain' href='../../public/images/villain.svg'><br>&lt;/div> <br>...<br>",
+      "lvlDescription": "We will continue our talk about children, but this time we are just gonna talk about the first ones. The command is simple, you just use the tag/class/id:first-child. So, go find the first child of the carpet. <br>HTML code<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='villain' src='pirate.svg'> <br>&nbsp;&nbsp &lt;img class='hero' src='superman.svg'><br>&lt;/div> <br>...<br>",
       "lvlAnswers": [".carpet:first-child"],
       "lvlTemplate": "[cod]{<br>}",
-      "lvlImg": "cssDefaultIntermediar.svg"
+      "lvlImg": "lvl5CSSI.svg",
+      "lvlHtml":""
     },
     {
       "categoryName": "CSS - Intermediate",
       "lvlName": "6",
-      "lvlDescription": "Got bored of children? You have one more important to learn. What happens when you need a specific child, but it isn't the first or the last? You use :nth-child(..). For odd selections, you can use odd or 2n+1 and for even: even or 2n (we prefer the more concrete versions). Select the odd children from the carpet.<br>HTML code:<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='hero' href='../../public/images/superman.svg'> <br>&nbsp;&nbsp &lt;img class='girl' href='../../public/images/girl.svg'><br>&nbsp;&nbsp &lt;img class='villain' href='../../public/images/villain.svg'><br>&lt;/div> <br>...<br>",
+      "lvlDescription": "Got bored of children? You have one more important to learn. What happens when you need a specific child, but it isn't the first or the last? You use :nth-child(..). For odd selections, you can use odd or 2n+1 and for even: even or 2n (we prefer the more concrete versions). Select the odd children from the carpet.<br>HTML code:<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='villain' src='pirate.svg'> <br>&nbsp;&nbsp &lt;img class='girl' src='girl.svg'><br>&nbsp;&nbsp &lt;img class='hero' src='superman.svg'><br>&lt;/div> <br>...<br>",
       "lvlAnswers": [".carpet:nth-child(odd)"],
       "lvlTemplate": "[cod]{<br>}",
-      "lvlImg": "cssDefaultIntermediar.svg"
+      "lvlImg": "lvl6CSSI.svg",
+      "lvlHtml":""
     },
     {
       "categoryName": "CSS - Intermediate",
       "lvlName": "7",
-      "lvlDescription": "To finish up this category, we need to talk about emtpy, an element that has no children (told you we won't talk anymore about children). This one is very easy: tag/class/id:empty. So, select the empty carpets.<br>HTML cod:<br>...<br> &lt;div class='carpet' /><br> &lt;div class='carpet'><br>&nbsp;&nbsp; &lt;img class='boy' href='../../public/images/boy.svg'> <br>&lt/div><br> &lt;div class='carpet' /><br>...<br>",
+      "lvlDescription": "To finish up this category, we need to talk about empty, an element that has no children (told you we won't talk anymore about children). This one is very easy: tag/class/id:empty. So, select the empty carpets.<br>HTML cod:<br>...<br> &lt;div class='carpet' /><br> &lt;div class='carpet'><br>&nbsp;&nbsp; &lt;img class='boy' src='boy.svg'> <br>&lt/div><br> &lt;div class='carpet' /><br>...<br>",
       "lvlAnswers": [".carpet:empty"],
       "lvlTemplate": "[cod]{<br>}",
-      "lvlImg": "cssDefaultIntermediar.svg"
+      "lvlImg": "lvl7CSSI.svg",
+      "lvlHtml":""
     }
   ],
   "cssExpert": [
@@ -237,32 +243,36 @@
       "lvlName": "1",
       "lvlDescription": "Welcome to the final category from the CSS Adventure where you will help the LEGO friends to meet or be saved! Here you will learn some things about the very important flex. For this level, you need to know about <a style='padding:0' href='https://www.w3schools.com/cssref/pr_class_display.asp' target='_blank'>display</a> and <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_flex-direction.asp' target='_blank'>flex-direction</a>. After you read about it, we invite you to make the display flex and set the flex direction to column (SEE).",
       "lvlAnswers": ["display", "flex", "flex-direction", "column"],
-      "lvlTemplate": ".lego-friends {<br> &nbsp;&nbsp;[cod] : [cod]<br> &nbsp;&nbsp;[cod] : [cod] <br>}",
-      "lvlImg": "cssDefaultExpert.svg"
+      "lvlTemplate": "<span>.lego-friends {</span><br> &nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br> &nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span> <br><span>}</span>",
+      "lvlImg": "cssDefaultExpert.svg",
+      "lvlHtml":"<div class='lego-friends' style='z-index:10;width:max-height; top:35%;'><img style='width:15%' src='../../public/images/boy.png' alt='boy'><img style='width:15%' src='../../public/images/girl.png' alt='girl'></div>"
     },
     {
       "categoryName": "CSS - Expert",
       "lvlName": "2",
-      "lvlDescription": "Our superheroes want to meet at the middle of the row between their castles, one next to another, so someone needs to help them. For that to work the way it is supposed to, you need to read about  <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_justify-content.asp' target='_blank'>justify-content</a> and  <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_align-items' target='_blank'>align-items</a>. <br>Good luck!",
-      "lvlAnswers": ["flex-direction", "row", "justify-content", "center", "align-items", "center"],
-      "lvlTemplate": ".lego-friends {<br>&nbsp;&nbsp; display : flex;<br>&nbsp;&nbsp;[cod] : [cod]; <br>&nbsp;&nbsp;[cod] : [cod];<br> &nbsp;&nbsp;[cod] : [cod]; <br>}",
-      "lvlImg": "cssDefaultExpert.svg"
+      "lvlDescription": "Our superheroes want to meet at the middle of the row between their castles, one next to another, so someone needs to help them. For that to work the way it is supposed to, you need to read about  <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_justify-content.asp' target='_blank'>justify-content</a> and  <a style='padding:0' href='https://www.w3schools.com/cssref/css3_pr_align-items' target='_blank'>align-items</a>. You need to figure out which one is the best fit here. Also, use !important after the flex-direction's value.<br>Good luck!",
+      "lvlAnswers": ["flex-direction", "row !important", "justify-content", "center"],
+      "lvlTemplate": "<span>.lego-friends {</span><br>&nbsp;&nbsp; <span>display : flex;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span> <br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span> <br><span>}</span>",
+      "lvlImg": "cssDefaultExpert.svg",
+      "lvlHtml":"<div class='lego-friends' style='flex-direction: column; z-index:10;width:max-height; top:35%; '><img style='width:15%' src='../../public/images/spiderman.png' alt='spiderman'><img style='width:15%' src='../../public/images/superman.png' alt='superman'></div>"
     },
     {
       "categoryName": "CSS - Expert",
       "lvlName": "3",
-      "lvlDescription": "Our lego friends are lost! Help them find their way back. The boy belongs to the right castle and the girl to the left one, but they are in reverse. Use the learnt flex-direction to change directions, justify-content and align-items to put them in the right places.",
-      "lvlAnswers": ["flex-direction", "row-reverse", "justify-content", "space-between", "align-items", "center"],
-      "lvlTemplate": ".lego-friends {<br>&nbsp;&nbsp; display : flex; <br>&nbsp;&nbsp;[cod] : [cod]<br>&nbsp;&nbsp;[cod] : [cod]<br>&nbsp;&nbsp;[cod] : [cod]<br>}",
-      "lvlImg": "cssDefaultExpert.svg"
+      "lvlDescription": "Our lego friends are lost! Help them find their way back. The boy belongs to the right castle and the girl to the left one, but they are in reverse. Use the learnt flex-direction to change directions, justify-content (or align-items) to put them in the right places. Use !important when you don't see things moving around.",
+      "lvlAnswers": ["flex-direction", "row-reverse", "justify-content", "space-between !important"],
+      "lvlTemplate": "<span>.lego-friends {</span><br>&nbsp;&nbsp; <span>display : flex;</span> <br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br><span>}</span>",
+      "lvlImg": "cssDefaultExpert.svg",
+      "lvlHtml":"<div class='lego-friends' style='justify-content:center; z-index:10;width:max-height; top:35%; '><img style='width:15%' src='../../public/images/boy.png' alt='boy'><img style='width:15%' src='../../public/images/girl.png' alt='girl'></div>"
     },
     {
       "categoryName": "CSS - Expert",
       "lvlName": "4",
-      "lvlDescription": "Oh no, the lego team doesn't find its place to get ready to save the city! Place the forth of them at the bottom of the grass, each of the four hero on each place of the bottom line of the grass.",
-      "lvlAnswers": ["justify-content", "space-around", "align-items", "baseline"],
-      "lvlTemplate": ".lego-friends {<br>&nbsp;&nbsp; display : flex;<br>&nbsp;&nbsp; flex-direction : row; <br>&nbsp;&nbsp;[cod] : [cod]<br>&nbsp;&nbsp;[cod] : [cod]<br>}",
-      "lvlImg": "cssDefaultExpert.svg"
+      "lvlDescription": "Oh no, the lego team doesn't find its place to get ready to save the city! Place all of them at the bottom of the grass (use top to 73% to do that), each of the four hero on each place of the piece of the grass. Use !important when things do not change.",
+      "lvlAnswers": ["justify-content", "space-between", "top", "73% !important"],
+      "lvlTemplate": "<span>.lego-friends {</span><br>&nbsp;&nbsp; <span>display : flex;</span><br>&nbsp;&nbsp; <span>flex-direction : row;</span> <br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br><span>}</span>",
+      "lvlImg": "cssDefaultExpert.svg",
+      "lvlHtml":"<div class='lego-friends' style='z-index:10;width:max-height; top:35%; '><img style='width:15%' src='../../public/images/boy.png' alt='boy'><img style='width:15%' src='../../public/images/superman.png' alt='superman'><img style='width:15%' src='../../public/images/spiderman.png' alt='spiderman'><img style='width:15%' src='../../public/images/girl.png' alt='girl'></div>"
     }
   ]
 }
