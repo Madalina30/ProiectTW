@@ -4,6 +4,8 @@ require_once 'gitConfig.php';
 
 // Include and initialize user class
 require_once 'User_class.php';
+error_reporting(0);
+ini_set('display_errors', 0);
 $user = new User();
 
 if(isset($accessToken)){
@@ -65,7 +67,7 @@ if(isset($accessToken)){
     $loginURL = $gitClient->getAuthorizeURL($_SESSION['state']);
 
     // Render Github login button
-    $output = '<a href="'.htmlspecialchars($loginURL).'"><img src="images/github-login.png"></a>';
+    // $output = '<a href="'.htmlspecialchars($loginURL).'"><img src="images/github-login.png"></a>';
 }
 ?>
 
@@ -89,15 +91,18 @@ if(isset($accessToken)){
                Join us on a big adventure and learn the art of HTML and CSS 
                while building their city!
             </p>
-            <a href="/app/views/home.html">
-                <section class="btn-fill btn-github">
+            <?php
+                echo "<a href=".htmlspecialchars($loginURL).">
+                <section class='btn-fill btn-github'>
                     Signup with 
-                    <div class="wrapper"><?php echo $output; ?></div>
-                    <img src="../../public/images/github.svg" alt="Github">
+                    <img src='../../public/images/github.svg' alt='Github'>
 
                 </section>
                 <!-- when pressed - open a login pop-up and then home -->
-            </a> 
+            </a> ";
+            
+            ?>
+            
         </div>    
     </main>
 </body>

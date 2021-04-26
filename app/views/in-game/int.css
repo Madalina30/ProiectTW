@@ -3,7 +3,7 @@ body {
   z-index: 9;
 }
 
-button {
+.move-me {
   background-color: rgb(215, 98, 238);
   border: none;
   border-radius: 10px;

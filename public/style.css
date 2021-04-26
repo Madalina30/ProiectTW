@@ -554,13 +554,14 @@ image 100% */
     padding: 10px;
     width: 50%;
     position: relative;
+    
 }
 
 .what-you-see > * {
     position: absolute;
     width: 90%;
     /* max-height: 100%; */
-    top:-190px;
+    top:-200px;
     left: 5%;
 }
 
@@ -568,6 +569,7 @@ image 100% */
     width: 100%;
     max-height: none;
     top:-200px;
+    flex-wrap: wrap;
     left: 0% !important;
 }
 
@@ -797,18 +799,19 @@ path[d="M192,102.25A98.75,98.75,0,0,1,285.91683098414643,231.51542819452607"] {
     }
 
     .what-you-see{  
-        width: 90%;
-        right: 3%;
+        width: 90vw;
+        right: 2%;
         justify-content: center;
     }
 
     .where-you-write {
-        right: 1.5%;
+        width: 85vw;
+        left: 3%;
     }
 
     .what-you-see > * {
-        top: 50px;
-        padding: 10px;
+        top: 0px;
+        padding: 5px;
     }
 
     .img-level-here {

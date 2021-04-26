@@ -82,7 +82,7 @@ async function loadAnswers(type, level){
             }
           });
         //   nextLevel.innerText = 'Next Level'
-        console.log("Atatea pnt la level ", level, ": ", pointsPerLevel);
+        console.log("Atatea pnt la level ", level+1, ": ", pointsPerLevel);
 
     } else {
         buttonEnabled = false;
