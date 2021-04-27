@@ -143,10 +143,18 @@
             </aside>
             <div class="what-you-see">
                 <?php
-                    echo '<img class="img-level-here" src="../../public/images/'.$levelImage.'" alt="">';
-                    echo '<p class="where-you-see" style="z-index: 7;color:black;"></p>';
-                    if(isset($gameData["lvlHtml"])){
+                    if (str_contains($category, "h")) {
+                        echo '<p class="where-you-see" style="z-index: 7;color:black; background:url(\'../../public/images/'.$levelImage.'\'); background-size: cover; padding: 10px; position: relative !important; height:auto !important; min-height: 250px;"></p>';
+                        
+                        if(isset($gameData["lvlHtml"])){
                         echo $gameData["lvlHtml"];
+                    }
+                    } else {
+                        echo '<img class="img-level-here" src="../../public/images/'.$levelImage.'" alt="">';
+                        echo '<p class="where-you-see" style="z-index: 7;color:black;"></p>';
+                        if(isset($gameData["lvlHtml"])){
+                            echo $gameData["lvlHtml"];
+                        }
                     }
                 ?>
                 

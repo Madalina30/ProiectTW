@@ -129,8 +129,8 @@
     {
       "categoryName": "CSS - Beginner",
       "lvlName": "1",
-      "lvlDescription": "For the first adventure of the CSS realms, you are asked to build a 'lego' red rectangle of 200px x 200px. <br>For this challenge, you will have to use: <a style='padding:0' href='https://www.w3schools.com/cssref/pr_dim_width.asp' target='_blank'>width</a>,  <a style='padding:0' href='https://www.w3schools.com/cssref/pr_dim_height.asp' target='_blank'>height</a> and  <a style='padding:0' href='https://www.w3schools.com/cssref/pr_background-color.asp' target='_blank'>background-color</a>.",
-      "lvlAnswers": ["width", "200px", "height", "200px", "background-color", "red"],
+      "lvlDescription": "For the first adventure of the CSS realms, you are asked to build a 'lego' red rectangle of 100px x 100px. <br>For this challenge, you will have to use: <a style='padding:0' href='https://www.w3schools.com/cssref/pr_dim_width.asp' target='_blank'>width</a>,  <a style='padding:0' href='https://www.w3schools.com/cssref/pr_dim_height.asp' target='_blank'>height</a> and  <a style='padding:0' href='https://www.w3schools.com/cssref/pr_background-color.asp' target='_blank'>background-color</a>.",
+      "lvlAnswers": ["width", "100px", "height", "100px", "background-color", "red"],
       "lvlTemplate": "<span>.rectangle {</span><br> &nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br> &nbsp;&nbsp; [cod] <span>:</span> [cod]<span>;</span><br><span>}</span>",
       "lvlImg": "cssDefaultBeginner.svg",
       "lvlHtml":"<div class='rectangle' style='margin:10px;'></div>"
@@ -160,7 +160,7 @@
       "lvlAnswers": ["transform", "rotate(30deg)", "color", "white", "padding", "20px 30px"],
       "lvlTemplate": "<span>.black-rect {</span><br>&nbsp;&nbsp; <span>background-color : black;</span><br>&nbsp;&nbsp; <span>width : 50px;</span><br>&nbsp;&nbsp; <span>height : 50px;</span><br>  &nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br><span>}</span>",
       "lvlImg": "cssDefaultBeginner.svg",
-      "lvlHtml": "<div style='background-color: yellow; width: 100px; height: 100px;'><div class='black-rect'>hello from black</div></div>"
+      "lvlHtml": "<div style='background-color: yellow; width: 100px; height: 100px; margin:5px;'><div class='black-rect'>hello from black</div></div>"
     },
     {
       "categoryName": "CSS - Beginner",
@@ -169,7 +169,7 @@
       "lvlAnswers": ["border", "1px solid black", "border-radius", "20px"],
       "lvlTemplate": "<span>.lego-piece {</span><br> &nbsp;&nbsp; <span>background-color : green;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br>&nbsp;&nbsp;[cod] <span>:</span> [cod]<span>;</span><br><span>}</span>",
       "lvlImg": "cssDefaultBeginner.svg",
-      "lvlHtml": "<div style='display: flex; flex-direction:column; align-items:flex-start; '> <div style='display:flex; flex-direction: row; justify-content: space-around; align-items: center; width: 18%;'> <div style='background-color: grey; border-radius: 5px; border: 1px solid black; height:20px; width:20px;'></div> <div style='background-color: grey; border-radius: 5px; border: 1px solid black; height:20px; width:20px;'></div> </div> <div class='lego-piece' style='width:100px; height:100px; background-color:grey;'></div></div>"
+      "lvlHtml": "<div style='display: flex; flex-direction:column; align-items:flex-start; margin:5px;'> <div style='display:flex; flex-direction: row; justify-content: space-around; align-items: center; width: 18%;'> <div style='background-color: grey; border-radius: 5px; border: 1px solid black; height:20px; width:20px;'></div> <div style='background-color: grey; border-radius: 5px; border: 1px solid black; height:20px; width:20px;'></div> </div> <div class='lego-piece' style='width:100px; height:100px; background-color:grey;'></div></div>"
     }
   ],
   "cssIntermediate": [
@@ -178,7 +178,7 @@
       "lvlName": "1",
       "lvlDescription": "Welcome to the longest category! Here you will go through the magic of selections from a castle room. You will need here to select all carpets from the room. (hint: take the tag)<br> HTML code: <br>...<br>&lt;img class='carpet' src='carpet.svg'><br>&lt;img class='carpet' src='carpet.svg'><br>... <br>",
       "lvlAnswers": ["img"],
-      "lvlTemplate": "[cod] {<br>}",
+      "lvlTemplate": "[cod] {<br><input style='display:none;' />}",
       "lvlImg": "lvl1CSSI.svg",
       "lvlHtml":""
     },
@@ -187,7 +187,7 @@
       "lvlName": "2",
       "lvlDescription": "You will now learn about classes in CSS as you already know something about them from HTML. In CSS, things are a bit different: you cannot access a class as a normal tag, you need to put '.' before the name of the class. Now that you know how to use it, select the hero from the images.<br> HTML code:<br>...<br> &lt;img class='villain' src='pirate.svg'><br>&lt;img class='hero' src='superman.svg'> <br>...<br>",
       "lvlAnswers": [".hero"],
-      "lvlTemplate": "[cod] {<br>}",
+      "lvlTemplate": "[cod] {<br><input style='display:none;' />}",
       "lvlImg": "lvl2CSSI.svg",
       "lvlHtml":""
     },
@@ -196,7 +196,7 @@
       "lvlName": "3",
       "lvlDescription": "As you already know about classes, you will learn about ids too. They are used in CSS different from the classes, as you need to add '#' in front of the id name. And that's it, you are ready to select the villain from the room.<br>HTML code:<br>...<br> &lt;img id='villain' src='pirate.svg'><br>&lt;img class='hero' src='superman.svg'> <br>...<br>",
       "lvlAnswers": ["#villain"],
-      "lvlTemplate": "[cod]{<br>}",
+      "lvlTemplate": "[cod]{<br><input style='display:none;' />}",
       "lvlImg": "lvl3CSSI.svg",
       "lvlHtml": ""
     },
@@ -205,7 +205,7 @@
       "lvlName": "4",
       "lvlDescription": "Now we are gonna talk about children. Not human, but elements' children. For getting the exact child of an element, you use '>' between the parent and the child, but if you want to select all children (even if they are children of the children) you just write 'parent child'. Ok, so you need to select the children of the carpets. <br>HTML code:<br>...<br> &lt;main class='carpet'><br>&nbsp;&nbsp&lt;img class='villain' src='pirate.svg'><br>&lt;/main><br>&lt;div class='carpet'><br>&nbsp;&nbsp&lt;img class='hero' src='superman.svg'> <br>&lt;/div><br>...<br>",
       "lvlAnswers": [".carpet > img"],
-      "lvlTemplate": "[cod]{<br>}",
+      "lvlTemplate": "[cod]{<br><input style='display:none;' />}",
       "lvlImg": "lvl4CSSI.svg",
       "lvlHtml": ""
     },
@@ -214,7 +214,7 @@
       "lvlName": "5",
       "lvlDescription": "We will continue our talk about children, but this time we are just gonna talk about the first ones. The command is simple, you just use the tag/class/id:first-child. So, go find the first child of the carpet. <br>HTML code<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='villain' src='pirate.svg'> <br>&nbsp;&nbsp &lt;img class='hero' src='superman.svg'><br>&lt;/div> <br>...<br>",
       "lvlAnswers": [".carpet:first-child"],
-      "lvlTemplate": "[cod]{<br>}",
+      "lvlTemplate": "[cod]{<br><input style='display:none;' />}",
       "lvlImg": "lvl5CSSI.svg",
       "lvlHtml":""
     },
@@ -223,7 +223,7 @@
       "lvlName": "6",
       "lvlDescription": "Got bored of children? You have one more important to learn. What happens when you need a specific child, but it isn't the first or the last? You use :nth-child(..). For odd selections, you can use odd or 2n+1 and for even: even or 2n (we prefer the more concrete versions). Select the odd children from the carpet.<br>HTML code:<br>...<br> &lt;div class='carpet'> <br>&nbsp;&nbsp &lt;img class='villain' src='pirate.svg'> <br>&nbsp;&nbsp &lt;img class='girl' src='girl.svg'><br>&nbsp;&nbsp &lt;img class='hero' src='superman.svg'><br>&lt;/div> <br>...<br>",
       "lvlAnswers": [".carpet:nth-child(odd)"],
-      "lvlTemplate": "[cod]{<br>}",
+      "lvlTemplate": "[cod]{<br><input style='display:none;' />}",
       "lvlImg": "lvl6CSSI.svg",
       "lvlHtml":""
     },
@@ -232,7 +232,7 @@
       "lvlName": "7",
       "lvlDescription": "To finish up this category, we need to talk about empty, an element that has no children (told you we won't talk anymore about children). This one is very easy: tag/class/id:empty. So, select the empty carpets.<br>HTML cod:<br>...<br> &lt;div class='carpet' /><br> &lt;div class='carpet'><br>&nbsp;&nbsp; &lt;img class='boy' src='boy.svg'> <br>&lt/div><br> &lt;div class='carpet' /><br>...<br>",
       "lvlAnswers": [".carpet:empty"],
-      "lvlTemplate": "[cod]{<br>}",
+      "lvlTemplate": "[cod]{<br><input style='display:none;' />}",
       "lvlImg": "lvl7CSSI.svg",
       "lvlHtml":""
     }

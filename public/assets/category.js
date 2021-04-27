@@ -159,7 +159,7 @@ try {
             }
             .see-levels, .dropdown-content {
                 background-color: #2C7131;
-            }
+            }z
             `;
             document.head.appendChild(style);
             break;
