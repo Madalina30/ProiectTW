@@ -48,6 +48,7 @@ function showMeCSS(){
     document.querySelector(".style-css").innerHTML = newCss
     console.log(newCss)
 }
+
 function showMeHTML(){
     let html = document.querySelectorAll('.where-you-write > *');
     let newHtml = [];
@@ -72,6 +73,9 @@ async function loadAnswers(type, level){
     if (checkValidity(result[type][level]) == true) {
         buttonEnabled = true;
         ////// sweet alert    
+         // aici sa se puna datele in baza de date!!!! - de verificat la ce categorie sunt
+        // si de pus intr-una din categoriile bune +1 la nivel si pe HTML sau CSS nr de puncte de la
+        // userul respectiv conectat
         Swal.fire({
             icon: 'success',
             title: 'Great job!',
@@ -81,7 +85,7 @@ async function loadAnswers(type, level){
               nextLevel.innerText = 'Next Level'
             }
           });
-        //   nextLevel.innerText = 'Next Level'
+        await fetch(`${window.location.origin}/app/controllers/updateData.php?category=${categoryChosen}&lvl=${level+1}&ppl=${pointsPerLevel}`)
         console.log("Atatea pnt la level ", level+1, ": ", pointsPerLevel);
 
     } else {
@@ -159,7 +163,7 @@ try {
             }
             .see-levels, .dropdown-content {
                 background-color: #2C7131;
-            }z
+            }
             `;
             document.head.appendChild(style);
             break;

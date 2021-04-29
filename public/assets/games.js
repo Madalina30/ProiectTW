@@ -14,7 +14,7 @@ let cssCat = [
 
 buildCategry(htmlCatZone, htmlCat);
 buildCategry(cssCatZone, cssCat);
-
+//TODO: o sa se foloseasca si la allgames: levels done: x not completed/completed
 
 function buildCategry(catZone, catData){
     let catHolder = ``;
