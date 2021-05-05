@@ -11,10 +11,10 @@
 <body class="profile__body">
     <nav>
         <div class="nav__left">
-            <a href="home.html">
+            <a href="index.php">
                 <img class="logo" src="../../public/images/logo.svg" alt="LeHS">
             </a>
-            <a href="allgames.html" class="btn-fill btn-games">
+            <a href="allgames.php" class="btn-fill btn-games">
                 Games 
             </a>
             <a href="statistics.html" class="btn-fill btn-statistics">
@@ -22,7 +22,7 @@
             </a>
         </div>
         <div class="icons-right">
-            <a class="btn-profile" href="profile.html">
+            <a class="btn-profile" href="profile.php">
                 <img class="profile-button" src="../../public/images/profile.png" alt="">
             </a>
             <img class="insta-button" src="../../public/images/instagram.svg" alt="In">
@@ -32,9 +32,9 @@
             <div class="nav__items">
                 <div class="all-elements">
                     <a href="#"> Home </a> 
-                    <a href="allgames.html"> Games </a> 
+                    <a href="allgames.php"> Games </a> 
                     <a href="statistics.html"> Statistics </a> 
-                    <a class="btn-profile" href="profile.html">
+                    <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>
                     <img class="insta-button" src="../../public/images/instagram.svg" alt="In">

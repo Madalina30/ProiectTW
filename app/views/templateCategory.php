@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+require '../views/db_conf.php';
+session_start();
+if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
+    $userData = $_SESSION['userData'];
+    $username = $userData['username'];
+    $userDbData = $conn->query('SELECT * FROM users WHERE username = \'' . $username . '\'');
+    $rows = $userDbData->fetch_all(MYSQLI_ASSOC)[0];
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,10 +22,10 @@
     <div class="style-css"></div>
     <nav>
         <div class="nav__left">
-            <a href="home.html">
+            <a href="index.php">
                 <img class="logo" src="../../public/images/logo.svg" alt="LeHS">
             </a>
-            <a href="allgames.html" class="btn-fill btn-games">
+            <a href="allgames.php" class="btn-fill btn-games">
                 Games 
             </a>
             <a href="statistics.html" class="btn-fill btn-statistics">
@@ -25,7 +33,7 @@
             </a>
         </div>
         <div class="icons-right">
-            <a class="btn-profile" href="profile.html">
+            <a class="btn-profile" href="profile.php">
                 <img class="profile-button" src="../../public/images/profile.png" alt="">
             </a>
             <img class="insta-button" src="../../public/images/instagram.svg" alt="In">
@@ -35,9 +43,9 @@
             <div class="nav__items">
                 <div class="all-elements">
                     <a href="#"> Home </a> 
-                    <a href="allgames.html"> Games </a> 
+                    <a href="allgames.php"> Games </a> 
                     <a href="statistics.html"> Statistics </a> 
-                    <a class="btn-profile" href="profile.html">
+                    <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>
                     <img class="insta-button" src="../../public/images/instagram.svg" alt="In">
@@ -65,26 +73,35 @@
                 switch($category){
                     case "hb":
                         $selected_category = "htmlBeginner";
+                        $db_cat = "bHTML_lvl";
                         break;
                     case "hi":
                         $selected_category = "htmlIntermediate";
+                        $db_cat = "iHTML_lvl";
                         break;
                     case "he":
                         $selected_category = "htmlExpert";
+                        $db_cat = "eHTMLlvl";
                         break;
                     case "cb":
                         $selected_category = "cssBeginner";
+                        $db_cat = "bCSS_lvl";
                         break;
                     case "ci":
                         $selected_category = "cssIntermediate";
+                        $db_cat = "iCSS_lvl";
                         break;
                     case "ce":
                         $selected_category = "cssExpert";
+                        $db_cat = "eCSS_lvl";
                         break;
                     default:
                         $selected_category = "htmlBeginner";
+                        $db_cat = "bHTML_lvl";
                 }
-
+                if((int)$level > (int)$rows[$db_cat]){
+                    echo "<script>window.location.href = 'templateCategory.php?cat=".$category."&level=".$rows[$db_cat]."'</script>";
+                }
                 $gameDataFile = file_get_contents("../models/game.json");
                 $gameJson = json_decode($gameDataFile, true);
                 $maxLevel = count($gameJson[$selected_category]);
@@ -111,7 +128,7 @@
                         <?php
                             $levels = '';
                             echo "<br>";
-                            for($i=1;$i<=$level;$i++){
+                            for($i=1;$i<=$rows[$db_cat];$i++){
                                 echo "<a onclick='' class='toLevel' level='".($i-1)."'><center> Level ".$i.'</center></a>';
                             }
                             echo $levels;
@@ -133,8 +150,8 @@
                         <span class="attempts"> 
                             0 
                         </span>
-
-                        <button level="<?php echo $level+1;?>" max-level="<?php echo $maxLevel;?>" class="next-level" type="button" style="cursor:pointer;"> 
+                        
+                        <button level="<?php echo $level+1;?>"  max-level="<?php echo $maxLevel;?>" class="next-level" type="button" style="cursor:pointer;"> 
                             Next level 
                         </button> 
                     </form>  
@@ -143,7 +160,7 @@
             </aside>
             <div class="what-you-see">
                 <?php
-                    if (str_contains($category, "h")) {
+                    if (strpos($category, "h")) {
                         echo '<p class="where-you-see" style="z-index: 7;color:black; background:url(\'../../public/images/'.$levelImage.'\'); background-size: cover; padding: 10px; position: relative !important; height:auto !important; min-height: 250px;"></p>';
                         
                         if(isset($gameData["lvlHtml"])){
@@ -169,3 +186,8 @@
 </body>
 
 </html>
+<?php
+}else{
+    Header('Location:../../index.php');
+}
+?>

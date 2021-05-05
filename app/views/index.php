@@ -95,7 +95,9 @@ if(session('access_token')) {
         $output .= '<p>Email: '.$userData['email'].'</p>';
         $output .= '<p>Location: '.$userData['location'].'</p>';
         $output .= '<p>Profile Link :  <a href="'.$userData['link'].'" target="_blank">Click to visit GitHub page</a></p>';
-        $output .= '<p>Logout from <a href="logout.php">GitHub</a></p>'; 
+        $output .= '<p>Logout from <a href="logout.php">GitHub</a></p>';
+
+        $_SESSION['is_logged'] = 1;
     }else{
         $output = '<h3 style="color:red">Some problem occurred, please try again.</h3>';
     }
@@ -154,7 +156,7 @@ function session($key, $default=NULL) {
                 <a href="#">
                     <img class="logo" src="../../public/images/logo.svg" alt="LeHS">
                 </a>
-                <a href="allgames.html" class="btn-fill btn-games">
+                <a href="allgames.php" class="btn-fill btn-games">
                     Games 
                 </a>
                 <a href="statistics.html" class="btn-fill btn-statistics">
@@ -162,7 +164,7 @@ function session($key, $default=NULL) {
                 </a>
             </div>
             <div class="icons-right">
-                <a class="btn-profile" href="profile.html">
+                <a class="btn-profile" href="profile.php">
                     <img class="profile-button" src="../../public/images/profile.png" alt="">
                 </a>
                 <img class="insta-button" src="../../public/images/instagram.svg" alt="In">
@@ -173,9 +175,9 @@ function session($key, $default=NULL) {
                 <div class="nav__items">
                     <div class="all-elements">
                         <a href="#"> Home </a> 
-                        <a href="allgames.html"> Games </a> 
+                        <a href="allgames.php"> Games </a> 
                         <a href="statistics.html"> Statistics </a> 
-                        <a class="btn-profile" href="profile.html">
+                        <a class="btn-profile" href="profile.php">
                             <img class="profile-button" src="../../public/images/profile.png" alt="">
                         </a>
                         <img class="insta-button" src="../../public/images/instagram.svg" alt="In">

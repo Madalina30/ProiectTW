@@ -515,7 +515,9 @@ image 100% */
 
 
 .see-levels {
-    border-radius: 20px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 0;
     display: flex;
     flex-direction: row;
