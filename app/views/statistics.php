@@ -85,7 +85,7 @@
                 <div class="all-elements">
                     <a href="#"> Home </a> 
                     <a href="allgames.php"> Games </a> 
-                    <a href="statistics.html"> Statistics </a> 
+                    <a href="statistics.php"> Statistics </a> 
                     <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>

@@ -45,7 +45,7 @@ if($_SESSION['is_logged'] == 1){
             style="background-color: rgba(76, 182, 72, 0.644);">
                 Games 
             </a>
-            <a href="statistics.html" class="btn-fill btn-statistics">
+            <a href="statistics.php" class="btn-fill btn-statistics">
                     Statistics
             </a>
         </div>
@@ -61,7 +61,7 @@ if($_SESSION['is_logged'] == 1){
                 <div class="all-elements">
                     <a href="#"> Home </a> 
                     <a href="allgames.php"> Games </a> 
-                    <a href="statistics.html"> Statistics </a> 
+                    <a href="statistics.php"> Statistics </a> 
                     <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>
