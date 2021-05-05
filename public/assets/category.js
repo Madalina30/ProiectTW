@@ -7,6 +7,7 @@ const nextLevel = document.querySelector(".next-level");
 const imgSeeDefault = document.querySelector(".what-you-see");
 const level = nextLevel.getAttribute("level"); 
 const maxLevel = nextLevel.getAttribute("max-level");
+const key = nextLevel.getAttribute("key");
 const attempts = document.querySelector(".attempts");
 const textRight = document.querySelector(".where-you-see");
 const toLevels = document.querySelectorAll(".toLevel");
@@ -85,7 +86,7 @@ async function loadAnswers(type, level){
               nextLevel.innerText = 'Next Level'
             }
           });
-        await fetch(`${window.location.origin}/app/controllers/updateData.php?category=${categoryChosen}&lvl=${level+1}&ppl=${pointsPerLevel}`)
+        await fetch(`${window.location.origin}/app/controllers/updateData.php?category=${categoryChosen}&lvl=${level+1}&ppl=${pointsPerLevel}&key=${key}`)
         console.log("Atatea pnt la level ", level+1, ": ", pointsPerLevel);
 
     } else {

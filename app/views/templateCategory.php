@@ -111,6 +111,9 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
                 $levelTemplate = $gameData["lvlTemplate"];
                 $levelImage = $gameData["lvlImg"];
                 
+                $secretCode = rand(11111111,99999999);
+                $hashedSecret = hash('sha256', $secretCode);
+                $_SESSION['secret_code'] = $hashedSecret;
               
             ?>
             <aside class="left-side-level">
@@ -151,7 +154,7 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
                             0 
                         </span>
                         
-                        <button level="<?php echo $level+1;?>"  max-level="<?php echo $maxLevel;?>" class="next-level" type="button" style="cursor:pointer;"> 
+                        <button level="<?php echo $level+1;?>" key="<?php echo $hashedSecret;?>"  max-level="<?php echo $maxLevel;?>" class="next-level" type="button" style="cursor:pointer;"> 
                             Next level 
                         </button> 
                     </form>  
