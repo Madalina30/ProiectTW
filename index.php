@@ -49,7 +49,7 @@ $user = new User();
                while building their city!
             </p>
              <?php
-                echo "<p>aici e output".$output."</p>"; ///????
+                
                 echo "<a href=".htmlspecialchars($loginURL).">
                 <section class='btn-fill btn-github'>
                     Signup with 
