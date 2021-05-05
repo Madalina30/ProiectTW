@@ -1,0 +1,84 @@
+[26-Apr-2021 15:23:49 UTC] Access token not set
+[26-Apr-2021 15:26:34 UTC] Access token not set
+[26-Apr-2021 15:29:30 UTC] Access token not set
+[26-Apr-2021 15:32:29 UTC] Access token not set
+[26-Apr-2021 15:33:20 UTC] Access token not set
+[26-Apr-2021 15:33:20 UTC] Access token not set
+[26-Apr-2021 15:33:20 UTC] Access token not set
+[26-Apr-2021 15:33:20 UTC] Access token not set
+[26-Apr-2021 15:33:20 UTC] Access token not set
+[26-Apr-2021 15:33:21 UTC] Access token not set
+[26-Apr-2021 15:33:23 UTC] Access token not set
+[26-Apr-2021 15:33:23 UTC] Access token not set
+[26-Apr-2021 15:33:29 UTC] Access token not set
+[26-Apr-2021 15:33:29 UTC] Access token not set
+[26-Apr-2021 15:34:32 UTC] Access token not set
+[26-Apr-2021 15:37:13 UTC] The token is  !
+[26-Apr-2021 15:37:13 UTC] Access token not set
+[26-Apr-2021 15:37:48 UTC] The token is  !
+[26-Apr-2021 15:37:48 UTC] Access token not set
+[26-Apr-2021 15:44:49 UTC] The token is  !
+[26-Apr-2021 15:44:49 UTC] Access token not set
+[26-Apr-2021 16:01:43 UTC] The token is  !
+[26-Apr-2021 16:01:43 UTC] Access token not set
+[26-Apr-2021 16:14:49 UTC] The token is  !
+[26-Apr-2021 16:14:49 UTC] Access token not set
+[26-Apr-2021 16:20:48 UTC] PHP Warning:  require_once(db_conf.php): failed to open stream: No such file or directory in /storage/ssd5/300/16594300/public_html/index.php on line 12
+[26-Apr-2021 16:20:48 UTC] PHP Fatal error:  require_once(): Failed opening required 'db_conf.php' (include_path='.:/usr/share/pear:/usr/share/php') in /storage/ssd5/300/16594300/public_html/index.php on line 12
+[26-Apr-2021 16:21:33 UTC] PHP Warning:  require_once(db_conf.php): failed to open stream: No such file or directory in /storage/ssd5/300/16594300/public_html/index.php on line 12
+[26-Apr-2021 16:21:33 UTC] PHP Fatal error:  require_once(): Failed opening required 'db_conf.php' (include_path='.:/usr/share/pear:/usr/share/php') in /storage/ssd5/300/16594300/public_html/index.php on line 12
+[26-Apr-2021 16:21:36 UTC] PHP Warning:  require_once(db_conf.php): failed to open stream: No such file or directory in /storage/ssd5/300/16594300/public_html/index.php on line 12
+[26-Apr-2021 16:21:36 UTC] PHP Fatal error:  require_once(): Failed opening required 'db_conf.php' (include_path='.:/usr/share/pear:/usr/share/php') in /storage/ssd5/300/16594300/public_html/index.php on line 12
+[26-Apr-2021 16:22:08 UTC] The token is  !
+[26-Apr-2021 16:22:08 UTC] Access token not set
+[26-Apr-2021 16:24:46 UTC] The token is  !
+[26-Apr-2021 16:24:46 UTC] Access token not set
+[26-Apr-2021 16:46:56 UTC] The token is  !
+[26-Apr-2021 16:46:56 UTC] Access token not set
+[26-Apr-2021 16:47:01 UTC] The token is  !
+[26-Apr-2021 16:47:01 UTC] Access token not set
+[26-Apr-2021 16:47:05 UTC] The token is  !
+[26-Apr-2021 16:47:05 UTC] Access token not set
+[26-Apr-2021 16:49:45 UTC] The token is  !
+[26-Apr-2021 16:49:45 UTC] Access token not set
+[26-Apr-2021 16:50:41 UTC] The token is  !
+[26-Apr-2021 16:50:41 UTC] Access token not set
+[26-Apr-2021 16:54:42 UTC] Access token not set
+[26-Apr-2021 16:55:50 UTC] Access token not set
+[27-Apr-2021 09:31:04 UTC] Access token not set
+[27-Apr-2021 09:33:55 UTC] Access token not set
+[27-Apr-2021 09:34:00 UTC] Access token not set
+[27-Apr-2021 10:20:20 UTC] Access token not set
+[27-Apr-2021 10:21:13 UTC] Access token is set!
+[27-Apr-2021 10:21:13 UTC] Git user empty
+[27-Apr-2021 10:21:16 UTC] Access token is set!
+[27-Apr-2021 10:21:16 UTC] Git user empty
+[27-Apr-2021 10:21:20 UTC] Access token is set!
+[27-Apr-2021 10:21:20 UTC] Git user empty
+[27-Apr-2021 10:23:45 UTC] Access token is set!
+[27-Apr-2021 10:23:46 UTC] Git user empty
+[27-Apr-2021 10:23:49 UTC] Access token is set!
+[27-Apr-2021 10:23:50 UTC] Git user empty
+[27-Apr-2021 10:23:57 UTC] Access token is set!
+[27-Apr-2021 10:23:58 UTC] Git user empty
+[27-Apr-2021 10:24:45 UTC] Access token not set
+[27-Apr-2021 10:41:15 UTC] Access token not set
+[27-Apr-2021 15:23:55 UTC] Access token not set
+[28-Apr-2021 13:56:06 UTC] Access token is set!
+[28-Apr-2021 13:56:06 UTC] Git user empty
+[28-Apr-2021 13:56:26 UTC] Access token is set!
+[28-Apr-2021 13:56:26 UTC] Git user empty
+[28-Apr-2021 13:57:08 UTC] Access token is set!
+[28-Apr-2021 13:57:08 UTC] Git user empty
+[28-Apr-2021 13:57:10 UTC] Access token is set!
+[28-Apr-2021 13:57:10 UTC] Git user empty
+[28-Apr-2021 14:01:27 UTC] Access token is set!
+[28-Apr-2021 14:01:28 UTC] Git user empty
+[28-Apr-2021 14:02:13 UTC] Access token is set!
+[28-Apr-2021 14:02:13 UTC] Git user empty
+[28-Apr-2021 14:02:51 UTC] Access token is set!
+[28-Apr-2021 14:02:51 UTC] Git user empty
+[28-Apr-2021 14:02:56 UTC] Access token is set!
+[28-Apr-2021 14:02:56 UTC] Git user empty
+[28-Apr-2021 14:04:12 UTC] Access token is set!
+[28-Apr-2021 14:04:13 UTC] Git user empty
