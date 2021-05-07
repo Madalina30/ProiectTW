@@ -103,14 +103,6 @@
     {
       "categoryName": "HTML - Expert",
       "lvlName": "3",
-      "lvlDescription": "Here you will learn about other 3 HTML tags: audio, source and video. You will need to present a movie to the lego people to entertain them, but first they need to hear the soundtrack for that movie. Create:<br>- a title 'Soundtrack'<br>- the soundtrack called 'lego.mp3' and if it does not exist, the message 'The soundtrack is not in our system.'<br>- the lego movie trailer from the following youtube address: .",
-      "lvlAnswers": ["<audio>", "source", "video"],
-      "lvlTemplate": "<span>&lt;div>  <br>&lt;/div></span>",
-      "lvlImg": "htmlDefaultExpert.svg"
-    },
-    {
-      "categoryName": "HTML - Expert",
-      "lvlName": "4",
       "lvlDescription": "You will now build your first small web page! Remember that you did a login page on the last category? Well, now you will build a signup page.<br>You will have:<br>- signup title (but not the biggest version of the h tags)<br>- fields for username, email, password and password confirmation (set the types for each and placeholders) <br>- an image for 'checking if you are a robot' (robot.svg) <br>- a submit input for all the REQUIRED infos from above.",
       "lvlAnswers": ["<h2>", "</h2>", "<input type='text' placeholder='username' required>", "<input type='email' placeholder='email' required>", "<input type='password' placeholder='password' required>", "<input type='password' placeholder='password confirmation' required>", "<img href='robot.svg' alt='robot'>", "<input type='submit'>"],
       "lvlTemplate": "&lt;form> <span><br></span> &nbsp;&nbsp;[cod] <span>Signup</span> [cod]&lt;br> <span><br></span> &nbsp;&nbsp;[cod]&lt;br><span><br></span>&nbsp;&nbsp;[cod]&lt;br><span><br></span>&nbsp;&nbsp;[cod]&lt;br> <span><br></span>&nbsp;&nbsp;[cod]&lt;br><span><br></span> &nbsp;&nbsp;[cod]&lt;br><span><br></span> &nbsp;&nbsp;[cod]&lt;br><span><br></span> &lt;/form>",
@@ -118,7 +110,7 @@
     },
     {
       "categoryName": "HTML - Expert",
-      "lvlName": "5",
+      "lvlName": "4",
       "lvlDescription": "As we are at the end of the HTML journey, it is a great opportunity for you to learn how to put some CSS inside the tags (do not use this technique often, it is not recommanded for big data). <br>For the program below add:<br>- in div - background color to black, width to 200px, height to 200px, padding to 10px and margin to 10px<br>- on p - color purple<br>- on button border none and background color to lightpink.",
       "lvlAnswers": ["background-color: black;", "width: 200px;", "height: 200px;", "padding: 10px;", "margin: 10px;", "color: purple;", "border: none;", "background-color: lightpink;"],
       "lvlTemplate": "<span>&lt;div style='</span>[cod] [cod] [cod] [cod] [cod]<span>'> </span><br>&nbsp;&nbsp; <span>&lt;p style='</span>[cod]<span>'> This is some sample text here &lt;/p></span><br>&nbsp;&nbsp; <span>&lt;button type='button' style='</span>[cod] [cod]<span>'> Click me &lt;/button></span><br><span>&lt;/div></span>",
