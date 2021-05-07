@@ -1,3 +1,38 @@
+<?php
+require '../views/db_conf.php';
+$forAll = $conn->query('SELECT username, picture, HTML_points, CSS_points FROM users ORDER BY (HTML_points + CSS_points) DESC LIMIT 10;');
+$rowsAll = $forAll->fetch_all(MYSQLI_ASSOC);
+
+$forHTML = $conn->query('SELECT username, picture, HTML_points FROM users ORDER BY HTML_points DESC LIMIT 10;');
+$rowsHTML = $forHTML->fetch_all(MYSQLI_ASSOC);
+
+$forCSS = $conn->query('SELECT username, picture, CSS_points FROM users ORDER BY CSS_points DESC LIMIT 10;');
+$rowsCSS = $forCSS->fetch_all(MYSQLI_ASSOC);
+
+$totalLevels = 30;
+
+$forLevels = $conn->query('SELECT sum(levels) as levels FROM statistics;');
+$rowsLevels = $forLevels->fetch_all(MYSQLI_ASSOC)[0];
+$levelsDone =  $rowsLevels['levels'];
+$completed = $levelsDone/30*100;
+$uncompleted = 100 - $completed;
+
+// get levels for the date - sum levels where date - today/yesterday/last 7 days/last 30 days
+$date  = date("y.m.d");
+$forToday = $conn->query('SELECT sum(levels) as today FROM statistics WHERE DATE(date) = CURDATE();');
+$today = $forToday->fetch_assoc();
+
+$forYesterday = $conn->query('SELECT sum(levels) as yesterday FROM statistics WHERE DATE(date) = DATE_SUB(CURDATE(), INTERVAL 1 DAY);');
+$yesterday = $forYesterday->fetch_assoc();
+
+$for7 = $conn->query('SELECT sum(levels) as last7 FROM statistics WHERE DATE(date) BETWEEN DATE_SUB(CURDATE(), INTERVAL 7 DAY) AND CURDATE();');
+$last7 = $for7->fetch_assoc();
+
+$for30= $conn->query('SELECT sum(levels) as last30 FROM statistics WHERE DATE(date) BETWEEN DATE_SUB(CURDATE(), INTERVAL 30 DAY) AND CURDATE();');
+$last30 = $for30->fetch_assoc();
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,17 +49,17 @@
   
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Period', 'Minutes', { role: 'style'}],
-          ['all time', 2,'#b87333'],
-          ['last week', 4, 'pink'],
-          ['this week', 10, 'green'],
-          ['yesterday', 4 ,'blue'],
-          ['today', 5, 'blue']
+          ['Period', 'Levels', { role: 'style'}],
+          ['All time', <?php echo $levelsDone; ?>,'#b87333'],
+          ['Last 30 days', <?php echo $last30['last30']; ?>, 'pink'],
+          ['Last 7 days', <?php echo $last7['last7']; ?>, 'green'],
+          ['Yesterday', <?php echo $yesterday['yesterday']; ?> ,'blue'],
+          ['Today', <?php echo $today['today']; ?>, 'blue']
         ]);
   
         var options = {
           chart: {
-            title: 'Time spent learning'
+            title: 'Everyone\'s progress'
           }
         };
   
@@ -43,8 +78,8 @@
   
         var data = google.visualization.arrayToDataTable([
           ['Levels completed', 'Number of levels', {role: 'style'}],
-          ['Completed', 30, 'purple'],
-          ['Incompleted', 70, 'green']
+          ['Completed', <?php echo $completed; ?>, 'purple'],
+          ['Incompleted', <?php echo $uncompleted; ?>, 'green']
         ]);
   
         var options = {
@@ -108,36 +143,22 @@
                     <th>username</th>
                     <th>points</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>user1</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>user2</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>user3</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>user4</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>user5</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>user6</td>
-                    <td>80</td>
-                </tr>
+                <?php
+                for ($i = 0; $i < count($rowsAll); $i++) {
+                    if ($rowsAll[$i]['picture'])
+                        echo "<tr>
+                                <td>".($i+1)."</td>
+                                <td><div style='display: flex; flex-direction:row; justify-content:center;'><img src=" . $rowsAll[$i]['picture'] ." alt='U' width=20px style='border-radius:10px; margin-right: 2px;'>".$rowsAll[$i]['username']."</div></td>
+                                <td>".($rowsAll[$i]['HTML_points'] + $rowsAll[$i]['CSS_points'])."</td>
+                            </tr>";
+                    else echo "<tr>
+                                <td>".($i+1)."</td>
+                                <td>".$rowsAll[$i]['username']."</td>
+                                <td>".($rowsAll[$i]['HTML_points'] + $rowsAll[$i]['CSS_points'])."</td>
+                            </tr>";
+                }
+                ?>
+                
             </table>
             <table class="table__html">
                 <caption>  <h3> HTML </h3> </caption>
@@ -147,36 +168,22 @@
                     <th>username</th>
                     <th>points</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>user1</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>user2</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>user3</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>user4</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>user5</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>user6</td>
-                    <td>80</td>
-                </tr>
+                <?php
+                for ($i = 0; $i < count($rowsHTML); $i++) {
+                    if ($rowsHTML[$i]['picture'])
+                        echo "<tr>
+                                <td>".($i+1)."</td>
+                                <td><div style='display: flex; flex-direction:row; justify-content:center;'><img src=" . $rowsHTML[$i]['picture'] ." alt='U' width=20px style='border-radius:10px; margin-right: 2px;'>".$rowsHTML[$i]['username']."</div></td>
+                                <td>".$rowsHTML[$i]['HTML_points']."</td>
+                            </tr>";
+                    else echo "<tr>
+                                <td>".($i+1)."</td>
+                                <td>".$rowsHTML[$i]['username']."</td>
+                                <td>".$rowsHTML[$i]['HTML_points']."</td>
+                            </tr>";
+                }
+                ?>
+                
             </table>
             <table class="table__css">
                 <caption>  <h3> CSS </h3> </caption>
@@ -185,36 +192,21 @@
                     <th>username</th>
                     <th>points</th>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>user1</td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>user2</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>user3</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>user4</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>user5</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>user6</td>
-                    <td>80</td>
-                </tr>
+               <?php
+                for ($i = 0; $i < count($rowsCSS); $i++) {
+                    if ($rowsCSS[$i]['picture'])
+                        echo "<tr>
+                                <td>".($i+1)."</td>
+                                <td><div style='display: flex; flex-direction:row; justify-content:center;'><img src=" . $rowsCSS[$i]['picture'] ." alt='U' width=20px style='border-radius:10px; margin-right: 2px;'>".$rowsCSS[$i]['username']."</div></td>
+                                <td>".$rowsCSS[$i]['CSS_points']."</td>
+                            </tr>";
+                    else echo "<tr>
+                                <td>".($i+1)."</td>
+                                <td>".$rowsCSS[$i]['username']."</td>
+                                <td>".$rowsCSS[$i]['CSS_points']."</td>
+                            </tr>";
+                }
+                ?>
             </table>
         </div>
     </main>
