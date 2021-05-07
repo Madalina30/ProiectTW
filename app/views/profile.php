@@ -1,3 +1,21 @@
+<?php
+require '../views/db_conf.php';
+session_start();
+if($_SESSION['is_logged'] == 1){
+    $userData = $_SESSION['userData'];
+    $username = $userData['username'];
+    $userDbData = $conn->query('SELECT * FROM users WHERE username = \'' . $username . '\'');
+    $row = $userDbData->fetch_all(MYSQLI_ASSOC)[0];
+    $username=$row["username"];
+    $picture=$row["picture"];
+    $htmlPoints=$row["HTML_points"];
+    $cssPoints=$row["CSS_points"];
+    $totalPoints=$htmlPoints+$cssPoints;
+    $htmlLvl=$row["bHTML_lvl"]+$row["iHTML_lvl"]+$row["eHTMLlvl"];
+    $cssLvl=$row["bCSS_lvl"]+$row["iCSS_lvl"]+$row["eCSS_lvl"];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,8 +66,11 @@
 
     <main class="profile__container">
         <div class="profile__box">
-            <img src="../../public/images/profile.png" alt="">
-            <h2> Username </h2>
+            
+            <?php 
+            echo '<img src = "'.$picture.'" alt = \'user\' style=\' border-radius:70px;\'>';
+            echo '<h2 style=\'font-weight:0;\'>'.$username.'</h2> <br>';
+            ?>
             
             <!-- to see how to put them -->
             <div class="user-profile">
@@ -58,7 +79,9 @@
                         HTML points
                     </span>
                     <span>
-                        x
+                        <?php 
+                        echo $htmlPoints;
+                        ?>
                     </span>
                 </section>
                 <section>
@@ -66,7 +89,9 @@
                         CSS points
                     </span>
                     <span>
-                        x
+                         <?php 
+                        echo $cssPoints;
+                        ?>
                     </span>
                 </section>
                 <section>
@@ -74,7 +99,9 @@
                         Total points
                     </span>
                     <span>
-                        x
+                         <?php 
+                        echo $totalPoints;
+                        ?>
                     </span>
                 </section>
                 <section>
@@ -82,7 +109,9 @@
                         HTML levels
                     </span>
                     <span>
-                        x
+                         <?php 
+                        echo $htmlLvl;
+                        ?>
                     </span>
                 </section>
                 <section>
@@ -90,12 +119,13 @@
                         CSS levels
                     </span>
                     <span>
-                        x
+                         <?php 
+                        echo $cssLvl;
+                        ?>
                     </span>
                 </section>
             </div>
-            <a class="btn__logout" href="../../index.php">
-                <!-- aici sa se delogheze userul - sa apara delogat sau cv -->
+            <a class="btn__logout" href="../../logout.php">
                 Logout
             </a>
         </div>
