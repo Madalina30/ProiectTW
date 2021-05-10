@@ -9,12 +9,15 @@ $rowsHTML = $forHTML->fetch_all(MYSQLI_ASSOC);
 $forCSS = $conn->query('SELECT username, picture, CSS_points FROM users ORDER BY CSS_points DESC LIMIT 10;');
 $rowsCSS = $forCSS->fetch_all(MYSQLI_ASSOC);
 
-$totalLevels = 30;
+$totalUsers = $conn->query('SELECT count(username) as total FROM users;');
+$nrUs = $totalUsers->fetch_all(MYSQLI_ASSOC)[0];
+$nrLvl = (int)$nrUs['total'];
+$totalLevels = 30*$nrLvl;
 
 $forLevels = $conn->query('SELECT sum(levels) as levels FROM statistics;');
 $rowsLevels = $forLevels->fetch_all(MYSQLI_ASSOC)[0];
 $levelsDone =  $rowsLevels['levels'];
-$completed = $levelsDone/30*100;
+$completed = $levelsDone/$totalLevels*100;
 $uncompleted = 100 - $completed;
 
 // get levels for the date - sum levels where date - today/yesterday/last 7 days/last 30 days
