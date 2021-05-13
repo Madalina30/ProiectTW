@@ -1,12 +1,9 @@
 <?php
-// DE REFACUT CAND O SA FIE PUSE PE GIT SI FISIERELE SCHIMBATE
 require '../views/db_conf.php';
 session_start();
 if(isset($_GET['key']) && $_SESSION['secret_code'] == htmlspecialchars($_GET['key'])){
     if($_SESSION['is_logged'] == 1){
         $category = htmlspecialchars($_GET['category']);
-        // where category in db, +1 la levele done
-        //aici se updateaza datele
     
         $points = htmlspecialchars($_GET['ppl']);
         $level =  htmlspecialchars($_GET['lvl']);
@@ -48,7 +45,6 @@ if(isset($_GET['key']) && $_SESSION['secret_code'] == htmlspecialchars($_GET['ke
                     $sql = 'UPDATE statistics SET levels = levels + 1, points=points + '.$points.'  WHERE username = \'' . $username . '\' and date=\''.$date.'\' ';
                     $con = $conn->query($sql) or die($conn->error);
                 }else{
-                    echo 'ceva';
                     $sql = 'INSERT INTO statistics (username, date, levels, points) VALUES (\''.$username.'\', \''.$date.'\', 1, '.$points.')';
                     $con = $conn->query($sql) or die($conn->error);
                 }
@@ -86,7 +82,6 @@ if(isset($_GET['key']) && $_SESSION['secret_code'] == htmlspecialchars($_GET['ke
                     $sql = 'UPDATE statistics SET levels = levels + 1, points=points + '.$points.'  WHERE username = \'' . $username . '\' and date=\''.$date.'\' ';
                     $con = $conn->query($sql) or die($conn->error);
                 }else{
-                    echo 'ceva';
                     $sql = 'INSERT INTO statistics (username, date, levels, points) VALUES (\''.$username.'\', \''.$date.'\', 1, '.$points.')';
                     $con = $conn->query($sql) or die($conn->error);
                 }
