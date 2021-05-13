@@ -127,7 +127,7 @@ try {
             });
 
 
-            let style = document.createElement('style');
+            var style = document.createElement('style');
             style.innerHTML = `
             .body__category {
                 background-color: #bff8bf;
@@ -165,8 +165,8 @@ try {
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=hi&level="+level, "templateCategory.php?cat=he&level=", "htmlIntermediate")
             });
-            let style = document.createElement('style');
-            style.innerHTML = `
+            var style1 = document.createElement('style');
+            style1.innerHTML = `
             .body__category {
                 background-color: #F8E38D;
             }
@@ -191,15 +191,15 @@ try {
                 background-color: #C6A726;
             }
             `;
-            document.head.appendChild(style);
+            document.head.appendChild(style1);
             break;
         case "he":
             // buildLevel(category.htmlExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=he&level="+level, "templateCategory.php?cat=cb&level=", "htmlExpert")
             });
-            let style = document.createElement('style');
-            style.innerHTML = `
+            var style2 = document.createElement('style');
+            style2.innerHTML = `
             .body__category {
                 background-color: #FAB9B9;
             }
@@ -225,15 +225,15 @@ try {
                 background-color: #B71313;
             }
             `;
-            document.head.appendChild(style);
+            document.head.appendChild(style2);
             break;
         case "cb":
             // buildLevel(category.cssBeginner[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=cb&level="+level, "templateCategory.php?cat=ci&level=", "cssBeginner")
             });
-            let style = document.createElement('style');
-            style.innerHTML = `
+            var style3 = document.createElement('style');
+            style3.innerHTML = `
             .body__category {
                 background-color: #D3EEF9;
                 color: #054863;
@@ -259,15 +259,15 @@ try {
                 background-color: #7ECEF2;
             }
             `;
-            document.head.appendChild(style);
+            document.head.appendChild(style3);
             break;
         case "ci":
             // buildLevel(category.cssIntermediate[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=ci&level="+level, "templateCategory.php?cat=ce&level=", "cssIntermediate")
             });
-            let style = document.createElement('style');
-            style.innerHTML = `
+            var style4 = document.createElement('style');
+            style4.innerHTML = `
             .body__category {
                 background-color: #f7f3cf;
                 color: #695726;
@@ -294,15 +294,15 @@ try {
                 background-color: #695726;
             }
             `;
-            document.head.appendChild(style);
+            document.head.appendChild(style4);
             break;
         case "ce":
             // buildLevel(category.cssExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=ce&level="+level, "allgames.html", "cssExpert")
             });
-            let style = document.createElement('style');
-            style.innerHTML = `
+            var style5 = document.createElement('style');
+            style5.innerHTML = `
             .body__category {
                 background: linear-gradient(180deg, rgba(211,238,249,1) 0%, rgba(191,248,191,1) 100%);
                 color: #054863;
@@ -335,7 +335,7 @@ try {
                 top: 50%;
             }
             `;
-            document.head.appendChild(style);
+            document.head.appendChild(style5);
             break;
         default:
             break;
