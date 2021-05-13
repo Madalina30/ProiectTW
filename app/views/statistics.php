@@ -110,6 +110,9 @@ $last30 = $for30->fetch_assoc();
             style="background-color: rgba(96, 199, 240, 0.644);">
                     Statistics
             </a>
+            <a href="personalstatistics.php" class="btn-fill btn-games">
+                    My statistics 
+                </a>
         </div>
         <div class="icons-right">
             <a class="btn-profile" href="profile.php">
@@ -124,6 +127,7 @@ $last30 = $for30->fetch_assoc();
                     <a href="#"> Home </a> 
                     <a href="allgames.php"> Games </a> 
                     <a href="statistics.php"> Statistics </a> 
+                    <a href="personalstatistics.php">My Statistics</a>
                     <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>

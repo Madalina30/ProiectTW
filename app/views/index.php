@@ -162,6 +162,9 @@ function session($key, $default=NULL) {
                 <a href="statistics.php" class="btn-fill btn-statistics">
                         Statistics
                 </a>
+                <a href="personalstatistics.php" class="btn-fill btn-games">
+                    My statistics 
+                </a>
             </div>
             <div class="icons-right">
                 <a class="btn-profile" href="profile.php">
@@ -177,6 +180,7 @@ function session($key, $default=NULL) {
                         <a href="#"> Home </a> 
                         <a href="allgames.php"> Games </a> 
                         <a href="statistics.php"> Statistics </a> 
+                        <a href="personalstatistics.php">My Statistisc</a>
                         <a class="btn-profile" href="profile.php">
                             <img class="profile-button" src="../../public/images/profile.png" alt="">
                         </a>
