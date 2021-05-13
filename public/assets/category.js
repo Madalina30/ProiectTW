@@ -13,14 +13,11 @@ const textRight = document.querySelector(".where-you-see");
 const toLevels = document.querySelectorAll(".toLevel");
 let fromUrl = getCategoryAndLevel();
 let categoryChosen = fromUrl.cat;
-// console.log(categoryChosen);
 nextLevel.innerText = "Check Validity";
 
 goToLevel();
 if (categoryChosen.includes('h')) {
     showMeHTML();
-
-
     textZone.addEventListener("keyup", ()=>{
         showMeHTML();
     })
@@ -33,7 +30,6 @@ if (categoryChosen.includes('h')) {
 
 function showMeCSS(){
     let css = document.querySelectorAll('.where-you-write > *');
-    //  console.log(textZone.outerHTML)
     let newCss = ["<style>"];
         for(let i=0;i<css.length;i++){
             if(css[i].classList.contains("input-zone")){
@@ -47,7 +43,6 @@ function showMeCSS(){
     newCss.push("</style>")
     newCss = newCss.join("")
     document.querySelector(".style-css").innerHTML = newCss
-    console.log(newCss)
 }
 
 function showMeHTML(){
@@ -57,8 +52,6 @@ function showMeHTML(){
         if(html[i].classList.contains("input-zone")){
             newHtml.push(html[i].value);
         }else{
-
-            console.log(html[i].outerHTML)
             newHtml.push(html[i].innerText?html[i].innerText:html[i].outerHTML);
         }
     }
@@ -70,6 +63,7 @@ function showMeHTML(){
 let pointsPerLevel = 20;
 
 async function loadAnswers(type, level){
+    // GET
     const result = await fetch('../models/game.json').then(data=>data.json()).then(data=>data);
     if (checkValidity(result[type][level]) == true) {
         buttonEnabled = true;
@@ -92,7 +86,6 @@ async function loadAnswers(type, level){
     } else {
         buttonEnabled = false;
         let intAttempt = parseInt(attempts.innerText)
-        console.log(intAttempt + "da")
         attempts.innerText = intAttempt + 1;
         pointsPerLevel -= 1;
         ////// sweet alert
@@ -108,15 +101,13 @@ async function loadAnswers(type, level){
 function checkValidity(data){
     const answers = data.lvlAnswers;
     let inputs = document.querySelectorAll('.where-you-write > input');
-    let c = 0, c1=0;
+    let nrCorrectAnswers = 0;
     for(let i=0;i<inputs.length;i++){
         if(inputs[i].value == answers[i]){
-            c1++;
+            nrCorrectAnswers++;
         }
     }
-    console.log(c1, " ", answers.length)
-    if(c1 == answers.length){
-        console.log("esti jmecher")
+    if(nrCorrectAnswers == answers.length){
         return true;
     } else {
         return false;
@@ -136,7 +127,7 @@ try {
             });
 
 
-            var style = document.createElement('style');
+            let style = document.createElement('style');
             style.innerHTML = `
             .body__category {
                 background-color: #bff8bf;
@@ -174,7 +165,7 @@ try {
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=hi&level="+level, "templateCategory.php?cat=he&level=", "htmlIntermediate")
             });
-            var style = document.createElement('style');
+            let style = document.createElement('style');
             style.innerHTML = `
             .body__category {
                 background-color: #F8E38D;
@@ -207,7 +198,7 @@ try {
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=he&level="+level, "templateCategory.php?cat=cb&level=", "htmlExpert")
             });
-            var style = document.createElement('style');
+            let style = document.createElement('style');
             style.innerHTML = `
             .body__category {
                 background-color: #FAB9B9;
@@ -241,7 +232,7 @@ try {
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=cb&level="+level, "templateCategory.php?cat=ci&level=", "cssBeginner")
             });
-            var style = document.createElement('style');
+            let style = document.createElement('style');
             style.innerHTML = `
             .body__category {
                 background-color: #D3EEF9;
@@ -275,7 +266,7 @@ try {
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=ci&level="+level, "templateCategory.php?cat=ce&level=", "cssIntermediate")
             });
-            var style = document.createElement('style');
+            let style = document.createElement('style');
             style.innerHTML = `
             .body__category {
                 background-color: #f7f3cf;
@@ -310,7 +301,7 @@ try {
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=ce&level="+level, "allgames.html", "cssExpert")
             });
-            var style = document.createElement('style');
+            let style = document.createElement('style');
             style.innerHTML = `
             .body__category {
                 background: linear-gradient(180deg, rgba(211,238,249,1) 0%, rgba(191,248,191,1) 100%);
@@ -350,7 +341,6 @@ try {
             break;
     }
 
-    console.log(fromUrl.cat, level);
 } catch (error) {
     console.log(error);
 }
@@ -368,20 +358,19 @@ function buildLevel(...lvlData){
 }
 
 function getCategoryAndLevel(){
-    const q = {};
+    const datas = {};
     location.href.split('?')[1].split('&').forEach(
         function(i)
         {
-            q[i.split('=')[0]]=i.split('=')[1];
+            datas[i.split('=')[0]]=i.split('=')[1];
         }
     );
-    return q;
+    return datas;
 }
 
 function checkLevel(toLower, toHigher, category){
     
     if(buttonEnabled){
-        console.log("treci")
         if(parseInt(level)<parseInt(maxLevel)){
             window.location.href = toLower;
             pointsPerLevel = 20;
@@ -412,10 +401,10 @@ function myFunction() {
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.level-at')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      let i;
       for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
+        let openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
         }
