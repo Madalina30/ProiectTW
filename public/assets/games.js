@@ -40,7 +40,7 @@ async function buildCategry(catZone, catData){
                     Not completed yet
                 </span>`:`
                 <span style='margin-left: 10px;color:green;'> &#8226; </span> 
-                <span class="completed-${catData[i][1]} completed-data just-complete" style='color:green !important;'>
+                <span class="completed-${catData[i][1]} completed-data" style='color:green !important;'>
                     Completed
                 </span>`}
                 
@@ -49,57 +49,59 @@ async function buildCategry(catZone, catData){
         </div>`;
     }
     catZone.innerHTML = catHolder;
-    let span = document.querySelector(".just-complete");
-    if (span.innerText == 'Completed') {
-        document.querySelector(".beginner-html").addEventListener('click', function() {
+    document.querySelector(".beginner-html").addEventListener('click', function() {
+        let span = document.querySelector(".completed-beginner-html");
+        if (span.innerText == 'Completed') {
             window.location.href = "templateCategory.php?cat=hb&level=" + (parseInt(document.querySelector('.config .htmlBeginner .level').innerText) - 1);
-        });
-        
-        document.querySelector(".intermediate-html").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=hi&level=" + (parseInt(document.querySelector('.config .htmlIntermediate .level').innerText) - 1);
-        });
-        
-        document.querySelector(".expert-html").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=he&level=" + (parseInt(document.querySelector('.config .htmlExpert .level').innerText) - 1);
-        });
-        
-        document.querySelector(".beginner-css").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=cb&level=" + (parseInt(document.querySelector('.config .cssBeginner .level').innerText) - 1);
-        });
-        
-        document.querySelector(".intermediate-css").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=ci&level=" + (parseInt(document.querySelector('.config .cssIntermediate .level').innerText) - 1);
-        });
-        
-        document.querySelector(".expert-css").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=ce&level=" + (parseInt(document.querySelector('.config .cssExpert .level').innerText) - 1);
-        });
-    } else {
-        document.querySelector(".beginner-html").addEventListener('click', function() {
+        } else {
             window.location.href = "templateCategory.php?cat=hb&level=" + document.querySelector('.config .htmlBeginner .level').innerText;
-        });
-        
-        document.querySelector(".intermediate-html").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=hi&level=" + document.querySelector('.config .htmlIntermediate .level').innerText;
-        });
-        
-        document.querySelector(".expert-html").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=he&level=" + document.querySelector('.config .htmlExpert .level').innerText;
-        });
-        
-        document.querySelector(".beginner-css").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=cb&level=" + document.querySelector('.config .cssBeginner .level').innerText;
-        });
-        
-        document.querySelector(".intermediate-css").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=ci&level=" + document.querySelector('.config .cssIntermediate .level').innerText;
-        });
-        
-        document.querySelector(".expert-css").addEventListener('click', function() {
-            window.location.href = "templateCategory.php?cat=ce&level=" + document.querySelector('.config .cssExpert .level').innerText;
-        });
-    }
+        }
+    });
     
+    document.querySelector(".intermediate-html").addEventListener('click', function() {
+        let span = document.querySelector(".completed-intermediate-html");
+        if (span.innerText == 'Completed') {
+            window.location.href = "templateCategory.php?cat=hi&level=" + (parseInt(document.querySelector('.config .htmlIntermediate .level').innerText) - 1);
+        } else {
+            window.location.href = "templateCategory.php?cat=hi&level=" + document.querySelector('.config .htmlIntermediate .level').innerText;
+        }
+    });
+    
+    document.querySelector(".expert-html").addEventListener('click', function() {
+        let span = document.querySelector(".completed-expert-html");
+        if (span.innerText == 'Completed') {
+            window.location.href = "templateCategory.php?cat=he&level=" + (parseInt(document.querySelector('.config .htmlExpert .level').innerText) - 1);
+        } else {
+            window.location.href = "templateCategory.php?cat=he&level=" + document.querySelector('.config .htmlExpert .level').innerText;
+        }
+    });
+    
+    document.querySelector(".beginner-css").addEventListener('click', function() {
+        let span = document.querySelector(".completed-beginner-css");
+        if (span.innerText == 'Completed') {
+            window.location.href = "templateCategory.php?cat=cb&level=" + (parseInt(document.querySelector('.config .cssBeginner .level').innerText) - 1);
+        } else {
+            window.location.href = "templateCategory.php?cat=cb&level=" + document.querySelector('.config .cssBeginner .level').innerText;
+        }
+    });
+    
+    document.querySelector(".intermediate-css").addEventListener('click', function() {
+        let span = document.querySelector(".completed-intermediate-css");
+        if (span.innerText == 'Completed') {
+            window.location.href = "templateCategory.php?cat=ci&level=" + (parseInt(document.querySelector('.config .cssIntermediate .level').innerText) - 1);
+        } else {
+            window.location.href = "templateCategory.php?cat=ci&level=" + document.querySelector('.config .cssIntermediate .level').innerText;
+        }
+    });
+    
+    document.querySelector(".expert-css").addEventListener('click', function() {
+        let span = document.querySelector(".completed-expert-css");
+        if (span.innerText == 'Completed') {
+            window.location.href = "templateCategory.php?cat=ce&level=" + (parseInt(document.querySelector('.config .cssExpert .level').innerText) - 1);
+        } else {
+            window.location.href = "templateCategory.php?cat=ce&level=" + document.querySelector('.config .cssExpert .level').innerText;
+        }
+    });
 }
 
 
