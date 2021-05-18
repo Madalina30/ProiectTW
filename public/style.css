@@ -310,6 +310,10 @@ nav {
     padding: 10px;
 } 
 
+.btn__show {
+    
+}
+
 /* contact us */
 .contact-us {
     background: url(../public/images/contact.svg) no-repeat center center fixed; 
