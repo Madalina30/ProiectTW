@@ -443,6 +443,7 @@ image 100% */
 
 .personalstatistics__body{
     background-color: rgb(30, 30, 30);
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
