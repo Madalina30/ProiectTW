@@ -1,33 +1,23 @@
 <?php
 define('APP_NAME','legohtml_css');
-error_reporting(E_ALL); // Error/Exception engine, always use E_ALL
+error_reporting(E_ALL);
 
-ini_set('ignore_repeated_errors', TRUE); // always use TRUE
+ini_set('ignore_repeated_errors', TRUE);
 
-ini_set('display_errors', FALSE); // Error/Exception display, use FALSE only in production environment or real server. Use TRUE in development environment
+ini_set('display_errors', FALSE);
 
-ini_set('log_errors', TRUE); // Error/Exception file logging engine.
-ini_set('error_log', 'errors.log'); // Logging file path
-// Include GitHub API config file
-//require_once 'gitConfig.php';
+ini_set('log_errors', TRUE); 
+ini_set('error_log', 'errors.log'); 
 require_once 'db_conf.php';
-
-// Include and initialize user class
 require_once 'User_class.php';
 $user = new User();
 
-// Start session
 if(!session_id()){
     session_start();
 }
 
-// Include Github client library 
 require_once 'src/Github_OAuth_Client.php';
 
-
-/*
- * Configuration and setup GitHub API
- */
 $clientID         = '0f60001fb8544c07c505';
 $clientSecret     = '174232c146c84086cc99cfef080533f1c5162e0e';
 $redirectURL     = 'https://lego-hmlcss.000webhostapp.com/app/views/index.php';
@@ -43,13 +33,11 @@ $gitClient = new Github_OAuth_Client(array(
 ));
 
 if(get('code')) {
-  // Verify the state matches our stored state
   if(!get('state') || $_SESSION['state'] != get('state')) {
     header('Location: ' . $_SERVER['PHP_SELF']);
     die();
   }
 
-  // Exchange the auth code for a token
   $token = apiRequest($tokenURL, array(
     'client_id' => $clientID,
     'client_secret' => $clientSecret,
@@ -64,8 +52,6 @@ error_log("am obtinut tokenul" . $token->access_token);
 
 if(session('access_token')) {
   $gitUser  = apiRequest($apiURLBase . 'user');
- // var_error_log($gitUser);
- // error_log("user data: " . $gitUser);
 
  if(!empty($gitUser)){
      error_log("avem userul de git");

@@ -4,7 +4,6 @@ session_start();
 if(isset($_GET['key']) && $_SESSION['secret_code'] == htmlspecialchars($_GET['key'])){
     if($_SESSION['is_logged'] == 1){
         $category = htmlspecialchars($_GET['category']);
-    
         $points = htmlspecialchars($_GET['ppl']);
         $level =  htmlspecialchars($_GET['lvl']);
         $userData = $_SESSION['userData'];
@@ -87,7 +86,6 @@ if(isset($_GET['key']) && $_SESSION['secret_code'] == htmlspecialchars($_GET['ke
                 }
             }
         }
-    // TODO: o sa se foloseasca si la allgames: levels done: x not completed/completed !!!!!!!
     }
 }
 ?>

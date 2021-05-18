@@ -76,7 +76,6 @@ if($_SESSION['is_logged'] == 1){
             echo '<h2 style=\'font-weight:0;\'>'.$username.'</h2> <br>';
             ?>
             
-            <!-- to see how to put them -->
             <div class="user-profile">
                 <section>
                     <span>

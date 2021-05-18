@@ -82,7 +82,6 @@ if($_SESSION['is_logged'] == 1){
         <h1> Games </h1>
         <section class="learn-html learn-section">
             <h2> HTML </h2>
-            <!-- 3 images with progress on top with the categories -->
             <div class="games-categories categories-html">
 
             </div>

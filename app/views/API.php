@@ -2,7 +2,6 @@
 header('Content-Type: text/plain');
 error_reporting(0);
 ini_set('display_errors', 0);
-// nr nivel si categoria to get 
 $level = isset($_GET['lvl'])?$_GET['lvl']:0;
 
 $category = "";

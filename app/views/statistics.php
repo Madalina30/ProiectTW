@@ -20,7 +20,6 @@ $levelsDone =  $rowsLevels['levels'];
 $completed = $levelsDone/$totalLevels*100;
 $uncompleted = 100 - $completed;
 
-// get levels for the date - sum levels where date - today/yesterday/last 7 days/last 30 days
 $date  = date("y.m.d");
 $forToday = $conn->query('SELECT sum(levels) as today FROM statistics WHERE DATE(date) = CURDATE();');
 $today = $forToday->fetch_assoc();
@@ -99,7 +98,6 @@ $last30 = $for30->fetch_assoc();
 <body class="body__stats">    
     <nav>
         <div class="nav__left">
-            <!-- put btn on img -->
             <a href="index.php">
                 <img class="logo" src="../../public/images/logo.svg" alt="LeHS">
             </a>

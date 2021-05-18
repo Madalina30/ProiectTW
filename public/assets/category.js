@@ -63,14 +63,9 @@ function showMeHTML(){
 let pointsPerLevel = 20;
 
 async function loadAnswers(type, level){
-    // GET
     const result = await fetch('../models/game.json').then(data=>data.json()).then(data=>data);
     if (checkValidity(result[type][level]) == true) {
         buttonEnabled = true;
-        ////// sweet alert    
-         // aici sa se puna datele in baza de date!!!! - de verificat la ce categorie sunt
-        // si de pus intr-una din categoriile bune +1 la nivel si pe HTML sau CSS nr de puncte de la
-        // userul respectiv conectat
         Swal.fire({
             icon: 'success',
             title: 'Great job!',
@@ -88,7 +83,6 @@ async function loadAnswers(type, level){
         let intAttempt = parseInt(attempts.innerText)
         attempts.innerText = intAttempt + 1;
         pointsPerLevel -= 1;
-        ////// sweet alert
         Swal.fire({
             icon: 'error',
             title: 'Wrong answer!',
@@ -114,18 +108,12 @@ function checkValidity(data){
     }
 }
 
-
-
-
 try {
     switch (categoryChosen) {
         case "hb":
-            // buildLevel(category.htmlBeginner[0]);
-           
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=hb&level="+level, "templateCategory.php?cat=hi&level=", "htmlBeginner")
             });
-
 
             var style = document.createElement('style');
             style.innerHTML = `
@@ -160,8 +148,6 @@ try {
             document.head.appendChild(style);
             break;
         case "hi":
-            // buildLevel(category.htmlIntermediate[0]);
-
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=hi&level="+level, "templateCategory.php?cat=he&level=", "htmlIntermediate")
             });
@@ -194,7 +180,6 @@ try {
             document.head.appendChild(style1);
             break;
         case "he":
-            // buildLevel(category.htmlExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=he&level="+level, "templateCategory.php?cat=cb&level=", "htmlExpert")
             });
@@ -228,7 +213,6 @@ try {
             document.head.appendChild(style2);
             break;
         case "cb":
-            // buildLevel(category.cssBeginner[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=cb&level="+level, "templateCategory.php?cat=ci&level=", "cssBeginner")
             });
@@ -262,7 +246,6 @@ try {
             document.head.appendChild(style3);
             break;
         case "ci":
-            // buildLevel(category.cssIntermediate[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=ci&level="+level, "templateCategory.php?cat=ce&level=", "cssIntermediate")
             });
@@ -297,7 +280,6 @@ try {
             document.head.appendChild(style4);
             break;
         case "ce":
-            // buildLevel(category.cssExpert[0]);
             document.querySelector(".next-level").addEventListener('click', function() {
                 checkLevel("templateCategory.php?cat=ce&level="+level, "allgames.html", "cssExpert")
             });
@@ -345,18 +327,6 @@ try {
     console.log(error);
 }
 
-function buildLevel(...lvlData){
-    lvlData = lvlData[0];
-    const input = `<input type="text" name="html" id="level${lvlData.lvlName}-html"
-    class="input-zone">`;
-    lvlName.innerText = lvlData.lvlName;
-    categoryName.innerText = lvlData.categoryName;
-    description.innerHTML = lvlData.lvlDescription;
-    textZone.innerHTML = lvlData.lvlTemplate.split("[cod]").join(input) + textZone.innerHTML;
-    const image = `<img src="../../public/images/${lvlData.lvlImg}" alt="">`;
-    imgSeeDefault.innerHTML = image;
-}
-
 function getCategoryAndLevel(){
     const datas = {};
     location.href.split('?')[1].split('&').forEach(
@@ -385,7 +355,6 @@ function checkLevel(toLower, toHigher, category){
 }
 
 function goToLevel(){
-    //categoryChosen
     for(let i=0;i<toLevels.length;i++){
         toLevels[i].addEventListener("click", ()=>{
             let level = toLevels[i].getAttribute("level");
@@ -393,12 +362,10 @@ function goToLevel(){
         })
     }
 }
-///////////////////////////////
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.level-at')) {
       let dropdowns = document.getElementsByClassName("dropdown-content");

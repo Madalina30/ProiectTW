@@ -15,7 +15,6 @@ let cssCat = [
 
 buildCategry(htmlCatZone, htmlCat);
 buildCategry(cssCatZone, cssCat);
-//TODO: o sa se foloseasca si la allgames: levels done: x not completed/completed
 
 async function buildCategry(catZone, catData){
     const result = await fetch('../models/game.json').then(data=>data.json()).then(data=>data);
