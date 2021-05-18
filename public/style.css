@@ -311,7 +311,11 @@ nav {
 } 
 
 .btn__show {
-    
+    background-color: #6eceff;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 /* contact us */

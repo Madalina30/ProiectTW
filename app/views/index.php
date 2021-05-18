@@ -237,8 +237,8 @@ function session($key, $default=NULL) {
             </section>
             <section class="div__bullet q-a">
                 <h4> How are the points distributed? </h4>
-                <p> Every level has 100 points and every time you submit 
-                    a wrong answer you will get -10 points from the total left for that level. </p>
+                <p> Every level has 20 points and every time you submit 
+                    a wrong answer you will get -1 point from the total left for that level. </p>
             </section>
             <section class="div__bullet q-a">
                 <h4> Why did we chose the lego theme? </h4>
@@ -283,6 +283,7 @@ function session($key, $default=NULL) {
             <!-- link catre html documentatie -->
             <a href="documentatie.html" style="color:blueviolet">Documentatie</a>
         </p>
+        <button type='button' class='btn__show'> Show more </button>
     </div>
 
     <!-- contact us -->
