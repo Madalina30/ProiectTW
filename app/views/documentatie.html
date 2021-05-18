@@ -166,9 +166,92 @@
         Iar pentru conectarea la baza de date folosim mysqli_connect din php cu datele necesare conectarii la aceasta:host,username db, parola db, nume db.
       </p>
       <H3>Tabelul USERS</H3>
-      <p>Tabelul Users contine doate informatiile necasare pentru utilizatorii aplicatiei. Acesta este populat automat o data cu logarea prin Github iar apoi este actualizat
+      <p>Tabelul Users contine toate informatiile necesare pentru utilizatorii aplicatiei. Acesta este populat automat o data cu logarea prin Github iar apoi este actualizat
         pe parcurs in functie de nivelele completate de utilizator si punctajele acestuia.
       </p>
+      <h4>Structura tabelului USERS:</h4>
+      <pre>
+        <code>
+          -id 
+          -username
+          -link
+          -...
+        </code>
+    </pre>
+    <H3>Tabelul STATISTICS</H3>
+      <p>Tabelul Statistics contine informatii utile pentru determinarea numarului de puncte pentru fiecare utilizator in parte dar si pentru determinarea
+        numarului de nivele rezolvate cu succes. Acest tabel este populat/updatat automat de fiecare data cand un utilizator termina cu succes un nivel.
+      </p>
+      <h4>Structura tabelului STATISTICS:</h4>
+      <pre>
+        <code>
+          -id 
+          -username
+          -link
+          -...
+        </code>
+    </pre>
+      <h3>Securitatea bazei de date</h3>
+      <p>
+        Pentru a preveni SQL Injections, toate operatiile pe baza de date folosesc Prepared Statements.
+      </p>
+    </section>
+
+    <section id="api">
+      <h2>API-ul utilizat</h2>
+      <pre>
+        <code>
+          <?php 
+          header('Content-Type: text/plain');
+          error_reporting(0);
+          ini_set('display_errors', 0);
+          $level = isset($_GET['lvl'])?$_GET['lvl']:0;
+
+          $category = "";
+          try{
+              $category = $_GET['cat'];
+          }catch(Exception $e){
+              $category = "hb";
+          }
+
+
+          switch($category){
+              case "hb":
+                  $selected_category = "htmlBeginner";
+                  break;
+              case "hi":
+                  $selected_category = "htmlIntermediate";
+                  break;
+              case "he":
+                  $selected_category = "htmlExpert";
+                  break;
+              case "cb":
+                  $selected_category = "cssBeginner";
+                  break;
+              case "ci":
+                  $selected_category = "cssIntermediate";
+                  break;
+              case "ce":
+                  $selected_category = "cssExpert";
+                  break;
+              default:
+                  $selected_category = "htmlBeginner";
+          }
+          $gameDataFile = file_get_contents("../models/game.json");
+          $gameJson = json_decode($gameDataFile, true);
+          $maxLevel = count($gameJson[$selected_category]);
+          $gameData =  $gameJson[$selected_category][$level];
+          if($gameData['lvlAnswers'] == null){
+              echo json_encode(array("status"=>'ok', "message"=>'no data to show'));
+          }else{
+              $levelDescription = $gameData["lvlDescription"];
+              $levelAnswers = $gameData["lvlAnswers"];
+              $levelTemplate = $gameData["lvlTemplate"];
+              echo json_encode(array("status"=>'ok', "description"=>$levelDescription, "answers"=>$levelAnswers));
+          }
+          ?>
+        </code>
+      </pre>
     </section>
     
     <section id="interfata-cu-utilizatorul">
@@ -178,6 +261,7 @@
 
             Prima pagina a platformei Web este pagina de autentificare ce contine un buton de autentificare/inregistrare. Dupa autentificare, utilizatorii sunt redirectionati catre pagina principala, de unde pot naviga ulterior in pagina de jocuri, pagina contului si pagina de statistici.
           </p>
+
     </section>
 
     <section id="interfata-pagina-autentificare">
