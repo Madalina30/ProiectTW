@@ -31,6 +31,9 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
             <a href="statistics.php" class="btn-fill btn-statistics">
                     Statistics
             </a>
+            <a href="personalstatistics.php" class="btn-fill btn-games">
+                    My statistics 
+                </a>
         </div>
         <div class="icons-right">
             <a class="btn-profile" href="profile.php">
@@ -44,7 +47,8 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
                 <div class="all-elements">
                     <a href="#"> Home </a> 
                     <a href="allgames.php"> Games </a> 
-                    <a href="statistics.php"> Statistics </a> 
+                    <a href="statistics.php"> Statistics </a>
+                    <a href="personalstatistics.php">My Statistics</a> 
                     <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>

@@ -92,7 +92,7 @@
         Utilizatorii sunt supusi unor provocari pentru a salva super-eroii LEGO si a construi impreuna cu acestia regatul LEGO.
       </p>
       <p>
-        Link site: <a href="https://lego-htmlcss.netlify.app">https://lego-htmlcss.netlify.app</a>
+        Link site: <a href="https://lego-hmlcss.000webhostapp.com/">https://lego-hmlcss.000webhostapp.com/</a>
       </p>
     </section>
     
@@ -162,8 +162,8 @@
     <section id="database">
       <h2>Baza de date</h2>
       <p>Pentru stocarea informatiilor am folosit o baza de date controlata prin phpmyadmin din panelul de control al serviciul de hostare utilizat.
-        Baza de date contine 3 tabele: USERS, STATISTICS, ....
-        Iar pentru conectarea la baza de date folosim mysqli_connect din php cu datele necesare conectarii la aceasta:host,username db, parola db, nume db.
+        Baza de date contine 2 tabele: USERS si STATISTICS.
+        Pentru conectarea la baza de date folosim mysqli_connect din php cu datele necesare conectarii la aceasta: host, username db, parola db, nume db.
       </p>
       <H3>Tabelul USERS</H3>
       <p>Tabelul Users contine toate informatiile necesare pentru utilizatorii aplicatiei. Acesta este populat automat o data cu logarea prin Github iar apoi este actualizat
@@ -172,10 +172,25 @@
       <h4>Structura tabelului USERS:</h4>
       <pre>
         <code>
-          -id 
-          -username
-          -link
-          -...
+          - id 
+          - oauth_provider
+          - oauth_uid
+          - name
+          - username
+          - email
+          - location
+          - picture
+          - link
+          - created
+          - modified
+          - bHTML_lvl
+          - iHTML_lvl
+          - eHTMLlvl
+          - HTML_points
+          - bCSS_lvl
+          - iCSS_lvl
+          - eCSS_lvl
+          - CSS_points
         </code>
     </pre>
     <H3>Tabelul STATISTICS</H3>
@@ -185,10 +200,11 @@
       <h4>Structura tabelului STATISTICS:</h4>
       <pre>
         <code>
-          -id 
-          -username
-          -link
-          -...
+          - id 
+          - username
+          - date
+          - levels
+          - points
         </code>
     </pre>
       <h3>Securitatea bazei de date</h3>
@@ -201,7 +217,7 @@
       <h2>API-ul utilizat</h2>
       <pre>
         <code>
-          <?php 
+          &lt;?php 
           header('Content-Type: text/plain');
           error_reporting(0);
           ini_set('display_errors', 0);
