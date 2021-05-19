@@ -100,6 +100,159 @@
       <h2>Arhitectura aplicației</h2>
       <p>Din punct de vedere arhitectural, platforma respecta MVC.</p>
     </section>
+
+    <section id="configuration">
+      <h2>Configurarea Aplicatiei</h2>
+      <p>
+        Pentru configurarea aplicatiei folosim o serie de variabile ce contin datele confidentiale utilizate pentru conectarea la baza de date, activarea API-ului de conectare 
+        prin Github dar si pentru retinerea informatiilor specifice fiecarui utilizator conectat.
+      </p>
+    </section>
+
+    <section id="social-media-connection">
+      <h2>Conectarea cu retelele sociale-Github</h2>
+      <p>Pentru a accesa beneficiile aplicatiei web developate, utilizatorii trebuie sa se conecteze prin github folosind mail-ul si parola corespunzatoare.
+      La apasarea butonului de login, utilizatorul este redirectionat pe o pagina noua unde ii este ceruta permisiunea de a se conecta prin Github.
+      Daca datele sunt corecte, utilizatorului i se atribuie prin intermediul API-ului un cod.
+      Odata obtinut acest cod, prin php se face un POST la https://github.com/login/oauth/access_token cu datele necesare si se returneaza
+      un access token, care este folosit apoi pentru a face un GET la https://api.github.com/user pentru a prelua
+      datele publice ale utilizatorului. Dupa ce avem datele utilizatorului, se verifica baza de date pentru a valida daca username-ul există deja, 
+      iar in caz contrar se adauga un utilizator nou. In urma acestui proces, este setat în $_SESSION access token-ul corespunzator.
+      In cazul in care un utilizator s-a conectat deja o data, acesta ramane memorat si la urmatoarea accesare a aplicatiei, nu va mai fi nevoie sa se logheze.
+    </p>
+    <p>Codul utilizat pentru verificarea existentei unui utilizator, respectiv adaugarea acestuia.</p>
+    <pre>
+    <code>
+      function checkUser($userData = array()){
+        if(!empty($userData)){
+            // Check whether user data already exists in database
+            $prevQuery = "SELECT * FROM ".$this->userTbl." WHERE oauth_provider = '".$userData['oauth_provider']."' 
+            AND oauth_uid = '".$userData['oauth_uid']."'";
+            $prevResult = $this->db->query($prevQuery);
+            if($prevResult->num_rows > 0){
+                // Update user data if already exists
+                $query = "UPDATE ".$this->userTbl." SET name = '".$userData['name']."', username = '".$userData['username']."',
+                 email = '".$userData['email']."', location = '".$userData['location']."', picture = '".$userData['picture']."',
+                 link = '".$userData['link']."', modified = NOW() 
+                 WHERE oauth_provider = '".$userData['oauth_provider']."' AND oauth_uid = '".$userData['oauth_uid']."'";
+                $update = $this->db->query($query);
+            }else{
+                // Insert user data
+                $query = "INSERT INTO ".$this->userTbl." SET oauth_provider = '".$userData['oauth_provider']."', 
+                 oauth_uid = '".$userData['oauth_uid']."',name = '".$userData['name']."', username = '".$userData['username']."',
+                 email = '".$userData['email']."', location = '".$userData['location']."',
+                 picture = '".$userData['picture']."', link = '".$userData['link']."', created = NOW(), modified = NOW()";
+                $insert = $this->db->query($query);
+            }
+            
+            // Get the user data from the database
+            $result = $this->db->query($prevQuery);
+            $userData = $result->fetch_assoc();
+        }
+        return $userData;
+      }
+    </code>
+    </pre>
+    <p>
+      Conectarea cu GitHub a fost făcută conform documentației oficiale (Basics of authentication - Github).
+    </p>
+
+    </section>
+
+    <section id="database">
+      <h2>Baza de date</h2>
+      <p>Pentru stocarea informatiilor am folosit o baza de date controlata prin phpmyadmin din panelul de control al serviciul de hostare utilizat.
+        Baza de date contine 3 tabele: USERS, STATISTICS, ....
+        Iar pentru conectarea la baza de date folosim mysqli_connect din php cu datele necesare conectarii la aceasta:host,username db, parola db, nume db.
+      </p>
+      <H3>Tabelul USERS</H3>
+      <p>Tabelul Users contine toate informatiile necesare pentru utilizatorii aplicatiei. Acesta este populat automat o data cu logarea prin Github iar apoi este actualizat
+        pe parcurs in functie de nivelele completate de utilizator si punctajele acestuia.
+      </p>
+      <h4>Structura tabelului USERS:</h4>
+      <pre>
+        <code>
+          -id 
+          -username
+          -link
+          -...
+        </code>
+    </pre>
+    <H3>Tabelul STATISTICS</H3>
+      <p>Tabelul Statistics contine informatii utile pentru determinarea numarului de puncte pentru fiecare utilizator in parte dar si pentru determinarea
+        numarului de nivele rezolvate cu succes. Acest tabel este populat/updatat automat de fiecare data cand un utilizator termina cu succes un nivel.
+      </p>
+      <h4>Structura tabelului STATISTICS:</h4>
+      <pre>
+        <code>
+          -id 
+          -username
+          -link
+          -...
+        </code>
+    </pre>
+      <h3>Securitatea bazei de date</h3>
+      <p>
+        Pentru a preveni SQL Injections, toate operatiile pe baza de date folosesc Prepared Statements.
+      </p>
+    </section>
+
+    <section id="api">
+      <h2>API-ul utilizat</h2>
+      <pre>
+        <code>
+          <?php 
+          header('Content-Type: text/plain');
+          error_reporting(0);
+          ini_set('display_errors', 0);
+          $level = isset($_GET['lvl'])?$_GET['lvl']:0;
+
+          $category = "";
+          try{
+              $category = $_GET['cat'];
+          }catch(Exception $e){
+              $category = "hb";
+          }
+
+
+          switch($category){
+              case "hb":
+                  $selected_category = "htmlBeginner";
+                  break;
+              case "hi":
+                  $selected_category = "htmlIntermediate";
+                  break;
+              case "he":
+                  $selected_category = "htmlExpert";
+                  break;
+              case "cb":
+                  $selected_category = "cssBeginner";
+                  break;
+              case "ci":
+                  $selected_category = "cssIntermediate";
+                  break;
+              case "ce":
+                  $selected_category = "cssExpert";
+                  break;
+              default:
+                  $selected_category = "htmlBeginner";
+          }
+          $gameDataFile = file_get_contents("../models/game.json");
+          $gameJson = json_decode($gameDataFile, true);
+          $maxLevel = count($gameJson[$selected_category]);
+          $gameData =  $gameJson[$selected_category][$level];
+          if($gameData['lvlAnswers'] == null){
+              echo json_encode(array("status"=>'ok', "message"=>'no data to show'));
+          }else{
+              $levelDescription = $gameData["lvlDescription"];
+              $levelAnswers = $gameData["lvlAnswers"];
+              $levelTemplate = $gameData["lvlTemplate"];
+              echo json_encode(array("status"=>'ok', "description"=>$levelDescription, "answers"=>$levelAnswers));
+          }
+          ?>
+        </code>
+      </pre>
+    </section>
     
     <section id="interfata-cu-utilizatorul">
         <h2>Interfața cu utilizatorul</h2>
@@ -108,6 +261,7 @@
 
             Prima pagina a platformei Web este pagina de autentificare ce contine un buton de autentificare/inregistrare. Dupa autentificare, utilizatorii sunt redirectionati catre pagina principala, de unde pot naviga ulterior in pagina de jocuri, pagina contului si pagina de statistici.
           </p>
+
     </section>
 
     <section id="interfata-pagina-autentificare">
