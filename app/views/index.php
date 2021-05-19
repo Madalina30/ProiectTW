@@ -260,8 +260,7 @@ function session($key, $default=NULL) {
             <section class="ioan">
                 <img src="../../public/images/ioan.svg" alt="Ioan">
                 <h4> Ioan Puiu </h4>
-                <p> "Great people do things before they are ready.
-                    Just do it!" </p>
+                <p> "Your passion is waiting for your courage to catch up." </p>
             </section>
             <section class="emi">
                 <img src="../../public/images/emi.svg" alt="Emi">
