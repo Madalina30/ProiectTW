@@ -31,6 +31,9 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
             <a href="statistics.php" class="btn-fill btn-statistics">
                     Statistics
             </a>
+            <a href="personalstatistics.php" class="btn-fill btn-games">
+                    My statistics 
+                </a>
         </div>
         <div class="icons-right">
             <a class="btn-profile" href="profile.php">
