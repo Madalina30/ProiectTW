@@ -1,5 +1,5 @@
 <?php 
-header('Content-Type: text/plain');
+header('Content-Type: application/json');
 error_reporting(0);
 ini_set('display_errors', 0);
 $level = isset($_GET['lvl'])?$_GET['lvl']:0;
