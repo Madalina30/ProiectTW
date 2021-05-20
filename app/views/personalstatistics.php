@@ -128,7 +128,7 @@ $last30 = $for30->fetch_assoc();
             <img class="exit" src="../../public/images/menu.svg" alt="m">
             <div class="nav__items">
                 <div class="all-elements">
-                    <a href="#"> Home </a> 
+                <a href="index.php"> Home </a> 
                     <a href="allgames.php"> Games </a> 
                     <a href="statistics.php"> Statistics </a> 
                     <a href="personalstatistics.php">My Statistics</a>
