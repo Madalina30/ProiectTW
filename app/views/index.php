@@ -294,6 +294,7 @@ function session($key, $default=NULL) {
         </div>
     </div>
     <script src="../../public/assets/side-menu.js"></script>
+    <script src="../../public/assets/showMore.js"></script>
 </body>
 
 
