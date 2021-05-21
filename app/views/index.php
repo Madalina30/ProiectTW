@@ -280,7 +280,7 @@ function session($key, $default=NULL) {
         </p>
         <p>Here is our documentation for this amazing project: 
             <!-- link catre html documentatie -->
-            <a href="documentatie.html" style="color:blueviolet">Documentatie</a>
+            <a href="../../docs/documentatie.html" style="color:blueviolet">Documentatie</a>
         </p>
         <button type='button' class='btn__show'> Show more </button>
     </div>

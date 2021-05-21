@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>LeHS (Learn HTML & CSS)</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+    <style>
+      body{
+        padding: 0 15%;
+        background-color: rgb(224, 224, 224);
+      }
+
+      p{
+        text-align:justify;
+      }
+
+      a {
+        color: purple;
+        text-decoration: none;
+      }
+
+      code{
+	text-align:justify;
+	}
+
+    </style>
+  </head>
+
+  <body prefix="schema: http://schema.org">
+    
+    <header>
+      <h1 style="text-align:center">Documentatie - LeHS (Learn HTML & CSS)</h1>
+    </header>
+    
+    <div role="contentinfo">
+      <dl>
+        <dt>Autori</dt>
+        <dd typeof="sa:ContributorRole" property="schema:author">
+          <span typeof="schema:Person">
+            <meta property="schema:givenName" content="Madalina">
+						<meta property="schema:familyName" content="Banica">
+            <a href="https://github.com/Madalina30">
+              <span property="schema:name">Madalina Banica</span>
+            </a>
+          </span>
+        </dd>
+        <dd typeof="sa:ContributorRole" property="schema:author">
+          <span typeof="schema:Person">
+            <meta property="schema:givenName" content="Ionut">
+						<meta property="schema:familyName" content="Puiu">
+            <a href="https://github.com/IoanPuiu">
+              <span property="schema:name">Ionut Puiu</span>
+            </a>
+          </span>
+        </dd>
+        <dd typeof="sa:ContributorRole" property="schema:author">
+          <span typeof="schema:Person">
+            <meta property="schema:givenName" content="George Emanuel">
+            <meta property="schema:familyName" content="Hurmuz">
+            <a href="https://github.com/Emanuel-G-H">
+              <span property="schema:name">George Emanuel Hurmuz</span>
+            </a>
+          </span>
+        </dd>
+        <dt>Licență</dt>
+        <dd>
+          <a href="https://opensource.org/licenses/MIT">MIT</a>
+        </dd>
+      </dl>
+    </div>
+    
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Cerință</h2>
+      <p>
+        Sa se creeze un sistem Web ce ajuta diverse categorii de persoane (de la incepatori la experti) sa invete, exerseze si aprofundeze cunostinte referitoare la HTML si CSS.
+
+        Dupa autentificarea cu un cont disponibil pe o retea sociala la alegere (minimal, GitHub), aplicatia va pune la dispozitia utilizatorilor, printr-o interfata atractiva, nivele cu diverse provocari (eventual, insotite de explicatii ce constau din anumite sarcini (e.g., scriere de cod-sursa, raspunsuri la teste) pentru a trece mai departe.
+
+        Aplicatia va salva progresul fiecarui utilizator, acesta putand, ulterior, sa continue de unde a ramas. In plus, se vor oferi statistici referitoare la clasamentele globale pentru fiecare utilizator in parte si vizand nivelurile de dificultate. De asemenea, solutia va expune si un API REST/GraphQL prin care alte aplicatii vor putea prelua in format JSON sau XML atat provocarile, cat si raspunsurile corecte.
+      </p>
+      <p>Se vor avea in vedere aspecte precum internationalizarea si accesibilitatea.
+      </p>
+        <p>Inspiratie: Flexbox Froggy & CSS Grid Garden
+      </p>
+    </section>
+    
+    <section id="introduction" role="doc-introduction">
+      <h2>Introducere</h2>
+      <p>
+        Prioritar dezvoltarii platformei Web a fost atingerea scopului didactic pe care aceasta si-l propune. Pentru ca 
+        experienta utilizatorilor sa fie intr-adevar una placuta, interfata urmareste o tematica inspirata din lumea <a href="https://www.lego.com/en-us">Lego</a>,
+        iar fiecare tip de nivel (HTML
+        sau CSS) contine un scenariu Lego pe care utilizatorii
+        trebuie sa il parcurga pentru a avansa atat in universul Lego, cat si in universul programarii.
+        Utilizatorii sunt supusi unor provocari pentru a salva super-eroii LEGO si a construi impreuna cu acestia regatul LEGO.
+      </p>
+      <p>
+        Link site: <a href="https://lego-hmlcss.000webhostapp.com/">https://lego-hmlcss.000webhostapp.com/</a>
+      </p>
+    </section>
+    
+    <section id="architecture">
+      <h2>Arhitectura aplicației</h2>
+      <p>Din punct de vedere arhitectural, platforma respecta MVC.</p>
+    </section>
+
+    <section id="configuration">
+      <h2>Configurarea Aplicatiei</h2>
+      <p>
+        Pentru configurarea aplicatiei folosim o serie de variabile ce contin datele confidentiale utilizate pentru conectarea la baza de date, activarea API-ului de conectare 
+        prin Github dar si pentru retinerea informatiilor specifice fiecarui utilizator conectat.
+      </p>
+    </section>
+
+    <section id="social-media-connection">
+      <h2>Conectarea cu retelele sociale-Github</h2>
+      <p>Pentru a accesa beneficiile aplicatiei web developate, utilizatorii trebuie sa se conecteze prin github folosind mail-ul si parola corespunzatoare.
+      La apasarea butonului de login, utilizatorul este redirectionat pe o pagina noua unde ii este ceruta permisiunea de a se conecta prin Github.
+      Daca datele sunt corecte, utilizatorului i se atribuie prin intermediul API-ului un cod.
+      Odata obtinut acest cod, prin php se face un POST la https://github.com/login/oauth/access_token cu datele necesare si se returneaza
+      un access token, care este folosit apoi pentru a face un GET la https://api.github.com/user pentru a prelua
+      datele publice ale utilizatorului. Dupa ce avem datele utilizatorului, se verifica baza de date pentru a valida daca username-ul există deja, 
+      iar in caz contrar se adauga un utilizator nou. In urma acestui proces, este setat în $_SESSION access token-ul corespunzator.
+      In cazul in care un utilizator s-a conectat deja o data, acesta ramane memorat si la urmatoarea accesare a aplicatiei, nu va mai fi nevoie sa se logheze.
+    </p>
+    <p>Codul utilizat pentru verificarea existentei unui utilizator, respectiv adaugarea acestuia.</p>
+    <pre>
+    <code style="text-align">
+      function checkUser($userData = array()){
+        if(!empty($userData)){
+            // Check whether user data already exists in database
+            $prevQuery = "SELECT * FROM ".$this->userTbl." WHERE oauth_provider = '".$userData['oauth_provider']."' 
+            AND oauth_uid = '".$userData['oauth_uid']."'";
+            $prevResult = $this->db->query($prevQuery);
+            if($prevResult->num_rows > 0){
+                // Update user data if already exists
+                $query = "UPDATE ".$this->userTbl." SET name = '".$userData['name']."', username = '".$userData['username']."',
+                 email = '".$userData['email']."', location = '".$userData['location']."', picture = '".$userData['picture']."',
+                 link = '".$userData['link']."', modified = NOW() 
+                 WHERE oauth_provider = '".$userData['oauth_provider']."' AND oauth_uid = '".$userData['oauth_uid']."'";
+                $update = $this->db->query($query);
+            }else{
+                // Insert user data
+                $query = "INSERT INTO ".$this->userTbl." SET oauth_provider = '".$userData['oauth_provider']."', 
+                 oauth_uid = '".$userData['oauth_uid']."',name = '".$userData['name']."', username = '".$userData['username']."',
+                 email = '".$userData['email']."', location = '".$userData['location']."',
+                 picture = '".$userData['picture']."', link = '".$userData['link']."', created = NOW(), modified = NOW()";
+                $insert = $this->db->query($query);
+            }
+            
+            // Get the user data from the database
+            $result = $this->db->query($prevQuery);
+            $userData = $result->fetch_assoc();
+        }
+        return $userData;
+      }
+    </code>
+    </pre>
+    <p>
+      Conectarea cu GitHub a fost făcută conform documentației oficiale (Basics of authentication - Github).
+    </p>
+
+    </section>
+
+    <section id="database">
+      <h2>Baza de date</h2>
+      <p>Pentru stocarea informatiilor am folosit o baza de date controlata prin phpmyadmin din panelul de control al serviciul de hostare utilizat.
+        Baza de date contine 2 tabele: USERS si STATISTICS.
+        Pentru conectarea la baza de date folosim mysqli_connect din php cu datele necesare conectarii la aceasta: host, username db, parola db, nume db.
+      </p>
+      <H3>Tabelul USERS</H3>
+      <p>Tabelul Users contine toate informatiile necesare pentru utilizatorii aplicatiei. Acesta este populat automat o data cu logarea prin Github iar apoi este actualizat
+        pe parcurs in functie de nivelele completate de utilizator si punctajele acestuia.
+      </p>
+      <h4>Structura tabelului USERS:</h4>
+      <pre>
+        <code>
+          - id 
+          - oauth_provider
+          - oauth_uid
+          - name
+          - username
+          - email
+          - location
+          - picture
+          - link
+          - created
+          - modified
+          - bHTML_lvl
+          - iHTML_lvl
+          - eHTMLlvl
+          - HTML_points
+          - bCSS_lvl
+          - iCSS_lvl
+          - eCSS_lvl
+          - CSS_points
+        </code>
+    </pre>
+    <H3>Tabelul STATISTICS</H3>
+      <p>Tabelul Statistics contine informatii utile pentru determinarea numarului de puncte pentru fiecare utilizator in parte dar si pentru determinarea
+        numarului de nivele rezolvate cu succes. Acest tabel este populat/updatat automat de fiecare data cand un utilizator termina cu succes un nivel.
+      </p>
+      <h4>Structura tabelului STATISTICS:</h4>
+      <pre>
+        <code>
+          - id 
+          - username
+          - date
+          - levels
+          - points
+        </code>
+    </pre>
+      <h3>Securitatea bazei de date</h3>
+      <p>
+        Pentru a preveni SQL Injections, toate operatiile pe baza de date folosesc Prepared Statements.
+      </p>
+    </section>
+
+    <section id="api">
+      <h2>API-ul utilizat</h2>
+      	<p> API REST-ul creat are rolul de a prelua informatii dintr-un json precum enuntul unui nivel dintr-un joc si raspunsul 
+	(cu tot cu un template pe care e pus acel răspuns). Informatiile sunt preluate din url in functie de categoria jocului si 
+	de nivelul pe care il alege un utilizator(iar daca categoria sau nivelul nu corespunde cu ce este in json, 
+	o sa se afiseze "no data to show").
+	Codul utilizat se gaseste in app/views/API.php si arata astfel:</p>
+	
+	<pre>
+        <code>
+          &lt;?php 
+          header('Content-Type: text/plain');
+          error_reporting(0);
+          ini_set('display_errors', 0);
+          $level = isset($_GET['lvl'])?$_GET['lvl']:0;
+
+          $category = "";
+          try{
+              $category = $_GET['cat'];
+          }catch(Exception $e){
+              $category = "hb";
+          }
+
+
+          switch($category){
+              case "hb":
+                  $selected_category = "htmlBeginner";
+                  break;
+              case "hi":
+                  $selected_category = "htmlIntermediate";
+                  break;
+              case "he":
+                  $selected_category = "htmlExpert";
+                  break;
+              case "cb":
+                  $selected_category = "cssBeginner";
+                  break;
+              case "ci":
+                  $selected_category = "cssIntermediate";
+                  break;
+              case "ce":
+                  $selected_category = "cssExpert";
+                  break;
+              default:
+                  $selected_category = "htmlBeginner";
+          }
+          $gameDataFile = file_get_contents("../models/game.json");
+          $gameJson = json_decode($gameDataFile, true);
+          $maxLevel = count($gameJson[$selected_category]);
+          $gameData =  $gameJson[$selected_category][$level];
+          if($gameData['lvlAnswers'] == null){
+              echo json_encode(array("status"=>'ok', "message"=>'no data to show'));
+          }else{
+              $levelDescription = $gameData["lvlDescription"];
+              $levelAnswers = $gameData["lvlAnswers"];
+              $levelTemplate = $gameData["lvlTemplate"];
+              echo json_encode(array("status"=>'ok', "description"=>$levelDescription,
+              "answers"=>$levelAnswers));
+          }
+          ?>
+        </code>
+      </pre>
+    </section>
+    
+    <section id="interfata-cu-utilizatorul">
+        <h2>Interfața cu utilizatorul</h2>
+          <p>
+            Platforma Web ofera o experienta placuta utilizatorilor, abordand o tema inspirata din lumea Lego (vezi mai multe detalii in <a href="#introduction">Introducere</a>) ce are scopul de a starni interesul, dar si creativitatea.
+
+            Prima pagina a platformei Web este pagina de autentificare ce contine un buton de autentificare/inregistrare. Dupa autentificare, utilizatorii sunt redirectionati catre pagina principala, de unde pot naviga ulterior in pagina de jocuri, pagina contului si pagina de statistici.
+          </p>
+
+    </section>
+
+    <section id="interfata-pagina-autentificare">
+        <h4>Interfata paginii de autentificare</h4>
+
+        <p>
+          Pagina de autentificare intampina utilizatorii cu titlul platformei web (LEGO HTML & CSS), o scurta descriere ce incurajeaza utilizatorii sa foloseasca platforma si un buton de autentificare ce se foloseste de conturi  
+            <span typeof="organization" resource="https://github.com/"><meta property="schema:name" content="GitHub">GitHub</span> ce permit utilizatorilor sa isi creeze/acceseze conturile. 
+        </p>
+
+        <p>
+          In urma autentificarii, daca aceasta are loc cu succes, utilizatorul este redirectionat catre pagina Home a platformei web.
+        </p>
+    </section>
+
+    <section id="interfata-pagina-Home">
+        <h4>Interfata paginii Home</h4>
+        <p>
+          Pagina Home este punctul de legatura al tuturor paginilor oferite de platforma.
+          Pentru a ajunge in pagina Home, utilizatorii trebuie sa se autentifice cu succes in pagina de autentificare. O data autentificati, acestia pot accesa pagina Home apasand click pe logo-ul platformei web (aflat in antet).
+          Pagina Home este construita astfel incat experienta de navigare sa fie una cat mai placuta, cuprizand diverse sectiuni ce au rolul de a ajuta utilizatorii. 
+        </p>
+    </section>
+
+    <section id="interfata-pagina-games">
+      <h4>Interfata paginii Games</h4>
+      <p>Pagina Games este o pagina ce contine doua subpagini dedicate nivelelor HTML dar si CSS. Pentru ca intreaga platforma este creata astfel incat sa fie compatibila tuturor device-urilor ce o utilizeaza, pozitionarea subpaginilor se face fie vertical, fie orizontal. </p>
+    </section>
+
+    <section id="interfata-nivele">
+      <h4>Interfata nivele</h4>
+      <p>Pagina unui nivel, fie HTML, fie CSS, contine numarul nivelului, descrierea nivelului, un spatiu de completare si rezolvare al nivelului si o sectiune ce surprinde partea practica a nivelelor. In functie de rezolvarea utilizatorilor, acestia pot trece sau nu la nivele mai avansate. In cazul in care o rezolvare este corecta, platforma va puncta utilizatorul, va efectua modificarile din sectiunea practica-grafica, si va debloca urmatorul nivel.</p>
+    </section>
+
+    <section id="interfata-statistics">
+        <h4>Interfata paginii Statistics</h4>
+        <p>
+          Pagina Statistics este pagina ce gazduieste clasamentul utilizatorilor. Clasamentul acesta se face in functie de punctele castigate in urma efecturarii nivelelelor de pe pagina Games. 
+          Clasamentul este facut pentru fiecare sectiune:
+        </p>
+          <ul>
+            <li>Clasamentul general;</li>
+            <li>Clasamentul pentru sectiunea CSS;</li>
+            <li>Clasamentul pentru sectiunea HTML;</li>
+          </ul>
+        <p>
+          Pentru fiecare utilizator din clasament, se afiseaza locul, numele utilizatorului si punctajul acestuia.
+        </p>
+    </section>
+
+     <section id="interfata-my-statistics">
+        <h4>Interfata paginii My Statistics</h4>
+        <p>
+          Spre deosebire de pagina cu statistici, pagina My Statistics contine informatii doar pentru evolutia utilizatorului
+	prezent logat pe site. Informatiile pe care le prezinta sunt numarul de puncte total, numarul de puncte cumulate la CSS dar si HTML, cat si procentul de nivele rezolvate cu succes din numarul total de nivele, dar si
+	numarul de nivele rezolvate pe parcursul zilei curente, zilei antecedente si saptamanii antecedente.
+        </p>
+    </section>
+    
+    <section id="interfata-profil">
+        <h4>Interfata paginii de profil</h4>
+
+        <p>Pagina de profil afiseaza diverse informatii despre utilizator, precum::</p>
+        <ul>
+          <li>Imaginea de profil</li>
+          <li>Numele de utilizator, identic cu cel de pe GitHub</li>
+          <li>Numarul de puncte primite atat la HTML cat si la CSS, dar si numarul total de puncte</li>
+          <li>Numarul de nivele trecute cu succes atat la HTML cat si la CSS</li>
+          <li>un buton de Logout</li>
+        </ul> 
+    </section>
+
+  </body>
+</html>
