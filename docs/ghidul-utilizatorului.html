@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>LeHS (Learn HTML & CSS)</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+    <style>
+      body{
+        padding: 0 20%;
+        background-color: rgb(224, 224, 224);
+      }
+
+      p{
+        text-align:justify;
+      }
+
+      a {
+        color: purple;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body prefix="schema: http://schema.org">
+        <header>
+      <h1 style="text-align:center">Ghidul utilizatorului - LeHS (Learn HTML & CSS)</h1>
+    </header>
+    
+    <div role="contentinfo">
+      <dl>
+        <dt>Autori</dt>
+        <dd typeof="sa:ContributorRole" property="schema:author">
+          <span typeof="schema:Person">
+            <meta property="schema:givenName" content="Madalina">
+						<meta property="schema:familyName" content="Banica">
+            <a href="https://github.com/Madalina30">
+              <span property="schema:name">Madalina Banica</span>
+            </a>
+          </span>
+        </dd>
+        <dd typeof="sa:ContributorRole" property="schema:author">
+          <span typeof="schema:Person">
+            <meta property="schema:givenName" content="Ionut">
+						<meta property="schema:familyName" content="Puiu">
+            <a href="https://github.com/IoanPuiu">
+              <span property="schema:name">Ionut Puiu</span>
+            </a>
+          </span>
+        </dd>
+        <dd typeof="sa:ContributorRole" property="schema:author">
+          <span typeof="schema:Person">
+            <meta property="schema:givenName" content="George Emanuel">
+            <meta property="schema:familyName" content="Hurmuz">
+            <a href="https://github.com/Emanuel-G-H">
+              <span property="schema:name">George Emanuel Hurmuz</span>
+            </a>
+          </span>
+        </dd>
+        <dt>Licență</dt>
+        <dd>
+          <a href="https://opensource.org/licenses/MIT">MIT</a>
+        </dd>
+      </dl>
+    </div>
+    <section id="connecting">
+      <h2>Conectarea</h2>
+      <section id="user-connection">
+        <h3>Conectarea utilizatorilor</h3>
+        <p>
+          Pentru a accesa serviciile oferite de aplicatia Web Lego-HtmlCSS, trebuie sa va conectati utilizand Github. O data inregistrati in aplicatie, nu va mai fi nevoie sa va conectati ulterior, accesand direct serviciile oferite. 
+        </p>
+        <p>
+          Dupa apasarea butonului de login veti fi redirectionati catre o pagina ce contine un form care va solicita informatiile necesare conectarii voastre prin Github. Completati acele casute si apoi dati login.
+          Daca inregistrarea are loc cu succes, veti fi redirectionati catre pagina principal.
+        </p>
+      </section>
+      <section id="app-connection">
+        <h3>Utilizarea API REST-ului</h3>
+        <p> Pentru a accesa intrebarile si raspunsurile nivelelor oferite de catre aplicatie web in cauza, utilizatorii se pot folosi de un link special creat pentru api rest-ul aplicatiei: 
+        https://lego-hmlcss.000webhostapp.com/app/views/API.php?cat=...&lvl=... unde cat poate fi hb,hi,he,cb,ci,ce (HTML,CSS-begginer, intermediate, advanced) iar lvl depinde de categoria initiala solicitata( hb-4,hi-4,he-3,cb-4,ci-6,ce-3).
+      </p>
+      <p>
+        Exemplu de apel: <a href="https://lego-hmlcss.000webhostapp.com/app/views/API.php?cat=he&lvl=2">Html expert, nivelul 2</a>
+      </p>
+      </section>
+    </section>
+    <section id="main-menu">
+      <h2>Meniul principal</h2>
+      <p>
+        Meniul principal este unul usor de utilizat. Acesta contine legaturi pentru a naviga catre pagina cu jocuri, statistici ori pagina profilului utilizatorului conectat. 
+        Pe ecranele mici, meniul este de tip hamburger, in dreapta. 
+        Recomandam citirea documentatiei pentru mai multe detalii.
+      </p>
+      <p>
+        Butoanele din meniul principal functioneaza astfel:
+      </p>
+      <ul>
+        <li>
+          GAMES - trimite utilizatorul pe pagina de jocuri de unde acesta poate accesa nivelele atat pentru CSS, cat si pentru HTML.
+        </li>
+        <li>
+          STATISTICS - trimite utilizator pe pagina de statistici de unde acesta poate observa pozitia lui in intregul clasament al utilizatorilor.
+        </li>
+        <li>
+          My Statistics - trimite utilizatorul pe pagina cu statistici personale unde poate vedea progresul facut in ultimele sesiuni dar si procentul de exercitii finalizate din numarul total de exercitii.
+        </li>
+        <li>
+          PROFILE - trimite utilizatorul pe pagina profilului utilizatorului unde acesta poate sa observe detalii diverse despre punctele pe care le are dar si numarul de nivele efectuate cu succes.
+        </li>
+      </ul>
+    </section>
+    <section id="disconnecting">
+      <h2>Deconectarea</h2>
+      <p>
+        Pentru deconectare, un utilizator trebuie sa mearga pe pagina PROFILE si de acolo sa apese pe butonul LOGOUT.
+      </p>
+    <section id="practicing">
+      <h2>Rezolvarea exercitiilor</h2>
+      <p>
+        Accesare nivelelor se face prin pagina GAMES. Pot fi accesate 3 tipuri de nivele: begginer, intermediate, advanced pentru 2 domenii: CSS si HTML.
+      </p>
+      <p>
+        Structura unui exercitiu pastreaza un template clar definit. In partea din stanga se afla numarul nivelului impreuna cu tipul acestuia si o scurta descriere a probelemei ce trebuie efectuate. Sub descrierea nivelului, se afla un form ce necesita completat pentru a efectua cu succes un nivel. In tot acest timp, in dreapta se afla o interfata grafica ce arata live modificarile efectuate peste formul din stanga.
+      </p>
+      <p>
+        Dupa completarea casutelor, se apasa pe butonul de CHECK VALIDITY pentru a verifica daca varianta propusa este corecta.
+        In cazul in care aceasta este corecta, si asa ar fi bine sa fie, utilizatorul poate fi redirectionat catre urmatorul nivel. Altmiteri, trebuie sa incerce alta varianta.
+      </p>
+      <section id="score">
+        <h3>Calcularea scorului</h3>
+        <p>
+          Scorul este actualizat de fiecare data cand se rezolva corect inca un exercitiu. Actualizarea se face in functie de corectitudinea si viteza raspunsului oferit.
+        </p>
+        <p>
+          Pentru a vedea modificarile, puteti accesa pagina MY STATISTICS ori PROFILE.
+        </p>
+      </section>
+    </section>
+  </body>
+</html>
