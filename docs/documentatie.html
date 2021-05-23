@@ -127,7 +127,7 @@
     </p>
     <p>Codul utilizat pentru verificarea existentei unui utilizator, respectiv adaugarea acestuia.</p>
     <pre>
-    <code style="text-align">
+    <code style="text-align: justify">
       function checkUser($userData = array()){
         if(!empty($userData)){
             // Check whether user data already exists in database
@@ -221,10 +221,11 @@
     <section id="api">
       <h2>API-ul utilizat</h2>
       	<p> API REST-ul creat are rolul de a prelua informatii dintr-un json precum enuntul unui nivel dintr-un joc si raspunsul 
-	(cu tot cu un template pe care e pus acel răspuns). Informatiile sunt preluate din url in functie de categoria jocului si 
-	de nivelul pe care il alege un utilizator(iar daca categoria sau nivelul nu corespunde cu ce este in json, 
-	o sa se afiseze "no data to show").
-	Codul utilizat se gaseste in app/views/API.php si arata astfel:</p>
+      	(cu tot cu un template pe care e pus acel răspuns). Informatiile sunt preluate din url in functie de categoria jocului si 
+      	de nivelul pe care il alege un utilizator(iar daca categoria sau nivelul nu corespunde cu ce este in json, 
+      	o sa se afiseze "no data to show").
+      	Codul utilizat se gaseste in app/views/API.php si arata astfel:
+      </p>
 	
 	<pre>
         <code>
@@ -280,6 +281,12 @@
           ?>
         </code>
       </pre>
+    </section>
+
+    <section id="diagrama-aplicatie">
+      <h2>Diagrama Aplicatiei</h2>
+        <img src="../../docs/proiectTWDiagram.png" width="100%" style="align-items: justify;background-color:rgb(102, 105, 106)">
+         <!-- <img src= proiectTWDiagram.png width="100%" style="align-items: justify;background-color:rgb(102, 105, 106)"> -->
     </section>
     
     <section id="interfata-cu-utilizatorul">
@@ -363,4 +370,11 @@
     </section>
 
   </body>
+  <footer>
+    <section id="copyright">
+      <br>
+      <br>
+      <p style="text-align:center">© 2021 George Emanuel Hurmuz, Madalina Banica, Ionut Puiu</p>
+    </section>
+  </footer>
 </html>
