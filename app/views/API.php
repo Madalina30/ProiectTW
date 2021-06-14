@@ -44,6 +44,6 @@ if($gameData['lvlAnswers'] == null){
     $levelDescription = $gameData["lvlDescription"];
     $levelAnswers = $gameData["lvlAnswers"];
     $levelTemplate = $gameData["lvlTemplate"];
-    echo json_encode(array("status"=>'ok', "description"=>$levelDescription, "answers"=>$levelAnswers));
+    echo json_encode(array("status"=>'ok', "description"=>$levelDescription, "answers"=>$levelAnswers, "template"=>$levelTemplate));
 }
 ?>

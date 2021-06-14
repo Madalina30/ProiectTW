@@ -71,17 +71,6 @@ if(session('access_token')) {
         
         // Put user data into the session
         $_SESSION['userData'] = $userData;
-        
-        // Render Github profile data
-        $output  = '<h2>Github Profile Details</h2>';
-        $output .= '<img src="'.$userData['picture'].'" />';
-        $output .= '<p>ID: '.$userData['oauth_uid'].'</p>';
-        $output .= '<p>Name: '.$userData['name'].'</p>';
-        $output .= '<p>Login Username: '.$userData['username'].'</p>';
-        $output .= '<p>Email: '.$userData['email'].'</p>';
-        $output .= '<p>Location: '.$userData['location'].'</p>';
-        $output .= '<p>Profile Link :  <a href="'.$userData['link'].'" target="_blank">Click to visit GitHub page</a></p>';
-        $output .= '<p>Logout from <a href="logout.php">GitHub</a></p>';
 
         $_SESSION['is_logged'] = 1;
     }else{
@@ -140,7 +129,7 @@ function session($key, $default=NULL) {
             <div class="nav__left">
                 <!-- put btn on img -->
                 <a href="#">
-                    <img class="logo" src="../../public/images/logo.svg" alt="LeHS">
+                    <img class="logo" src="../../public/images/logo.svg" alt="LeHS" height=70px width=70px>
                 </a>
                 <a href="allgames.php" class="btn-fill btn-games">
                     Games 
@@ -154,9 +143,9 @@ function session($key, $default=NULL) {
             </div>
             <div class="icons-right">
                 <a class="btn-profile" href="profile.php">
-                    <img class="profile-button" src="../../public/images/profile.png" alt="">
+                    <img class="profile-button" src="../../public/images/profile.png" alt="" height=35px width=35px>
                 </a>
-                <img class="insta-button" src="../../public/images/instagram.svg" alt="In">
+                <img class="insta-button" src="../../public/images/instagram.svg" alt="In" height=35px width=35px>
             </div>
             <img id="menuButton" src="../../public/images/menu.svg" alt="=">
             <nav class="nav__appear">
@@ -168,9 +157,9 @@ function session($key, $default=NULL) {
                         <a href="statistics.php"> Statistics </a> 
                         <a href="personalstatistics.php">My Statistisc</a>
                         <a class="btn-profile" href="profile.php">
-                            <img class="profile-button" src="../../public/images/profile.png" alt="">
+                            <img class="profile-button" src="../../public/images/profile.png" alt="" height=35px width=35px>
                         </a>
-                        <img class="insta-button" src="../../public/images/instagram.svg" alt="In">
+                        <img class="insta-button" src="../../public/images/instagram.svg" alt="In" height=35px width=35px>
                         
                     </div>
                 
@@ -193,14 +182,14 @@ function session($key, $default=NULL) {
         </h1>
         <div class="div__presentation div__learn-presentation">
             <div class="div__bullet">
-                <img src="../../public/images/levels.svg" alt="Levels">
+                <img src="../../public/images/levels.svg" alt="Levels" height=auto width=auto>
                 <h4>Levels</h4>
                 <p>
                     Lots of challenging levels to go for you to master HTML and CSS!
                 </p>
             </div>
             <div class="div__bullet">
-                <img src="../../public/images/statictics.svg" alt="Statistics">
+                <img src="../../public/images/statictics.svg" alt="Statistics" height=auto width=auto>
                 <h4>Statistics</h4>
                 <p>
                     See the top players and try to beat them!
@@ -215,10 +204,10 @@ function session($key, $default=NULL) {
         </h1>
         <div class="div__presentation div__games-presentation">
             <a href="templateCategory.php?cat=hb&level=0">
-                <img class="to-html to-page" src="../../public/images/htmlLevels.svg" alt="HTML">
+                <img class="to-html to-page" src="../../public/images/htmlLevels.svg" alt="HTML" height=auto width=auto>
             </a>
             <a href="templateCategory.php?cat=cb&level=0">
-                <img class="to-css to-page" src="../../public/images/cssLevels.svg" alt="CSS">  
+                <img class="to-css to-page" src="../../public/images/cssLevels.svg" alt="CSS" height=auto width=auto>  
             </a>
         </div>
         
@@ -253,17 +242,17 @@ function session($key, $default=NULL) {
         <h1> Meet our team </h1>
         <div class="three-on-row div__presentation">
             <section class="mada">
-                <img src="../../public/images/mada.svg" alt="Mada">
+                <img src="../../public/images/mada.svg" alt="Mada" height=auto width=auto>
                 <h4> Madalina-Elena Banica </h4>
                 <p> "The secret to creativity is knowing how to hide your sources" </p>
             </section>
             <section class="ioan">
-                <img src="../../public/images/ioan.svg" alt="Ioan">
+                <img src="../../public/images/ioan.svg" alt="Ioan" height=auto width=auto>
                 <h4> Ioan Puiu </h4>
                 <p> "Your passion is waiting for your courage to catch up." </p>
             </section>
             <section class="emi">
-                <img src="../../public/images/emi.svg" alt="Emi">
+                <img src="../../public/images/emi.svg" alt="Emi" height=auto width=auto>
                 <h4> George-Emanuel Hurmuz </h4>
                 <p> "An enthusiastic heart finds opportunities everywhere." </p>
             </section>
