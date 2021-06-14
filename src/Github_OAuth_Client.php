@@ -1,13 +1,4 @@
 <?php
-/*
- * Class Github_OAuth_Client
- * 
- * Author: CodexWorld
- * Author URL: https://www.codexworld.com
- * Author Email: admin@codexworld.com
- * 
- * The first PHP Library to support OAuth for GitHub REST API.
- */
 class Github_OAuth_Client{
     public $authorizeURL = "https://github.com/login/oauth/authorize";
     public $tokenURL = "https://github.com/login/oauth/access_token";
@@ -16,9 +7,6 @@ class Github_OAuth_Client{
     public $clientSecret;
     public $redirectUri;
     
-    /**
-     * Construct object
-     */
     public function __construct(array $config = []){
         $this->clientID = isset($config['client_id']) ? $config['client_id'] : '';
         if(!$this->clientID){
@@ -33,11 +21,6 @@ class Github_OAuth_Client{
         $this->redirectUri = isset($config['redirect_uri']) ? $config['redirect_uri'] : '';
     }
     
-    /**
-     * Get the authorize URL
-     *
-     * @returns a string
-     */
     public function getAuthorizeURL($state){
         return $this->authorizeURL . '?' . http_build_query([
             'client_id' => $this->clientID,
@@ -47,9 +30,6 @@ class Github_OAuth_Client{
         ]);
     }
     
-    /**
-     * Exchange token and code for an access token
-     */
     public function getAccessToken($state, $oauth_code){
         $token = self::apiRequest($this->tokenURL . '?' . http_build_query([
             'client_id' => $this->clientID,
@@ -60,16 +40,11 @@ class Github_OAuth_Client{
         return $token->access_token;
     }
     
-    /**
-     * Make an API request
-     *
-     * @return API results
-     */
     public function apiRequest($access_token_url){
         $apiURL = filter_var($access_token_url, FILTER_VALIDATE_URL)?$access_token_url:$this->apiURLBase.'user?access_token='.$access_token_url;
         $context  = stream_context_create([
           'http' => [
-            'user_agent' => 'CodexWorld GitHub OAuth Login',
+            'user_agent' => 'GitHub OAuth Login',
             'header' => 'Accept: application/json'
           ]
         ]);
@@ -77,5 +52,4 @@ class Github_OAuth_Client{
         
         return $response ? json_decode($response) : $response;
     }
-
 }

@@ -60,7 +60,7 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
          </nav>
         <img id="menuButton" src="../../public/images/menu.svg" alt="=">
     </nav>
-<!-- todo when you have enough data -->
+
     <div class="game-container-center">
         <main class="main__levels">
             <?php
@@ -103,6 +103,7 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
                         $selected_category = "htmlBeginner";
                         $db_cat = "bHTML_lvl";
                 }
+                // if level higher
                 if((int)$level > (int)$rows[$db_cat]){
                     echo "<script>window.location.href = 'templateCategory.php?cat=".$category."&level=".$rows[$db_cat]."'</script>";
                 }

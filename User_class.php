@@ -20,15 +20,15 @@ class User {
     
     function checkUser($userData = array()){
         if(!empty($userData)){
-            // Check whether user data already exists in database
+            // verific daca deja exista utilizatorul
             $prevQuery = "SELECT * FROM ".$this->userTbl." WHERE oauth_provider = '".$userData['oauth_provider']."' AND oauth_uid = '".$userData['oauth_uid']."'";
             $prevResult = $this->db->query($prevQuery);
             if($prevResult->num_rows > 0){
-                // Update user data if already exists
+                // daca exista deja modific datele utilizatorului
                 $query = "UPDATE ".$this->userTbl." SET name = '".$userData['name']."', username = '".$userData['username']."', email = '".$userData['email']."', location = '".$userData['location']."', picture = '".$userData['picture']."', link = '".$userData['link']."', modified = NOW() WHERE oauth_provider = '".$userData['oauth_provider']."' AND oauth_uid = '".$userData['oauth_uid']."'";
                 $update = $this->db->query($query);
             }else{
-                // Insert user data
+                //  Inserez informatiile
                 $query = "INSERT INTO ".$this->userTbl." SET oauth_provider = '".$userData['oauth_provider']."', oauth_uid = '".$userData['oauth_uid']."', name = '".$userData['name']."', username = '".$userData['username']."', email = '".$userData['email']."', location = '".$userData['location']."', picture = '".$userData['picture']."', link = '".$userData['link']."', created = NOW(), modified = NOW()";
                 $insert = $this->db->query($query);
             }

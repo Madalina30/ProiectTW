@@ -20,6 +20,11 @@
         color: purple;
         text-decoration: none;
       }
+
+      code{
+	text-align:justify;
+	}
+
     </style>
   </head>
 
@@ -122,7 +127,7 @@
     </p>
     <p>Codul utilizat pentru verificarea existentei unui utilizator, respectiv adaugarea acestuia.</p>
     <pre>
-    <code>
+    <code style="text-align: justify">
       function checkUser($userData = array()){
         if(!empty($userData)){
             // Check whether user data already exists in database
@@ -215,7 +220,14 @@
 
     <section id="api">
       <h2>API-ul utilizat</h2>
-      <pre>
+      	<p> API REST-ul creat are rolul de a prelua informatii dintr-un json precum enuntul unui nivel dintr-un joc si raspunsul 
+      	(cu tot cu un template pe care e pus acel răspuns). Informatiile sunt preluate din url in functie de categoria jocului si 
+      	de nivelul pe care il alege un utilizator(iar daca categoria sau nivelul nu corespunde cu ce este in json, 
+      	o sa se afiseze "no data to show").
+      	Codul utilizat se gaseste in app/views/API.php si arata astfel:
+      </p>
+	
+	<pre>
         <code>
           &lt;?php 
           header('Content-Type: text/plain');
@@ -263,11 +275,18 @@
               $levelDescription = $gameData["lvlDescription"];
               $levelAnswers = $gameData["lvlAnswers"];
               $levelTemplate = $gameData["lvlTemplate"];
-              echo json_encode(array("status"=>'ok', "description"=>$levelDescription, "answers"=>$levelAnswers));
+              echo json_encode(array("status"=>'ok', "description"=>$levelDescription,
+              "answers"=>$levelAnswers));
           }
           ?>
         </code>
       </pre>
+    </section>
+
+    <section id="diagrama-aplicatie">
+      <h2>Diagrama Aplicatiei</h2>
+        <img src="../../docs/proiectTWDiagram.png" width="100%" style="align-items: justify;background-color:rgb(102, 105, 106)">
+         <!-- <img src= proiectTWDiagram.png width="100%" style="align-items: justify;background-color:rgb(102, 105, 106)"> -->
     </section>
     
     <section id="interfata-cu-utilizatorul">
@@ -327,6 +346,15 @@
           Pentru fiecare utilizator din clasament, se afiseaza locul, numele utilizatorului si punctajul acestuia.
         </p>
     </section>
+
+     <section id="interfata-my-statistics">
+        <h4>Interfata paginii My Statistics</h4>
+        <p>
+          Spre deosebire de pagina cu statistici, pagina My Statistics contine informatii doar pentru evolutia utilizatorului
+	prezent logat pe site. Informatiile pe care le prezinta sunt numarul de puncte total, numarul de puncte cumulate la CSS dar si HTML, cat si procentul de nivele rezolvate cu succes din numarul total de nivele, dar si
+	numarul de nivele rezolvate pe parcursul zilei curente, zilei antecedente si saptamanii antecedente.
+        </p>
+    </section>
     
     <section id="interfata-profil">
         <h4>Interfata paginii de profil</h4>
@@ -342,4 +370,11 @@
     </section>
 
   </body>
+  <footer>
+    <section id="copyright">
+      <br>
+      <br>
+      <p style="text-align:center">© 2021 George Emanuel Hurmuz, Madalina Banica, Ionut Puiu</p>
+    </section>
+  </footer>
 </html>
