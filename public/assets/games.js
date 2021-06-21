@@ -1,5 +1,6 @@
 let htmlCatZone = document.querySelector(".categories-html");
 let cssCatZone = document.querySelector(".categories-css");
+const lang = document.querySelector(".language").innerText;
 let htmlCat = [
     ["htmlBeginner", "beginner-html", "htmlBegGames.svg", "beginner"],
     ["htmlIntermediate", "intermediate-html", "htmlIntGames.svg", "intermediate"],
@@ -17,17 +18,16 @@ buildCategry(htmlCatZone, htmlCat);
 buildCategry(cssCatZone, cssCat);
 
 async function buildCategry(catZone, catData){
-    const result = await fetch('../models/game.json').then(data=>data.json()).then(data=>data);
-    
+    let result = await fetch('../models/game.json').then(data=>data.json()).then(data=>data);
     let catHolder = ``;
     for(let i=0; i<catData.length; i++){
-        let maxLevel = result[catData[i][0]].length;
+        let maxLevel = result[lang][catData[i][0]].length;
         let level = document.querySelector('.config .'+catData[i][0]+' .level').innerText;
         catHolder += `<div class="category-${catData[i][1]} categories-here">`;
         catHolder += `<img id="${catData[i][0]}" class="level-image ${catData[i][1]}" src="../../public/images/${catData[i][2]}" alt="${catData[i][3]}">`;
         catHolder += `<div class="${catData[i][1]}-text categories-text"> 
             <section class="section__${catData[i][1]}">
-                Levels done: 
+            ${lang=='ro'?'Nivele completate':'Levels done'}
                 <span class="progress-${catData[i][1]} categories-data"> 
                     ${level} 
                 </span> 
@@ -36,11 +36,11 @@ async function buildCategry(catZone, catData){
                 ${parseInt(level) < parseInt(maxLevel)?`
                 <span class="bullet-cat"> &#8226; </span> 
                 <span class="completed-${catData[i][1]} completed-data">
-                    Not completed yet
+                    ${lang=='ro'?'Necompletat':'Not completed yet'}
                 </span>`:`
                 <span style='margin-left: 10px;color:green;'> &#8226; </span> 
                 <span class="completed-${catData[i][1]} completed-data" style='color:green !important;'>
-                    Completed
+                ${lang=='ro'?'Completat':'Completed'}
                 </span>`}
                 
             </section>
@@ -102,6 +102,3 @@ async function buildCategry(catZone, catData){
         }
     });
 }
-
-
-

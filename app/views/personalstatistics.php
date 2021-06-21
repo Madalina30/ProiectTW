@@ -1,6 +1,6 @@
 <?php
 require '../views/db_conf.php';
-session_start();
+require '../languages/languages.php';
 if($_SESSION['is_logged'] == 1){
     $userData = $_SESSION['userData'];
     $username = $userData['username'];
@@ -25,6 +25,7 @@ $levelsDone =  $rowsLevels['levels'];
 $completed = $levelsDone/$totalLevels*100;
 $uncompleted = 100 - $completed;
 
+// get levels for the date - sum levels where date - today/yesterday/last 7 days/last 30 days
 $date  = date("y.m.d");
 $forToday = $conn->query('SELECT sum(levels) as today FROM statistics WHERE DATE(date) = CURDATE() AND username = \''. $username .'\'');
 $today = $forToday->fetch_assoc();
@@ -46,7 +47,7 @@ $last30 = $for30->fetch_assoc();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Statistics</title>
+    <title><?php echo $lang[$language]['menu_btn_mystatistics'] ?></title>
     <link rel="stylesheet" href="../../public/style.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -56,17 +57,17 @@ $last30 = $for30->fetch_assoc();
   
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Period', 'Levels', { role: 'style'}],
-          ['All time', <?php echo $levelsDone; ?>,'#b87333'],
-          ['Last 30 days', <?php echo $last30['last30']; ?>, 'pink'],
-          ['Last 7 days', <?php echo $last7['last7']; ?>, 'green'],
-          ['Yesterday', <?php echo $yesterday['yesterday']; ?> ,'blue'],
-          ['Today', <?php echo $today['today']; ?>, 'blue']
+        ['<?php echo $lang[$language]['stats_period'] ?>' , '<?php echo $lang[$language]['stats_levels'] ?>', { role: 'style'}],
+          ['<?php echo $lang[$language]['stats_all_time'] ?>', <?php echo $levelsDone; ?>,'#b87333'],
+          ['<?php echo $lang[$language]['stats_30_days'] ?>', <?php echo $last30['last30']; ?>, 'pink'],
+          ['<?php echo $lang[$language]['stats_7_days'] ?>', <?php echo $last7['last7']; ?>, 'green'],
+          ['<?php echo $lang[$language]['stats_yesterday'] ?>', <?php echo $yesterday['yesterday']; ?> ,'blue'],
+          ['<?php echo $lang[$language]['stats_today'] ?>', <?php echo $today['today']; ?>, 'blue']
         ]);
   
         var options = {
           chart: {
-            title: 'Everyone\'s progress'
+            title: '<?php echo $lang[$language]['stats_everyone'] ?>'
           }
         };
   
@@ -84,13 +85,13 @@ $last30 = $for30->fetch_assoc();
       function drawChart() {
   
         var data = google.visualization.arrayToDataTable([
-          ['Levels completed', 'Number of levels', {role: 'style'}],
-          ['Completed', <?php echo $completed; ?>, 'purple'],
-          ['Incompleted', <?php echo $uncompleted; ?>, 'green']
+          ['<?php echo $lang[$language]['stats_levels_completed'] ?>', '<?php echo $lang[$language]['stats_number_of_levels'] ?>', {role: 'style'}],
+          ['<?php echo $lang[$language]['stats_completed'] ?>', <?php echo $completed; ?>, 'purple'],
+          ['<?php echo $lang[$language]['stats_incompleted'] ?>', <?php echo $uncompleted; ?>, 'green']
         ]);
   
         var options = {
-          title: 'Progress'
+          title:' <?php echo $lang[$language]['stats_progres'] ?>'
         };
   
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -108,14 +109,14 @@ $last30 = $for30->fetch_assoc();
                 <img class="logo" src="../../public/images/logo.svg" alt="LeHS">
             </a>
             <a href="allgames.php" class="btn-fill btn-games">
-                    Games 
+                 <?php echo $lang[$language]['menu_btn_games'] ?> 
             </a>
             <a href="statistics.php" class="btn-fill btn-games">
-                    Statistics
+                <?php echo $lang[$language]['menu_btn_statistics'] ?>
             </a>
             <a href="personalstatistics.php" class="btn-fill btn-games"
                 style="background-color: rgba(96, 199, 240, 0.644);">
-                    My statistics 
+                <?php echo $lang[$language]['menu_btn_mystatistics'] ?> 
             </a>
         </div>
         <div class="icons-right">
@@ -128,10 +129,10 @@ $last30 = $for30->fetch_assoc();
             <img class="exit" src="../../public/images/menu.svg" alt="m">
             <div class="nav__items">
                 <div class="all-elements">
-                <a href="index.php"> Home </a> 
-                    <a href="allgames.php"> Games </a> 
-                    <a href="statistics.php"> Statistics </a> 
-                    <a href="personalstatistics.php">My Statistics</a>
+                    <a href="index.php"> <?php echo $lang[$language]['menu_btn_home'] ?> </a> 
+                    <a href="allgames.php"> <?php echo $lang[$language]['menu_btn_games'] ?> </a> 
+                    <a href="statistics.php"> <?php echo $lang[$language]['menu_btn_statistics'] ?> </a> 
+                    <a href="personalstatistics.php"><?php echo $lang[$language]['menu_btn_mystatistics'] ?></a>
                     <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>
@@ -152,7 +153,7 @@ $last30 = $for30->fetch_assoc();
             </div>
             
             <div id='texts' style='display:inline-block; white-space:nowrap;'> 
-               <h1>".$username."'s Statistics</h1>
+               <h1>".$username.$lang[$language]['my_stats_title']."</h1>
             </div>
         </div>
         "
@@ -160,7 +161,7 @@ $last30 = $for30->fetch_assoc();
         <div class ="rows-for-leaderboards">
             <table class="table__all">
                 <tr>
-                    <th>All Points</th>
+                    <th><?php echo $lang[$language]['my_stats_all_points'] ?></th>
                 </tr>
                 <?php
                     echo "<tr>
@@ -172,7 +173,7 @@ $last30 = $for30->fetch_assoc();
             <table class="table__html">
 
                 <tr>
-                    <th>HTML Points</th>
+                    <th><?php echo $lang[$language]['my_stats_html_points'] ?></th>
                 </tr>
                 <?php
                     echo "<tr>
@@ -182,7 +183,7 @@ $last30 = $for30->fetch_assoc();
             </table>
             <table class="table__css">
                 <tr>
-                    <th>CSS Points</th>
+                    <th><?php echo $lang[$language]['my_stats_css_points'] ?></th>
                 </tr>
                <?php echo "<tr>
                                 <td>".$rowsCSS[0]['CSS_points']."</td>

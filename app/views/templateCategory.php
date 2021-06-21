@@ -1,11 +1,16 @@
 <?php
 require '../views/db_conf.php';
-session_start();
+require '../languages/languages.php';
 if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
     $userData = $_SESSION['userData'];
     $username = $userData['username'];
     $userDbData = $conn->query('SELECT * FROM users WHERE username = \'' . $username . '\'');
     $rows = $userDbData->fetch_all(MYSQLI_ASSOC)[0];
+    $language = 'ro';
+    if(isset($_SESSION['lang'])){
+        $language =  $_SESSION['lang'];
+        
+    }
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +24,7 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
 </head>
 <body class="body__category">
+    <div class="language" style="display:none;"><?php echo $language; ?></div>
     <div class="style-css"></div>
     <nav>
         <div class="nav__left">
@@ -45,10 +51,10 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
             <img class="exit" src="../../public/images/menu.svg" alt="m">
             <div class="nav__items">
                 <div class="all-elements">
-                    <a href="#"> Home </a> 
-                    <a href="allgames.php"> Games </a> 
-                    <a href="statistics.php"> Statistics </a>
-                    <a href="personalstatistics.php">My Statistics</a> 
+                <a href="index.php"> <?php echo $lang[$language]['menu_btn_home'] ?> </a> 
+                    <a href="allgames.php"> <?php echo $lang[$language]['menu_btn_games'] ?> </a> 
+                    <a href="statistics.php"> <?php echo $lang[$language]['menu_btn_statistics'] ?> </a> 
+                    <a href="personalstatistics.php"><?php echo $lang[$language]['menu_btn_mystatistics'] ?></a>
                     <a class="btn-profile" href="profile.php">
                         <img class="profile-button" src="../../public/images/profile.png" alt="">
                     </a>
@@ -60,7 +66,7 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
          </nav>
         <img id="menuButton" src="../../public/images/menu.svg" alt="=">
     </nav>
-
+<!-- todo when you have enough data -->
     <div class="game-container-center">
         <main class="main__levels">
             <?php
@@ -103,14 +109,13 @@ if(isset($_SESSION['is_logged']) &&  $_SESSION['is_logged'] == 1){
                         $selected_category = "htmlBeginner";
                         $db_cat = "bHTML_lvl";
                 }
-                // if level higher
                 if((int)$level > (int)$rows[$db_cat]){
                     echo "<script>window.location.href = 'templateCategory.php?cat=".$category."&level=".$rows[$db_cat]."'</script>";
                 }
                 $gameDataFile = file_get_contents("../models/game.json");
                 $gameJson = json_decode($gameDataFile, true);
-                $maxLevel = count($gameJson[$selected_category]);
-                $gameData =  $gameJson[$selected_category][$level];
+                $maxLevel = count($gameJson[$language][$selected_category]);
+                $gameData =  $gameJson[$language][$selected_category][$level];
                 $categoryName = $gameData["categoryName"];
                 $levelDescription = $gameData["lvlDescription"];
                 $levelTemplate = $gameData["lvlTemplate"];

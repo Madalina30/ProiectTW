@@ -10,6 +10,7 @@ ini_set('log_errors', TRUE);
 ini_set('error_log', 'errors.log'); 
 require_once 'db_conf.php';
 require_once 'User_class.php';
+require '../languages/languages.php';
 $user = new User();
 
 if(!session_id()){
@@ -113,6 +114,7 @@ function get($key, $default=NULL) {
 function session($key, $default=NULL) {
   return array_key_exists($key, $_SESSION) ? $_SESSION[$key] : $default;
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -120,7 +122,7 @@ function session($key, $default=NULL) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title><?php echo $lang[$language]['menu_btn_home'] ?></title>
     <link rel="stylesheet" href="../../public/style.css">
 </head>
 <body>
@@ -132,13 +134,13 @@ function session($key, $default=NULL) {
                     <img class="logo" src="../../public/images/logo.svg" alt="LeHS" height=70px width=70px>
                 </a>
                 <a href="allgames.php" class="btn-fill btn-games">
-                    Games 
+                <?php echo $lang[$language]['menu_btn_games'] ?> 
                 </a>
                 <a href="statistics.php" class="btn-fill btn-statistics">
-                        Statistics
+                <?php echo $lang[$language]['menu_btn_statistics'] ?>
                 </a>
                 <a href="personalstatistics.php" class="btn-fill btn-games">
-                    My statistics 
+                <?php echo $lang[$language]['menu_btn_mystatistics'] ?>
                 </a>
             </div>
             <div class="icons-right">
@@ -152,10 +154,10 @@ function session($key, $default=NULL) {
                 <img class="exit" src="../../public/images/menu.svg" alt="m">
                 <div class="nav__items">
                     <div class="all-elements">
-                        <a href="#"> Home </a> 
-                        <a href="allgames.php"> Games </a> 
-                        <a href="statistics.php"> Statistics </a> 
-                        <a href="personalstatistics.php">My Statistisc</a>
+                        <a href="#"> <?php echo $lang[$language]['menu_btn_home'] ?> </a> 
+                        <a href="allgames.php"> <?php echo $lang[$language]['menu_btn_games'] ?> </a> 
+                        <a href="statistics.php"> <?php echo $lang[$language]['menu_btn_statistics'] ?> </a> 
+                        <a href="personalstatistics.php"><?php echo $lang[$language]['menu_btn_mystatistics'] ?></a>
                         <a class="btn-profile" href="profile.php">
                             <img class="profile-button" src="../../public/images/profile.png" alt="" height=35px width=35px>
                         </a>
@@ -169,8 +171,7 @@ function session($key, $default=NULL) {
 
         <div class="presentation">
             <p class="description-site">
-                Come and join us into the beauty of Lego pieces and help
-                 us color them, build castles and other amazing things during our adventure!
+                <?php echo $lang[$language]['home_main_showcase'] ?>
             </p>
         </div>
         
@@ -178,21 +179,21 @@ function session($key, $default=NULL) {
 
     <div class="learn-presentation main-sections">
         <h1>
-            Learn HTML and CSS like a PRO
+             <?php echo $lang[$language]['home_learn_title'] ?>
         </h1>
         <div class="div__presentation div__learn-presentation">
             <div class="div__bullet">
                 <img src="../../public/images/levels.svg" alt="Levels" height=auto width=auto>
-                <h4>Levels</h4>
+                <h4> <?php echo $lang[$language]['home_learn_pic_1'] ?></h4>
                 <p>
-                    Lots of challenging levels to go for you to master HTML and CSS!
+                    <?php echo $lang[$language]['home_learn_pic_1_desc'] ?>
                 </p>
             </div>
             <div class="div__bullet">
                 <img src="../../public/images/statictics.svg" alt="Statistics" height=auto width=auto>
-                <h4>Statistics</h4>
+                <h4><h4> <?php echo $lang[$language]['home_learn_pic_2'] ?></h4></h4>
                 <p>
-                    See the top players and try to beat them!
+                    <?php echo $lang[$language]['home_learn_pic_2_desc'] ?>
                 </p>
             </div>
         </div>
@@ -200,7 +201,7 @@ function session($key, $default=NULL) {
 <!-- presentation -->
     <div class="games-presentation main-sections">
         <h1>
-            Play our games! HTML and CSS only!
+            <?php echo $lang[$language]['home_play_title'] ?>
         </h1>
         <div class="div__presentation div__games-presentation">
             <a href="templateCategory.php?cat=hb&level=0">
@@ -215,23 +216,20 @@ function session($key, $default=NULL) {
 
     <!-- FAQ -->
     <div class="faq main-sections" id="faq">
-        <h1> FAQ </h1>
+        <h1> <?php echo $lang[$language]['home_faq_title'] ?> </h1>
         <div class="three-on-row div__presentation">
             <!-- 3 questions and their answers -->
             <section class="div__bullet q-a">
-                <h4> Why would you use our site? </h4>
-                <p> Because you will learn the basics and advanced 
-                    notions about CSS and HTML in a relaxing, 
-                    funny, and interactive way. </p>
+                <h4> <?php echo $lang[$language]['home_faq_1_title'] ?> </h4>
+                <p> <?php echo $lang[$language]['home_faq_1_desc'] ?> </p>
             </section>
             <section class="div__bullet q-a">
-                <h4> How are the points distributed? </h4>
-                <p> Every level has 20 points and every time you submit 
-                    a wrong answer you will get -1 point from the total left for that level. </p>
+                <h4> <?php echo $lang[$language]['home_faq_2_title'] ?> </h4>
+                <p> <?php echo $lang[$language]['home_faq_2_desc'] ?> </p>
             </section>
             <section class="div__bullet q-a">
-                <h4> Why did we chose the lego theme? </h4>
-                <p> Because programming can be compared with playing lego. It is an entire universe of creativity. </p>
+                <h4> <?php echo $lang[$language]['home_faq_3_title'] ?> </h4>
+                <p> <?php echo $lang[$language]['home_faq_3_desc'] ?> </p>
             </section>
         </div>
     </div>
@@ -239,46 +237,44 @@ function session($key, $default=NULL) {
     <!-- team -->
 
     <div class="meet-our-team main-sections">
-        <h1> Meet our team </h1>
+        <h1> <?php echo $lang[$language]['home_team_members_title'] ?> </h1>
         <div class="three-on-row div__presentation">
             <section class="mada">
                 <img src="../../public/images/mada.svg" alt="Mada" height=auto width=auto>
                 <h4> Madalina-Elena Banica </h4>
-                <p> "The secret to creativity is knowing how to hide your sources" </p>
+                <p> <?php echo $lang[$language]['home_team_member_1_desc'] ?> </p>
             </section>
             <section class="ioan">
                 <img src="../../public/images/ioan.svg" alt="Ioan" height=auto width=auto>
                 <h4> Ioan Puiu </h4>
-                <p> "Your passion is waiting for your courage to catch up." </p>
+                <p> <?php echo $lang[$language]['home_team_member_2_desc'] ?> </p>
             </section>
             <section class="emi">
                 <img src="../../public/images/emi.svg" alt="Emi" height=auto width=auto>
                 <h4> George-Emanuel Hurmuz </h4>
-                <p> "An enthusiastic heart finds opportunities everywhere." </p>
+                <p> <?php echo $lang[$language]['home_team_member_3_desc'] ?> </p>
             </section>
         </div>
     </div>
 
     <!-- about us -->
     <div class="about-us main-sections" id="about">
-        <h1> About us </h1>
+        <h1> <?php echo $lang[$language]['home_about_us_title'] ?> </h1>
         <p class="about__description"> 
-            We are some young people from Computer Science 
-            faculty from Iasi and this is our web project for 
-            the 2nd year of faculty.
+        <?php echo $lang[$language]['home_about_us_desc_1'] ?>
         </p>
-        <p>Here is our documentation for this amazing project: 
+        <p><?php echo $lang[$language]['home_about_us_desc_2'] ?> 
             <!-- link catre html documentatie -->
             <a href="../../docs/documentatie.html" style="color:blueviolet">Documentatie</a>
         </p>
-        <button type='button' class='btn__show' style='cursor:pointer;'> Show more </button>
+        <button type='button' class='btn__show'> Show more </button>
     </div>
 
     <!-- contact us -->
     <div class="contact-us main-sections" id="contact">
-        <h1> Contact us </h1>
+        <h1> <?php echo $lang[$language]['home_contact_us_title'] ?> </h1>
         <div class="div__presentation">
-            <p> Phone: +04 744 LEGO45 </p>
+            <p> <?php echo $lang[$language]['home_phone'] ?>: +04 744 LEGO45 </p>
             <p> Email: lego_enthusiasts@gmail.com </p>
         </div>
     </div>

@@ -1,31 +1,35 @@
 <?php
-error_reporting(E_ALL); // Error/Exception engine, always use E_ALL
+error_reporting(E_ALL); // Error/Exception engine, cate erori vreau sa vad
 
-ini_set('ignore_repeated_errors', TRUE); // always use TRUE
+ini_set('ignore_repeated_errors', TRUE); 
 
-ini_set('display_errors', FALSE); // Error/Exception display, use FALSE only in production environment or real server. Use TRUE in development environment
+ini_set('display_errors', FALSE); // suntem pe host si nu vrem sa apara erorile, de aia e false
 
-ini_set('log_errors', TRUE); // Error/Exception file logging engine.
-ini_set('error_log', 'errors.log'); // Logging file path
-// Include GitHub API config file
+ini_set('log_errors', TRUE); // folosesc un fisier pentru afisarea erorilor
+ini_set('error_log', 'errors.log'); //fisierul in care se trec erorile
+
+//Includ gitHub API-ul.
 require_once 'gitConfig.php';
 require_once 'db_conf.php';
 
-// Include and initialize user class
+// generez un nou utilizator cu o sesiune noua de date inregistrate
 require_once 'User_class.php';
 $user = new User();
 
-    // Generate a random hash and store in the session for security
+    // Generez o valoare random pentru utilizatorul din sesiunea curenta si o salvez
     $_SESSION['state'] = hash('sha256', microtime(TRUE) . rand() . $_SERVER['REMOTE_ADDR']);
 
-    // Remove access token from the session
+    // Sterg acces_token-ul
     unset($_SESSION['access_token']);
 
-    // Get the URL to authorize
+    // Iau din git URL-ul de autentificare pentru utilizatorul cu state-ul curent
     $loginURL = $gitClient->getAuthorizeURL($_SESSION['state']);
 
-    // Render Github login button
+    // Aplic link-ul respectiv peste forma deja creata
      $output = '<a href="'.htmlspecialchars($loginURL).'"><img src="images/github-login.png"></a>';
+
+require './app/languages/languages.php';
+
 
 ?>
 <!DOCTYPE html>
@@ -44,15 +48,13 @@ $user = new User();
         <div class="box__start-page">
             <h2 style="font-size: 27px; margin:0;"> LEGO HTML & CSS</h2>
            <p>
-               Discover web development with our lego friends and their kingdome!
-               Join us on a big adventure and learn the art of HTML and CSS 
-               while building their city!
+              <?php echo $lang[$language]['main_desciption'] ?> 
             </p>
              <?php
                 
                 echo "<a href=".htmlspecialchars($loginURL).">
                 <section class='btn-fill btn-github'>
-                    Signup with 
+                    ".$lang[$language]['main_signup_buttpn']." 
                     <img src='../../public/images/github.svg' alt='Github'>
 
                 </section>
